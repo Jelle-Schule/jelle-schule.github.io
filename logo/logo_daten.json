@@ -3910,6 +3910,128 @@
      ]
     }
    ]
+  },
+  {
+   "datum": "2026-10-18",
+   "wochentag": "Sonntag",
+   "zeit": "19:50",
+   "url": "https://www.logo.de/logo-vom-sonntag-18-oktober-2026-102.html",
+   "beitraege": [
+    {
+     "titel": "Orang-Utans in Indonesien",
+     "kurz": "Ein Beitrag über Orang-Utans, Menschenaffen, die in Indonesien leben.",
+     "themen": [
+      "Natur & Wissen",
+      "Welt & Internationales"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Was sind Orang-Utans?",
+       "optionen": [
+        "Menschenaffen",
+        "Vögel",
+        "Fische"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Hör genau hin: Was erfährst du über die Orang-Utans? Schreib einen Satz."
+      }
+     ]
+    },
+    {
+     "titel": "Annabelle hat ME/CFS",
+     "kurz": "Annabelle ist seit einer Corona-Erkrankung chronisch krank. Sie muss die meiste Zeit im Bett liegen.",
+     "themen": [
+      "Gesundheit & Ernährung",
+      "Gesellschaft & Zusammenleben"
+     ],
+     "politisch": false,
+     "link": "https://www.zdf.de/video/reportagen/collection-index-page-kika-collection-kika-e5678aac-901b-4889-a934-848f0d499261-212/page-video-kika-long-covid-annabelle-kaempft-gegen-mecfs-102",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Wo muss Annabelle die meiste Zeit verbringen?",
+       "optionen": [
+        "im Bett",
+        "in der Schule",
+        "im Sportverein"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was könnte Annabelle helfen? Schreib einen Satz."
+      }
+     ]
+    },
+    {
+     "titel": "logo! erklärt: ME/CFS",
+     "kurz": "logo! erklärt die Krankheit ME/CFS und warum es dagegen noch keine Medikamente gibt.",
+     "themen": [
+      "Gesundheit & Ernährung",
+      "Natur & Wissen"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/mecfs-einfach-erklaert-100.html",
+     "fragen": [
+      {
+       "typ": "wort",
+       "text": "Schreib ein Wort auf, das du nicht kanntest."
+      },
+      {
+       "typ": "satz",
+       "text": "Hör genau hin: Wodurch kann ME/CFS ausgelöst werden?"
+      }
+     ]
+    },
+    {
+     "titel": "Streit im Jugendfußball",
+     "kurz": "Ein Beitrag über einen Streit im Jugendfußball.",
+     "themen": [
+      "Sport"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "satz",
+       "text": "Hör genau hin: Worum geht es bei dem Streit?"
+      },
+      {
+       "typ": "wort",
+       "text": "Wer kommt im Beitrag vor? Schreib eine Person oder Gruppe auf."
+      }
+     ]
+    },
+    {
+     "titel": "Gürteltier in Litauen",
+     "kurz": "Ein Beitrag über ein Gürteltier in Litauen.",
+     "themen": [
+      "Natur & Wissen",
+      "Europa"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Litauen ist ein Land in …",
+       "optionen": [
+        "Europa",
+        "Afrika",
+        "Südamerika"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Hör genau hin: Was ist an dem Gürteltier besonders?"
+      }
+     ]
+    }
+   ]
   }
  ]
 }
