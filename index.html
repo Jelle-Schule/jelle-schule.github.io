@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Unterrichts-Apps</title>
-<meta name="description" content="Alle Unterrichts-Apps – suchen, Link teilen, QR-Code an die Tafel.">
+<title>Lernkiste</title>
+<meta name="description" content="Lernkiste – Apps und Seiten für den Unterricht: suchen, Link teilen, QR-Code an die Tafel.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f5f4a'/%3E%3Crect x='14' y='14' width='14' height='14' rx='2' fill='white'/%3E%3Crect x='36' y='14' width='14' height='14' rx='2' fill='white'/%3E%3Crect x='14' y='36' width='14' height='14' rx='2' fill='white'/%3E%3Crect x='38' y='38' width='5' height='5' fill='white'/%3E%3Crect x='45' y='45' width='5' height='5' fill='white'/%3E%3C/svg%3E">
 <style>
 /* Layout: eine Spalte; oben Suche, darunter App-Karten mit Mini-QR; Tafel-Ansicht als Vollbild-Overlay */
@@ -103,8 +103,9 @@ details.help ol{padding-left:1.2em}
 <div class="wrap">
   <header>
     <div>
-      <p class="kicker">App-Regal</p>
-      <h1>Unterrichts-Apps</h1>
+      <!-- Name der Seite: hier ändern (und oben im <title>) -->
+      <p class="kicker">Apps &amp; Seiten für den Unterricht</p>
+      <h1>Lernkiste</h1>
     </div>
     <p class="count" id="count"></p>
   </header>
@@ -128,7 +129,7 @@ details.help ol{padding-left:1.2em}
       <li><b>Link kopieren / Teilen</b> – zum Weiterschicken an Kolleginnen, Kollegen oder per Mail an die Klasse.</li>
       <li><b>QR als Bild</b> – lädt den Code als PNG, z. B. für ein Arbeitsblatt oder eine Folie.</li>
       <li><b>Direkt-Link zu einer App hier:</b> Seitenadresse + <code>#name</code>, z. B. <code>…/#einmaleins</code> öffnet sofort deren QR-Code.</li>
-      <li><b>Neue App dazu?</b> Einfach Claude sagen: „Stell die App ins App-Regal.“</li>
+      <li><b>Neue App dazu?</b> Einfach Claude sagen: „Stell die App in die Lernkiste.“</li>
     </ol>
   </details>
 </div>
@@ -177,12 +178,20 @@ const APPS = [
   {
     id: "logo",
     title: "logo! Seh-Begleiter",
-    url: "https://claude.ai/artifact/7GJiwgu3if7zrvjqRGSW98",
+    url: "https://jelle-schule.github.io/logo/",
     fach: "GPG", stufe: "Klasse 5–6",
-    desc: "Begleitseite zur aktuellen logo!-Sendung, aktualisiert sich jeden Tag automatisch.",
-    note: "Läuft über Claude: Der Link funktioniert für Schüler nur, wenn die Seite in Claude öffentlich geteilt ist.",
+    desc: "Fragen zum Mitschauen zur aktuellen logo!-Sendung. Aktualisiert sich jeden Abend automatisch, der Link bleibt immer gleich.",
     tags: ["logo","logo!","nachrichten","kindernachrichten","zdf","tivi","gpg","politik","aktuelles","sehbegleiter","seh-begleiter","fernsehen","video"],
     added: "2026-10-14"
+  },
+  {
+    id: "logo-verzeichnis",
+    title: "logo! Verzeichnis",
+    url: "https://jelle-schule.github.io/logo/verzeichnis.html",
+    fach: "GPG", stufe: "Lehrkraft",
+    desc: "Alle logo!-Sendungen seit August mit Beiträgen und Themen, durchsuchbar. Mit Links zu jedem alten Seh-Begleiter und PDF zum Drucken.",
+    tags: ["logo","logo!","verzeichnis","archiv","sendungen","themen","politik","gpg","suche","nachrichten"],
+    added: "2026-10-18"
   }
 ];
 </script>
