@@ -4032,6 +4032,252 @@
      ]
     }
    ]
+  },
+  {
+   "datum": "2026-10-19",
+   "wochentag": "Montag",
+   "zeit": "19:50",
+   "url": "https://www.logo.de/logo-vom-montag-19-oktober-2026-100.html",
+   "streitfrage": {
+    "text": "Sollen Schülerinnen und Schüler während der Schulzeit demonstrieren dürfen?",
+    "optionen": [
+     "ja",
+     "nein",
+     "weiß ich noch nicht"
+    ]
+   },
+   "beitraege": [
+    {
+     "titel": "Nach den Ausschreitungen in Frankreich",
+     "kurz": "In Frankreich protestieren seit Wochen Schülerinnen und Schüler. Es geht um kaputte Schulgebäude und fehlende Lehrkräfte. Zum Teil waren die Proteste heftig.",
+     "themen": [
+      "Protest & Beteiligung",
+      "Schule & Bildung",
+      "Europa"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/proteste-schueler-frankreich-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Worüber beschweren sich die Schüler in Frankreich?",
+       "optionen": [
+        "kaputte Schulgebäude",
+        "fehlende Lehrkräfte",
+        "zu viele Ferien"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Hör genau hin: Was ist nach den Protesten passiert? Schreib einen Satz."
+      }
+     ]
+    },
+    {
+     "titel": "logo! erklärt: Inflation",
+     "kurz": "logo! erklärt, was Inflation ist: Das Geld wird weniger wert und man kann sich für das gleiche Geld weniger kaufen.",
+     "themen": [
+      "Wirtschaft & Preise"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/inflation-das-geld-wird-weniger-wert-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Was bedeutet Inflation?",
+       "optionen": [
+        "Das Geld wird weniger wert.",
+        "Alles wird billiger.",
+        "Es gibt kein Geld mehr."
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Hör genau hin: Warum druckt man nicht einfach mehr Geld?"
+      }
+     ]
+    },
+    {
+     "titel": "Kicker-Turnier in Saarbrücken",
+     "kurz": "Ein Beitrag über ein Turnier im Tischkicker in Saarbrücken.",
+     "themen": [
+      "Sport"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Saarbrücken liegt in …",
+       "optionen": [
+        "Deutschland",
+        "Frankreich",
+        "Italien"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "wort",
+       "text": "Wer kommt im Beitrag vor? Schreib eine Person oder Gruppe auf."
+      }
+     ]
+    },
+    {
+     "titel": "Weihnachtsmann-Schule",
+     "kurz": "Ein Beitrag über eine Schule, in der man lernt, als Weihnachtsmann aufzutreten.",
+     "themen": [
+      "Kultur & Feiertage"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "satz",
+       "text": "Hör genau hin: Was lernt man in der Weihnachtsmann-Schule?"
+      },
+      {
+       "typ": "wort",
+       "text": "Schreib ein Wort auf, das du nicht kanntest."
+      }
+     ]
+    },
+    {
+     "titel": "Lara checkt Riesenrutsche zur Schule",
+     "kurz": "Reporterin Lara schaut sich eine Riesenrutsche auf dem Weg zur Schule an.",
+     "themen": [
+      "Schule & Bildung",
+      "Verkehr & Mobilität"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Schätz zuerst selbst: Würdest du gern zur Schule rutschen?",
+       "optionen": [
+        "ja",
+        "nein",
+        "vielleicht"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Hör genau hin: Was ist an der Rutsche besonders?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "datum": "2026-10-20",
+   "wochentag": "Dienstag",
+   "zeit": "19:50",
+   "url": "https://www.logo.de/logo-vom-dienstag-20-oktober-2026-102.html",
+   "streitfrage": {
+    "text": "Soll der Staat mehr Geld für Schulgebäude ausgeben, auch wenn es dann woanders fehlt?",
+    "optionen": [
+     "ja",
+     "nein",
+     "weiß ich noch nicht"
+    ]
+   },
+   "beitraege": [
+    {
+     "titel": "Ein Gipfel ums Geld",
+     "kurz": "Bei einem Gipfeltreffen geht es um Geld. logo! erklärt dazu, was Investitionen sind, zum Beispiel Geld für neue Fabriken oder Windräder.",
+     "themen": [
+      "Wirtschaft & Preise",
+      "Regierung & Parlament"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/investitionen-deutschland-einfach-erklaert-100.html",
+     "fragen": [
+      {
+       "typ": "wort",
+       "text": "Hör genau hin: Wer trifft sich bei dem Gipfel?"
+      },
+      {
+       "typ": "kreuz",
+       "text": "Wofür kann man Geld investieren? Kreuze an.",
+       "optionen": [
+        "neue Fabriken",
+        "Windräder",
+        "Medikamente"
+       ],
+       "mehrere": true
+      }
+     ]
+    },
+    {
+     "titel": "Gehirnerschütterung – einfach erklärt",
+     "kurz": "Nach einem Stoß gegen den Kopf kann man eine Gehirnerschütterung bekommen. logo! erklärt, was dann im Körper passiert.",
+     "themen": [
+      "Gesundheit & Ernährung",
+      "Natur & Wissen"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/gehirnerschuetterung-einfach-erklaert-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Wodurch kann eine Gehirnerschütterung entstehen?",
+       "optionen": [
+        "Stoß gegen den Kopf",
+        "zu viel Schokolade",
+        "kaltes Wetter"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Hör genau hin: An welchen Zeichen merkt man eine Gehirnerschütterung?"
+      }
+     ]
+    },
+    {
+     "titel": "Marsmission mit Rover Idefix",
+     "kurz": "In Japan ist eine Rakete zum Mars gestartet. An Bord ist ein Rover mit dem Namen Idefix.",
+     "themen": [
+      "Natur & Wissen"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/marsmission-rover-idefix-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Der Mars ist ein …",
+       "optionen": [
+        "Planet",
+        "Stern",
+        "Mond"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Hör genau hin: Was soll der Rover auf dem Mars machen?"
+      }
+     ]
+    },
+    {
+     "titel": "Klavierwettbewerb",
+     "kurz": "Ein Beitrag über einen Wettbewerb im Klavierspielen.",
+     "themen": [
+      "Kultur & Feiertage"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "wort",
+       "text": "Wer kommt im Beitrag vor? Schreib eine Person auf."
+      },
+      {
+       "typ": "satz",
+       "text": "Was braucht man, um bei so einem Wettbewerb mitzumachen? Schreib einen Satz."
+      }
+     ]
+    }
+   ]
   }
  ]
 }
