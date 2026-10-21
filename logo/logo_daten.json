@@ -3394,10 +3394,11 @@
      "fragen": [
       {
        "typ": "kreuz",
-       "text": "Darf man jeden Pilz im Wald einfach essen?",
+       "text": "Du findest einen Pilz und kennst ihn nicht sicher. Was tust du?",
        "optionen": [
-        "ja",
-        "nein, manche sind giftig"
+        "stehen lassen",
+        "ein kleines Stück probieren",
+        "gut kochen, dann essen"
        ],
        "mehrere": false
       },
@@ -3531,11 +3532,11 @@
      "fragen": [
       {
        "typ": "kreuz",
-       "text": "Wo liegt die Ukraine?",
+       "text": "Welches Land führt Krieg gegen die Ukraine?",
        "optionen": [
-        "in Europa",
-        "in Afrika",
-        "in Südamerika"
+        "Russland",
+        "Polen",
+        "Frankreich"
        ],
        "mehrere": false
       },
@@ -3724,11 +3725,11 @@
      "fragen": [
       {
        "typ": "kreuz",
-       "text": "Woraus sind die Stoßzähne eines Elefanten?",
+       "text": "Die Stoßzähne eines Elefanten sind eigentlich …",
        "optionen": [
-        "Elfenbein",
-        "Holz",
-        "Metall"
+        "sehr lange Schneidezähne",
+        "Hörner",
+        "Knochen am Kiefer"
        ],
        "mehrere": false
       },
@@ -3749,11 +3750,11 @@
      "fragen": [
       {
        "typ": "kreuz",
-       "text": "Woher kommt Solarstrom?",
+       "text": "Warum ist Solarstrom gut für Orte ohne Stromleitung?",
        "optionen": [
-        "von der Sonne",
-        "vom Wind",
-        "aus Kohle"
+        "Man braucht nur Sonne und Solarzellen.",
+        "Er funktioniert nachts ohne Akku.",
+        "Er braucht viel Benzin."
        ],
        "mehrere": false
       },
@@ -3895,13 +3896,13 @@
      "fragen": [
       {
        "typ": "kreuz",
-       "text": "Was braucht eine Restauratorin für ihre Arbeit?",
+       "text": "Was macht eine Restauratorin?",
        "optionen": [
-        "Pinsel",
-        "Lupenbrille",
-        "Bagger"
+        "alte Kunstwerke reparieren und pflegen",
+        "neue Bilder malen und verkaufen",
+        "Museen planen und bauen"
        ],
-       "mehrere": true
+       "mehrere": false
       },
       {
        "typ": "wort",
@@ -3928,13 +3929,13 @@
      "fragen": [
       {
        "typ": "kreuz",
-       "text": "Was sind Orang-Utans?",
+       "text": "Warum sind Orang-Utans in Gefahr? Kreuze alles Passende an.",
        "optionen": [
-        "Menschenaffen",
-        "Vögel",
-        "Fische"
+        "Ihr Regenwald wird abgeholzt.",
+        "Menschen jagen sie.",
+        "Es ist ihnen zu kalt."
        ],
-       "mehrere": false
+       "mehrere": true
       },
       {
        "typ": "satz",
@@ -4017,17 +4018,17 @@
      "fragen": [
       {
        "typ": "kreuz",
-       "text": "Litauen ist ein Land in …",
+       "text": "Wo leben Gürteltiere eigentlich in freier Natur?",
        "optionen": [
-        "Europa",
-        "Afrika",
-        "Südamerika"
+        "in Amerika",
+        "in Europa",
+        "in Australien"
        ],
        "mehrere": false
       },
       {
        "typ": "satz",
-       "text": "Hör genau hin: Was ist an dem Gürteltier besonders?"
+       "text": "Hör genau hin: Wie kommt ein Gürteltier nach Litauen?"
       }
      ]
     }
@@ -4049,7 +4050,7 @@
    "beitraege": [
     {
      "titel": "Nach den Ausschreitungen in Frankreich",
-     "kurz": "In Frankreich protestieren seit Wochen Schülerinnen und Schüler. Es geht um kaputte Schulgebäude und fehlende Lehrkräfte. Zum Teil waren die Proteste heftig.",
+     "kurz": "In Frankreich protestieren seit Wochen Schülerinnen und Schüler gegen kaputte Schulgebäude und fehlende Lehrkräfte. Immer mehr Menschen machen mit, zum Teil sind die Proteste heftig.",
      "themen": [
       "Protest & Beteiligung",
       "Schule & Bildung",
@@ -4060,17 +4061,18 @@
      "fragen": [
       {
        "typ": "kreuz",
-       "text": "Worüber beschweren sich die Schüler in Frankreich?",
+       "text": "Wogegen protestieren die Schüler in Frankreich? Kreuze alles Passende an.",
        "optionen": [
         "kaputte Schulgebäude",
-        "fehlende Lehrkräfte",
-        "zu viele Ferien"
+        "zu wenige Lehrkräfte",
+        "zu viele Hausaufgaben",
+        "zu teures Schulessen"
        ],
        "mehrere": true
       },
       {
        "typ": "satz",
-       "text": "Hör genau hin: Was ist nach den Protesten passiert? Schreib einen Satz."
+       "text": "Was ist der Unterschied zwischen friedlich demonstrieren und Gewalt?"
       }
      ]
     },
@@ -4085,17 +4087,17 @@
      "fragen": [
       {
        "typ": "kreuz",
-       "text": "Was bedeutet Inflation?",
+       "text": "Was passiert, wenn der Staat einfach viel mehr Geld druckt?",
        "optionen": [
-        "Das Geld wird weniger wert.",
-        "Alles wird billiger.",
-        "Es gibt kein Geld mehr."
+        "Die Preise steigen.",
+        "Alle werden reich.",
+        "Die Preise sinken."
        ],
        "mehrere": false
       },
       {
        "typ": "satz",
-       "text": "Hör genau hin: Warum druckt man nicht einfach mehr Geld?"
+       "text": "Was ist in deinem Alltag teurer geworden? Nenne ein Beispiel."
       }
      ]
     },
@@ -4109,17 +4111,17 @@
      "fragen": [
       {
        "typ": "kreuz",
-       "text": "Saarbrücken liegt in …",
+       "text": "Vermute zuerst: Wer spielt bei dem Turnier mit? Dann hör genau hin.",
        "optionen": [
-        "Deutschland",
-        "Frankreich",
-        "Italien"
+        "nur Profis",
+        "Kinder und Jugendliche",
+        "alle, die Lust haben"
        ],
        "mehrere": false
       },
       {
-       "typ": "wort",
-       "text": "Wer kommt im Beitrag vor? Schreib eine Person oder Gruppe auf."
+       "typ": "satz",
+       "text": "Hör genau hin: Was muss man beim Kickern gut können?"
       }
      ]
     },
@@ -4132,12 +4134,18 @@
      "politisch": false,
      "fragen": [
       {
-       "typ": "satz",
-       "text": "Hör genau hin: Was lernt man in der Weihnachtsmann-Schule?"
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Was lernt man dort? Dann hör genau hin.",
+       "optionen": [
+        "mit Kindern sprechen",
+        "sich verkleiden und schminken",
+        "Geschenke basteln"
+       ],
+       "mehrere": true
       },
       {
-       "typ": "wort",
-       "text": "Schreib ein Wort auf, das du nicht kanntest."
+       "typ": "satz",
+       "text": "Hör genau hin: Was ist für einen guten Weihnachtsmann am wichtigsten?"
       }
      ]
     },
@@ -4152,17 +4160,17 @@
      "fragen": [
       {
        "typ": "kreuz",
-       "text": "Schätz zuerst selbst: Würdest du gern zur Schule rutschen?",
+       "text": "Vermute zuerst: Wozu ist die Rutsche da? Dann hör genau hin.",
        "optionen": [
-        "ja",
-        "nein",
-        "vielleicht"
+        "als schneller Weg den Berg hinunter",
+        "als Spielgerät für die Pause",
+        "als Fluchtweg bei Feuer"
        ],
        "mehrere": false
       },
       {
        "typ": "satz",
-       "text": "Hör genau hin: Was ist an der Rutsche besonders?"
+       "text": "Hör genau hin: Wie findet Lara die Rutsche? Warum?"
       }
      ]
     }
@@ -4183,8 +4191,8 @@
    },
    "beitraege": [
     {
-     "titel": "Ein Gipfel ums Geld",
-     "kurz": "Bei einem Gipfeltreffen geht es um Geld. logo! erklärt dazu, was Investitionen sind, zum Beispiel Geld für neue Fabriken oder Windräder.",
+     "titel": "Gipfel ums Geld: Investieren in Deutschland",
+     "kurz": "In Berlin haben sich Politikerinnen und Politiker mit Firmenchefs aus vielen Ländern getroffen. Die Firmen sollen Geld in Deutschland investieren, zum Beispiel in Fabriken oder Energie.",
      "themen": [
       "Wirtschaft & Preise",
       "Regierung & Parlament"
@@ -4193,44 +4201,45 @@
      "link": "https://www.logo.de/investitionen-deutschland-einfach-erklaert-100.html",
      "fragen": [
       {
-       "typ": "wort",
-       "text": "Hör genau hin: Wer trifft sich bei dem Gipfel?"
-      },
-      {
        "typ": "kreuz",
-       "text": "Wofür kann man Geld investieren? Kreuze an.",
+       "text": "Was wollen die Politiker bei dem Gipfel erreichen?",
        "optionen": [
-        "neue Fabriken",
-        "Windräder",
-        "Medikamente"
-       ],
-       "mehrere": true
-      }
-     ]
-    },
-    {
-     "titel": "Gehirnerschütterung – einfach erklärt",
-     "kurz": "Nach einem Stoß gegen den Kopf kann man eine Gehirnerschütterung bekommen. logo! erklärt, was dann im Körper passiert.",
-     "themen": [
-      "Gesundheit & Ernährung",
-      "Natur & Wissen"
-     ],
-     "politisch": false,
-     "link": "https://www.logo.de/gehirnerschuetterung-einfach-erklaert-100.html",
-     "fragen": [
-      {
-       "typ": "kreuz",
-       "text": "Wodurch kann eine Gehirnerschütterung entstehen?",
-       "optionen": [
-        "Stoß gegen den Kopf",
-        "zu viel Schokolade",
-        "kaltes Wetter"
+        "Firmen sollen in Deutschland Fabriken bauen.",
+        "Deutschland soll anderen Ländern Geld schenken.",
+        "Die Preise im Supermarkt sollen sinken."
        ],
        "mehrere": false
       },
       {
        "typ": "satz",
-       "text": "Hör genau hin: An welchen Zeichen merkt man eine Gehirnerschütterung?"
+       "text": "Hör genau hin: Was hätten die Menschen davon, wenn Firmen hier investieren?"
+      }
+     ]
+    },
+    {
+     "titel": "Gehirnerschütterung – einfach erklärt",
+     "kurz": "Nach einem starken Stoß gegen den Kopf kann man eine Gehirnerschütterung bekommen. logo! erklärt, woran man sie erkennt. In Deutschland passiert das jedes Jahr Zehntausenden Kindern.",
+     "themen": [
+      "Gesundheit & Ernährung",
+      "Natur & Wissen"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/gehirnerschuetterung-test-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Welche Zeichen können auf eine Gehirnerschütterung hinweisen? Kreuze alles Passende an.",
+       "optionen": [
+        "Kopfschmerzen",
+        "Schwindel",
+        "Fieber",
+        "schlechter schlafen als sonst"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Du stößt dir beim Sport heftig den Kopf. Was solltest du danach tun?"
       }
      ]
     },
@@ -4245,17 +4254,18 @@
      "fragen": [
       {
        "typ": "kreuz",
-       "text": "Der Mars ist ein …",
+       "text": "Schätz zuerst: Wie lange fliegt die Rakete bis zum Mars?",
        "optionen": [
-        "Planet",
-        "Stern",
-        "Mond"
+        "etwa 7 Tage",
+        "etwa 7 Wochen",
+        "etwa 7 Monate",
+        "etwa 7 Jahre"
        ],
        "mehrere": false
       },
       {
        "typ": "satz",
-       "text": "Hör genau hin: Was soll der Rover auf dem Mars machen?"
+       "text": "Hör genau hin: Was soll der Rover Idefix dort machen?"
       }
      ]
     },
@@ -4268,12 +4278,18 @@
      "politisch": false,
      "fragen": [
       {
-       "typ": "wort",
-       "text": "Wer kommt im Beitrag vor? Schreib eine Person auf."
+       "typ": "kreuz",
+       "text": "Schätz zuerst: Wie lange üben die jungen Pianisten am Tag? Dann hör hin.",
+       "optionen": [
+        "weniger als eine halbe Stunde",
+        "etwa eine Stunde",
+        "mehrere Stunden"
+       ],
+       "mehrere": false
       },
       {
        "typ": "satz",
-       "text": "Was braucht man, um bei so einem Wettbewerb mitzumachen? Schreib einen Satz."
+       "text": "Hör genau hin: Worauf achtet die Jury bei dem Wettbewerb?"
       }
      ]
     }
