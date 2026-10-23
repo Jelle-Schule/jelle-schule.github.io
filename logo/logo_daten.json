@@ -4294,6 +4294,301 @@
      ]
     }
    ]
+  },
+  {
+   "datum": "2026-10-21",
+   "wochentag": "Mittwoch",
+   "zeit": "19:50",
+   "url": "https://www.logo.de/logo-vom-mittwoch-21-oktober-2026-100.html",
+   "streitfrage": {
+    "text": "Sollen Kinder unter 13 Jahren keine Apps wie TikTok oder Instagram nutzen dürfen?",
+    "optionen": [
+     "ja",
+     "nein",
+     "weiß ich noch nicht"
+    ]
+   },
+   "beitraege": [
+    {
+     "titel": "So steht's ums Klima",
+     "kurz": "Ein neuer Bericht der Vereinten Nationen (UN) zeigt, wie warm die Erde noch werden könnte. Er sagt auch, was gegen den Klimawandel hilft.",
+     "themen": [
+      "Umwelt, Klima & Energie",
+      "Welt & Internationales"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/un-bericht-klimawandel-unwetter-102.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Wie stark könnte sich die Erde noch erwärmen? Dann hör hin.",
+       "optionen": [
+        "um weniger als 1 Grad",
+        "um etwa 2 bis 3 Grad",
+        "um etwa 5 bis 6 Grad"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was passiert mit Menschen, wenn es öfter extreme Hitze und Überschwemmungen gibt?"
+      }
+     ]
+    },
+    {
+     "titel": "Social Media für Kinder und Jugendliche?",
+     "kurz": "Die Bundesregierung hat Pläne für Social Media vorgestellt: TikTok, Instagram und Co. erst ab 13 Jahren. Danach soll es Mini-Konten geben, die Eltern einrichten – mit höchstens einer Stunde am Tag. Ein Gesetz ist das noch nicht.",
+     "themen": [
+      "Digitales & Medien",
+      "Regierung & Parlament"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/social-media-jugendschutz-eckpunkte-bundesregierung-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Ab welchem Alter sollen Kinder Apps wie TikTok nutzen dürfen?",
+       "optionen": [
+        "ab 10 Jahren",
+        "ab 12 Jahren",
+        "ab 13 Jahren",
+        "ab 16 Jahren"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Ein Mini-Konto erlaubt höchstens eine Stunde am Tag. Wie fändest du das? Warum?"
+      }
+     ]
+    },
+    {
+     "titel": "Warum es Herbstferien gibt – einfach erklärt",
+     "kurz": "Herbstferien hatten früher wenig mit Erholung zu tun. logo! erklärt, wie die Herbstferien entstanden sind.",
+     "themen": [
+      "Geschichte",
+      "Schule & Bildung"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/herbstferien-einfach-erklaert-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Wozu waren Herbstferien früher da? Dann hör genau hin.",
+       "optionen": [
+        "Kinder halfen bei der Ernte.",
+        "Die Schulen wurden renoviert.",
+        "Die Lehrer machten Fortbildungen.",
+        "Die Familien fuhren in Urlaub."
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was ist heute anders als früher? Wofür nutzt du deine Herbstferien?"
+      }
+     ]
+    },
+    {
+     "titel": "Coastal Rowing",
+     "kurz": "Coastal Rowing heißt Rudern auf dem Meer, nah an der Küste. Ein Beitrag über diese Sportart.",
+     "themen": [
+      "Sport"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Was ist beim Rudern auf dem Meer schwieriger als auf einem See?",
+       "optionen": [
+        "die Wellen",
+        "der Wind",
+        "die Strömung",
+        "die Länge des Bootes"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Hör genau hin: Was muss man können, um in diesem Sport gut zu sein?"
+      }
+     ]
+    },
+    {
+     "titel": "Bären in den USA",
+     "kurz": "Ein Beitrag über Bären in den USA.",
+     "themen": [
+      "Natur & Wissen"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Warum kommen Bären manchmal in die Nähe von Menschen?",
+       "optionen": [
+        "Sie suchen Futter.",
+        "Sie riechen Essensreste.",
+        "Ihr Lebensraum wird kleiner.",
+        "Sie suchen Schutz vor Kälte."
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Was können Menschen tun, damit sie gut mit Bären zusammenleben?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "datum": "2026-10-22",
+   "wochentag": "Donnerstag",
+   "zeit": "19:50",
+   "url": "https://www.logo.de/logo-vom-donnerstag-22-oktober-2026-102.html",
+   "streitfrage": {
+    "text": "Sollen Schülerinnen und Schüler mitentscheiden, was in der Schule gelernt wird?",
+    "optionen": [
+     "ja",
+     "nein",
+     "weiß ich noch nicht"
+    ]
+   },
+   "beitraege": [
+    {
+     "titel": "Bundesschülerkonferenz",
+     "kurz": "In der Bundesschülerkonferenz arbeiten Schülervertretungen aus den Bundesländern zusammen. Sie spricht für Schülerinnen und Schüler in ganz Deutschland.",
+     "themen": [
+      "Schule & Bildung",
+      "Protest & Beteiligung"
+     ],
+     "politisch": true,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Wer macht in der Bundesschülerkonferenz mit?",
+       "optionen": [
+        "Schülerinnen und Schüler",
+        "Lehrerinnen und Lehrer",
+        "Eltern",
+        "Abgeordnete aus dem Bundestag"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was würdest du an deiner Schule ändern, wenn du mitbestimmen dürftest?"
+      }
+     ]
+    },
+    {
+     "titel": "Verhütung für Waschbären?",
+     "kurz": "Vor etwa 100 Jahren gab es in Deutschland noch keine Waschbären. Heute leben hier ungefähr zwei Millionen. logo! erklärt, warum das ein Problem ist und was dagegen getan wird.",
+     "themen": [
+      "Natur & Wissen",
+      "Umwelt, Klima & Energie"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/waschbaer-verhuetung-einfach-erklaert-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Schätz zuerst: Wie viele Waschbären leben heute in Deutschland?",
+       "optionen": [
+        "etwa 20.000",
+        "etwa 200.000",
+        "etwa 2 Millionen",
+        "etwa 20 Millionen"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Warum können so viele Waschbären ein Problem für andere Tiere sein?"
+      }
+     ]
+    },
+    {
+     "titel": "Mio besiegt das Stottern",
+     "kurz": "Mio hat gestottert und erzählt, was geholfen hat. In Deutschland stottern mehr als 800.000 Menschen. Mit Klugheit hat Stottern nichts zu tun.",
+     "themen": [
+      "Gesundheit & Ernährung",
+      "Gesellschaft & Zusammenleben"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/welttag-des-stotterns-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Was stimmt über Stottern? Kreuze alles Passende an.",
+       "optionen": [
+        "Es hat nichts mit Klugheit zu tun.",
+        "Logopäden können helfen.",
+        "Wer stottert, ist nur aufgeregt.",
+        "In Deutschland stottern über 800.000 Menschen."
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Wie fühlt sich jemand, der beim Sprechen ausgelacht wird? Was kannst du tun?"
+      }
+     ]
+    },
+    {
+     "titel": "Brettspiele",
+     "kurz": "Ein Beitrag über Brettspiele und warum sie vielen Menschen Spaß machen.",
+     "themen": [
+      "Kultur & Feiertage",
+      "Gesellschaft & Zusammenleben"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Warum spielen viele lieber Brettspiele als am Handy?",
+       "optionen": [
+        "Man sitzt mit anderen zusammen.",
+        "Man kann gemeinsam lachen.",
+        "Man muss nicht auf einen Bildschirm schauen.",
+        "Brettspiele sind immer billiger."
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Welches Brettspiel magst du? Was macht es spannend?"
+      }
+     ]
+    },
+    {
+     "titel": "Olympische Jugendspiele",
+     "kurz": "Bei den Olympischen Jugendspielen treten junge Sportlerinnen und Sportler gegeneinander an. Diesmal finden sie in Dakar im Senegal statt, in Afrika.",
+     "themen": [
+      "Sport",
+      "Welt & Internationales"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/olympia-sportarten-einfach-erklaert-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Schätz zuerst: Wie alt sind die Sportler bei den Jugendspielen?",
+       "optionen": [
+        "10 bis 13 Jahre",
+        "15 bis 18 Jahre",
+        "18 bis 21 Jahre",
+        "21 bis 25 Jahre"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Warum gibt es wohl eigene Olympische Spiele für Jugendliche?"
+      }
+     ]
+    }
+   ]
   }
  ]
 }
