@@ -4589,6 +4589,269 @@
      ]
     }
    ]
+  },
+  {
+   "datum": "2026-10-23",
+   "wochentag": "Freitag",
+   "zeit": "19:25",
+   "url": "https://www.logo.de/logo-vom-freitag-23-oktober-2026-102.html",
+   "streitfrage": {
+    "text": "Sollen Schülerinnen und Schüler während der Schulzeit demonstrieren dürfen?",
+    "optionen": [
+     "ja",
+     "nein",
+     "weiß ich noch nicht"
+    ]
+   },
+   "beitraege": [
+    {
+     "titel": "Frankreich: Schüler über Proteste",
+     "kurz": "In Frankreich demonstrieren Schülerinnen und Schüler seit mehreren Wochen für bessere Bildung. Bei manchen Protesten gab es Gewalt. Viele Schüler finden, dass ihre eigentliche Botschaft dadurch untergeht.",
+     "themen": [
+      "Schule & Bildung",
+      "Protest & Beteiligung",
+      "Europa"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/schuelerprotest-frankreich-reaktion-gewalt-102.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Wofür demonstrieren die Schülerinnen und Schüler in Frankreich?",
+       "optionen": [
+        "für bessere Bildung",
+        "für mehr Klimaschutz",
+        "gegen höhere Preise",
+        "für ein Wahlrecht ab 16"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Warum ist Gewalt bei den Protesten für die Schüler selbst ein Problem?"
+      }
+     ]
+    },
+    {
+     "titel": "logo! erklärt: Warum Korallen wichtig sind",
+     "kurz": "Laut einer neuen Studie sind fast alle Korallenriffe in warmen, flachen Meeren bedroht. Gründe sind vor allem die Erderwärmung und Schäden durch Fischerei. logo! erklärt, warum Korallen so wichtig sind.",
+     "themen": [
+      "Umwelt, Klima & Energie",
+      "Natur & Wissen"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/korallen-sterben-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Wofür sind Korallenriffe wichtig? Dann hör genau hin.",
+       "optionen": [
+        "Lebensraum für viele Meerestiere",
+        "Schutz der Küsten vor Wellen",
+        "Fischfang für viele Menschen",
+        "Trinkwasser für Küstenorte"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Was passiert mit den Fischen, wenn ein Korallenriff abstirbt?"
+      }
+     ]
+    },
+    {
+     "titel": "New York: Verbot von Pferdekutschen",
+     "kurz": "In New York sollen die Pferdekutschen im Central Park verboten werden. Gründe sind der Tierschutz und die Sicherheit nach einem schweren Unfall. Die Kutscher fürchten um ihre Arbeit.",
+     "themen": [
+      "Welt & Internationales",
+      "Regierung & Parlament",
+      "Gesellschaft & Zusammenleben"
+     ],
+     "politisch": true,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Hör genau hin: Welche Gründe für das Verbot werden genannt?",
+       "optionen": [
+        "Tierschutz",
+        "Sicherheit nach einem Unfall",
+        "Lärm für die Anwohner",
+        "zu viele Touristen im Park"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Wen trifft das Verbot? Wie geht es den Kutschern damit?"
+      }
+     ]
+    },
+    {
+     "titel": "Solarstrom für eine indigene Gemeinschaft",
+     "kurz": "Eine indigene Gemeinschaft bekommt Strom aus Sonnenenergie. logo! zeigt, was sich dadurch für die Menschen dort verändert.",
+     "themen": [
+      "Umwelt, Klima & Energie",
+      "Welt & Internationales"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Wofür brauchen die Menschen dort den Strom? Dann hör genau hin.",
+       "optionen": [
+        "Licht am Abend",
+        "Handys aufladen",
+        "Wasser pumpen",
+        "Essen kühlen"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Wie wäre dein Tag ohne Strom? Nenne zwei Dinge, die fehlen würden."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "datum": "2026-10-24",
+   "wochentag": "Samstag",
+   "zeit": "19:50",
+   "url": "https://www.logo.de/logo-vom-samstag-24-oktober-2026-100.html",
+   "beitraege": [
+    {
+     "titel": "Herbststurm Luise über Deutschland",
+     "kurz": "Am Freitag zog Sturm „Luise“ über Deutschland, vor allem über den Westen und Südwesten. Bäume stürzten um und Züge blieben stehen. Am Sonntag kommt schon der nächste Sturm.",
+     "themen": [
+      "Natur & Wissen",
+      "Verkehr & Mobilität"
+     ],
+     "politisch": false,
+     "link": "https://www.zdfheute.de/panorama/herbststurm-verletzte-bahnverkehr-wetter-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Welche Folgen hatte der Sturm? Kreuze alles Passende an.",
+       "optionen": [
+        "umgestürzte Bäume",
+        "Züge blieben stehen",
+        "eine Autobahn wurde gesperrt",
+        "Schulen blieben wochenlang zu"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Welche Orte solltest du bei starkem Sturm meiden? Warum?"
+      }
+     ]
+    },
+    {
+     "titel": "Warum Zugvögel in Formation fliegen",
+     "kurz": "Im Herbst fliegen viele Zugvögel in wärmere Länder. Oft fliegen sie dabei in einer V-Form. logo! erklärt, warum sie das tun.",
+     "themen": [
+      "Natur & Wissen"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Warum fliegen Zugvögel in V-Form? Dann hör genau hin.",
+       "optionen": [
+        "So sparen sie Kraft.",
+        "So sehen sie Feinde früher.",
+        "So verlieren sie sich nicht.",
+        "So finden sie leichter Futter."
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Warum ist der Platz ganz vorne in der Formation am anstrengendsten?"
+      }
+     ]
+    },
+    {
+     "titel": "Winterzeit: Eine Stunde länger schlafen!",
+     "kurz": "In der Nacht von Samstag auf Sonntag werden die Uhren umgestellt. Um 3 Uhr wird die Uhr auf 2 Uhr zurückgedreht. Deshalb dauert die Nacht eine Stunde länger.",
+     "themen": [
+      "Natur & Wissen",
+      "Gesellschaft & Zusammenleben"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/die-uhren-wurden-umgestellt-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Was passiert bei der Umstellung auf Winterzeit?",
+       "optionen": [
+        "Die Uhr wird eine Stunde zurückgestellt.",
+        "Die Uhr wird eine Stunde vorgestellt.",
+        "Die Uhr wird zwei Stunden zurückgestellt.",
+        "Die Uhr wird eine halbe Stunde zurückgestellt."
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Wird es nach der Umstellung abends früher oder später dunkel? Warum?"
+      }
+     ]
+    },
+    {
+     "titel": "Dinofund unter Wasser",
+     "kurz": "Vor der Küste Kroatiens haben Forschende Knochen eines Dinosauriers am Meeresboden entdeckt. Einen solchen Fund unter Wasser gab es bisher kaum.",
+     "themen": [
+      "Natur & Wissen",
+      "Geschichte"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Schätz zuerst: Wie alt sind die Dinosaurier-Knochen?",
+       "optionen": [
+        "etwa 130.000 Jahre",
+        "etwa 1,3 Millionen Jahre",
+        "etwa 13 Millionen Jahre",
+        "etwa 130 Millionen Jahre"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Wie könnten die Knochen auf den Meeresboden gekommen sein? Vermute."
+      }
+     ]
+    },
+    {
+     "titel": "Thea trifft Karoline Herfurth",
+     "kurz": "Thea trifft die Schauspielerin und Regisseurin Karoline Herfurth und stellt ihr Fragen.",
+     "themen": [
+      "Kultur & Feiertage",
+      "Digitales & Medien"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Was macht eine Regisseurin? Kreuze alles Passende an.",
+       "optionen": [
+        "bestimmt, wie Szenen gespielt werden",
+        "entscheidet, wie der Film aussieht",
+        "schreibt Kritiken über fertige Filme",
+        "verkauft die Rechte an Kinos"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Welche Frage würdest du Karoline Herfurth stellen? Warum gerade diese?"
+      }
+     ]
+    }
+   ]
   }
  ]
 }
