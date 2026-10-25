@@ -4852,6 +4852,153 @@
      ]
     }
    ]
+  },
+  {
+   "datum": "2026-10-25",
+   "wochentag": "Sonntag",
+   "zeit": "19:50",
+   "url": "https://www.logo.de/logo-vom-sonntag-25-oktober-2026-102.html",
+   "streitfrage": {
+    "text": "Sollen Jugendliche schon ab 14 Jahren wählen dürfen?",
+    "optionen": [
+     "ja",
+     "nein",
+     "weiß ich noch nicht"
+    ]
+   },
+   "beitraege": [
+    {
+     "titel": "Proteste in Europa",
+     "kurz": "In mehreren Ländern Europas demonstrieren vor allem junge Menschen, zum Beispiel in Frankreich, Italien, Spanien, Belgien und Albanien. Sie protestieren unter anderem für bessere Schulen und gegen hohe Preise. Manchmal kam es dabei zu Gewalt.",
+     "themen": [
+      "Protest & Beteiligung",
+      "Europa",
+      "Schule & Bildung"
+     ],
+     "politisch": true,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Wofür oder wogegen protestieren junge Menschen in Europa? Kreuze alles Passende an.",
+       "optionen": [
+        "für bessere Schulen",
+        "gegen hohe Preise",
+        "für bezahlbare Wohnungen",
+        "für ein Handyverbot an Schulen"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Wen betreffen kaputte Schulen und fehlende Lehrkräfte am meisten? Warum?"
+      }
+     ]
+    },
+    {
+     "titel": "logo! erklärt: Regeln zum Demonstrieren",
+     "kurz": "In Deutschland darf jeder demonstrieren und so seine Meinung zeigen. Das ist ein Grundrecht. Demos müssen aber friedlich sein, und es gibt Regeln. logo! erklärt, welche.",
+     "themen": [
+      "Protest & Beteiligung",
+      "Wahlen & Demokratie"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/demonstrations-regeln-einfach-erklaert-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Darfst du als Dino verkleidet demonstrieren? Dann hör genau hin.",
+       "optionen": [
+        "Ja, das ist immer erlaubt.",
+        "Nein, das ist verboten.",
+        "Ja, aber man muss dich erkennen können."
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Wofür würdest du auf eine Demo gehen? Begründe kurz."
+      }
+     ]
+    },
+    {
+     "titel": "Silber für Turnerin Helen Kevric",
+     "kurz": "Bei der Turn-Weltmeisterschaft in Rotterdam in den Niederlanden hat Helen Kevric Silber gewonnen. Die 18-Jährige war zum ersten Mal bei einer WM dabei.",
+     "themen": [
+      "Sport"
+     ],
+     "politisch": false,
+     "link": "https://www.zdfheute.de/sport/helen-kevric-turnen-wm-silber-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "An welchem Turngerät hat Helen Kevric Silber gewonnen?",
+       "optionen": [
+        "Stufenbarren",
+        "Schwebebalken",
+        "Boden",
+        "Sprung"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Helen war vorher lange verletzt. Was braucht man, um danach wieder Spitze zu sein?"
+      }
+     ]
+    },
+    {
+     "titel": "Schneegänse",
+     "kurz": "Schneegänse sind weiße Gänse mit schwarzen Flügelspitzen. Sie brüten im hohen Norden. logo! zeigt diese besonderen Vögel.",
+     "themen": [
+      "Natur & Wissen"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Warum heißen sie Schneegänse? Dann hör genau hin.",
+       "optionen": [
+        "wegen ihrer weißen Federn",
+        "weil sie im Schnee brüten",
+        "weil sie bei Schnee losfliegen",
+        "weil sie in der Arktis leben"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was passiert mit Zugvögeln, wenn ihre Rastplätze verschwinden?"
+      }
+     ]
+    },
+    {
+     "titel": "Neunjährige Meeresschützerin",
+     "kurz": "Nina ist neun Jahre alt. Sie sammelt Müll am Strand und im Meer. Ihren Mitschülern erklärt sie, warum Plastik für das Meer gefährlich ist.",
+     "themen": [
+      "Umwelt, Klima & Energie",
+      "Natur & Wissen"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/neunjaehrige-meeresschuetzerin-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Warum ist Plastik im Meer gefährlich? Kreuze alles Passende an.",
+       "optionen": [
+        "Tiere halten es für Futter.",
+        "Tiere verfangen sich darin.",
+        "Es zerfällt in winzige Teilchen.",
+        "Es löst sich in wenigen Tagen auf."
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Was könntest du selbst tun, damit weniger Müll ins Meer kommt?"
+      }
+     ]
+    }
+   ]
   }
  ]
 }

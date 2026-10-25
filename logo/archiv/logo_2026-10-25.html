@@ -1,0 +1,74 @@
+<!DOCTYPE html><html lang="de"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>logo! vom 25.10.2026 – Seh-Begleiter</title><meta name="robots" content="noindex">
+<style>
+.navleiste{max-width:760px;margin:0 auto;padding:0 16px 28px;display:flex;flex-wrap:wrap;gap:10px;font-family:system-ui,sans-serif;font-size:15px}
+.navleiste a{color:inherit;border:1.5px solid currentColor;border-radius:999px;padding:6px 14px;text-decoration:none;opacity:.8}
+.navleiste a:hover{opacity:1}
+</style></head><body>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Baloo+2:wght@600;700&display=swap">
+<style>
+/* Layout: ein Arbeitsblatt in einer Spalte – Kopf mit Video-Knopf, dann je Beitrag eine Station, dann "Nach dem Schauen" */
+:root{
+ --papier:#fbfcfd; --karte:#ffffff; --tinte:#1e2532; --leise:#5b6475; --linie:#d9dee7;
+ --akzent:#8a4b2a; --akzent-hell:#f6ece6; --kreuz:#2f6f9f; --kreuz-hell:#e8f1f8; --pol:#8a4b2a;
+ --display:"Baloo 2","Comic Neue",system-ui,sans-serif; --text:"Atkinson Hyperlegible",Verdana,system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+ --papier:#14171d; --karte:#1c2028; --tinte:#eef1f6; --leise:#a5adbb; --linie:#323947;
+ --akzent:#e09a72; --akzent-hell:#2c221d; --kreuz:#7db7e3; --kreuz-hell:#1b2a37; --pol:#e09a72; color-scheme:dark}}
+:root[data-theme="dark"]{
+ --papier:#14171d; --karte:#1c2028; --tinte:#eef1f6; --leise:#a5adbb; --linie:#323947;
+ --akzent:#e09a72; --akzent-hell:#2c221d; --kreuz:#7db7e3; --kreuz-hell:#1b2a37; --pol:#e09a72; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--papier);color:var(--tinte);font-family:var(--text);font-size:17px;line-height:1.5;margin:0}
+.blatt{max-width:760px;margin:0 auto;padding-inline:16px;padding-block:20px 40px;display:flex;flex-direction:column;gap:18px}
+.kopf{display:flex;flex-direction:column;gap:6px}
+.eyebrow{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--leise)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(28px,6vw,38px);line-height:1.1;margin:0;text-wrap:balance}
+h1 span{color:var(--akzent)}
+.video{align-self:flex-start;display:inline-flex;align-items:center;gap:10px;background:var(--akzent);color:var(--karte);text-decoration:none;
+ font-family:var(--display);font-weight:600;font-size:20px;padding:10px 22px 8px;border-radius:999px;margin-top:6px}
+.video:focus-visible,input:focus-visible+span{outline:3px solid var(--kreuz);outline-offset:2px}
+.video svg{width:20px;height:20px;fill:currentColor}
+.themen{background:var(--akzent-hell);border-radius:14px;padding:14px 16px;display:flex;flex-direction:column;gap:8px}
+.themen h2,.station h2,.danach h2{font-family:var(--display);font-weight:700;margin:0;line-height:1.2}
+.themen h2{font-size:20px}
+.themen ol{margin:0;padding-left:1.4em;display:grid;gap:2px}
+.hinweis{font-size:15px;color:var(--leise);margin:0}
+.station{background:var(--karte);border:1.5px solid var(--linie);border-radius:14px;padding:14px 16px 16px;display:flex;flex-direction:column;gap:12px}
+.station header{display:flex;gap:12px;align-items:flex-start}
+.nr{flex:none;width:36px;height:36px;border-radius:50%;background:var(--akzent);color:var(--karte);display:grid;place-items:center;
+ font-family:var(--display);font-weight:700;font-size:20px;line-height:1;padding-top:3px}
+.station h2{font-size:21px;min-width:0;padding-top:3px}
+.pol{display:inline-block;font-family:var(--text);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+ color:var(--pol);border:1.5px solid var(--pol);border-radius:6px;padding:0 6px;margin-left:6px;vertical-align:3px}
+.frage{display:flex;flex-direction:column;gap:6px}
+.frage p{margin:0;font-weight:700}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opt{position:relative}
+.opt input{position:absolute;opacity:0;inset:0}
+.opt span{display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--linie);border-radius:10px;padding:6px 12px;cursor:pointer;background:var(--karte)}
+.opt span::before{content:"";width:16px;height:16px;border:2px solid var(--kreuz);border-radius:4px;flex:none}
+.opt input[type=radio]+span::before{border-radius:50%}
+.opt input:checked+span{background:var(--kreuz-hell);border-color:var(--kreuz)}
+.opt input:checked+span::before{background:var(--kreuz);box-shadow:inset 0 0 0 2px var(--karte)}
+.zeile{width:100%;font:inherit;color:var(--tinte);background:transparent;border:none;border-bottom:2px dotted var(--leise);padding:4px 2px}
+.zeile:focus{outline:none;border-bottom:2px solid var(--kreuz)}
+textarea.zeile{resize:vertical;min-height:2.6em}
+.danach{border-top:3px solid var(--akzent);padding-top:14px;display:flex;flex-direction:column;gap:16px}
+.danach h2{font-size:24px}
+.lehrer{font-size:14px;color:var(--leise);border-top:1px dashed var(--linie);padding-top:10px}
+.lehrer summary{cursor:pointer}
+@media (prefers-reduced-motion:no-preference){.opt span{transition:background .15s,border-color .15s}}
+</style>
+<main class="blatt">
+<div class="kopf"><div class="eyebrow">Mein Seh-Begleiter · GPG</div>
+<h1>logo! vom <span>Sonntag, 25. Oktober 2026</span></h1>
+<a class="video" href="https://www.logo.de/logo-vom-sonntag-25-oktober-2026-102.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12.5-7.5z"/></svg>Video ansehen</a></div>
+<section class="themen" aria-label="Die Themen"><h2>Darum geht es heute</h2><ol><li>Proteste in Europa</li><li>logo! erklärt: Regeln zum Demonstrieren</li><li>Silber für Turnerin Helen Kevric</li><li>Schneegänse</li><li>Neunjährige Meeresschützerin</li></ol>
+<p class="hinweis">Lies zuerst die Fragen. Dann schau das Video und beantworte sie beim Zuschauen. Du darfst auf Pause drücken.</p></section>
+<section class="station" aria-labelledby="t1"><header><div class="nr">1</div><h2 id="t1">Proteste in Europa<span class="pol">Politik</span></h2></header><div class="frage"><p>Wofür oder wogegen protestieren junge Menschen in Europa? Kreuze alles Passende an. <span class='hinweis'>(mehrere möglich)</span></p><div class="opts"><label class="opt"><input type="checkbox" id="b1f0_0" name="b1f0"><span>für bessere Schulen</span></label><label class="opt"><input type="checkbox" id="b1f0_1" name="b1f0"><span>gegen hohe Preise</span></label><label class="opt"><input type="checkbox" id="b1f0_2" name="b1f0"><span>für bezahlbare Wohnungen</span></label><label class="opt"><input type="checkbox" id="b1f0_3" name="b1f0"><span>für ein Handyverbot an Schulen</span></label></div></div><div class="frage"><label for="b1f1"><p>Wen betreffen kaputte Schulen und fehlende Lehrkräfte am meisten? Warum?</p></label><textarea class="zeile" id="b1f1" rows="2"></textarea></div></section><section class="station" aria-labelledby="t2"><header><div class="nr">2</div><h2 id="t2">logo! erklärt: Regeln zum Demonstrieren<span class="pol">Politik</span></h2></header><div class="frage"><p>Vermute zuerst: Darfst du als Dino verkleidet demonstrieren? Dann hör genau hin.</p><div class="opts"><label class="opt"><input type="radio" id="b2f0_0" name="b2f0"><span>Ja, das ist immer erlaubt.</span></label><label class="opt"><input type="radio" id="b2f0_1" name="b2f0"><span>Nein, das ist verboten.</span></label><label class="opt"><input type="radio" id="b2f0_2" name="b2f0"><span>Ja, aber man muss dich erkennen können.</span></label></div></div><div class="frage"><label for="b2f1"><p>Wofür würdest du auf eine Demo gehen? Begründe kurz.</p></label><textarea class="zeile" id="b2f1" rows="2"></textarea></div></section><section class="station" aria-labelledby="t3"><header><div class="nr">3</div><h2 id="t3">Silber für Turnerin Helen Kevric</h2></header><div class="frage"><p>An welchem Turngerät hat Helen Kevric Silber gewonnen?</p><div class="opts"><label class="opt"><input type="radio" id="b3f0_0" name="b3f0"><span>Stufenbarren</span></label><label class="opt"><input type="radio" id="b3f0_1" name="b3f0"><span>Schwebebalken</span></label><label class="opt"><input type="radio" id="b3f0_2" name="b3f0"><span>Boden</span></label><label class="opt"><input type="radio" id="b3f0_3" name="b3f0"><span>Sprung</span></label></div></div><div class="frage"><label for="b3f1"><p>Helen war vorher lange verletzt. Was braucht man, um danach wieder Spitze zu sein?</p></label><textarea class="zeile" id="b3f1" rows="2"></textarea></div></section><section class="station" aria-labelledby="t4"><header><div class="nr">4</div><h2 id="t4">Schneegänse</h2></header><div class="frage"><p>Vermute zuerst: Warum heißen sie Schneegänse? Dann hör genau hin.</p><div class="opts"><label class="opt"><input type="radio" id="b4f0_0" name="b4f0"><span>wegen ihrer weißen Federn</span></label><label class="opt"><input type="radio" id="b4f0_1" name="b4f0"><span>weil sie im Schnee brüten</span></label><label class="opt"><input type="radio" id="b4f0_2" name="b4f0"><span>weil sie bei Schnee losfliegen</span></label><label class="opt"><input type="radio" id="b4f0_3" name="b4f0"><span>weil sie in der Arktis leben</span></label></div></div><div class="frage"><label for="b4f1"><p>Was passiert mit Zugvögeln, wenn ihre Rastplätze verschwinden?</p></label><textarea class="zeile" id="b4f1" rows="2"></textarea></div></section><section class="station" aria-labelledby="t5"><header><div class="nr">5</div><h2 id="t5">Neunjährige Meeresschützerin</h2></header><div class="frage"><p>Warum ist Plastik im Meer gefährlich? Kreuze alles Passende an. <span class='hinweis'>(mehrere möglich)</span></p><div class="opts"><label class="opt"><input type="checkbox" id="b5f0_0" name="b5f0"><span>Tiere halten es für Futter.</span></label><label class="opt"><input type="checkbox" id="b5f0_1" name="b5f0"><span>Tiere verfangen sich darin.</span></label><label class="opt"><input type="checkbox" id="b5f0_2" name="b5f0"><span>Es zerfällt in winzige Teilchen.</span></label><label class="opt"><input type="checkbox" id="b5f0_3" name="b5f0"><span>Es löst sich in wenigen Tagen auf.</span></label></div></div><div class="frage"><label for="b5f1"><p>Was könntest du selbst tun, damit weniger Müll ins Meer kommt?</p></label><textarea class="zeile" id="b5f1" rows="2"></textarea></div></section>
+<section class="danach" aria-label="Nach dem Schauen"><h2>Nach dem Schauen</h2><div class="frage"><p>Politik-Detektiv: Welche Beiträge haben mit Politik zu tun? Kreuze die Nummern an. <span class='hinweis'>(mehrere möglich)</span></p><div class="opts"><label class="opt"><input type="checkbox" id="d_pol_0" name="d_pol"><span>1</span></label><label class="opt"><input type="checkbox" id="d_pol_1" name="d_pol"><span>2</span></label><label class="opt"><input type="checkbox" id="d_pol_2" name="d_pol"><span>3</span></label><label class="opt"><input type="checkbox" id="d_pol_3" name="d_pol"><span>4</span></label><label class="opt"><input type="checkbox" id="d_pol_4" name="d_pol"><span>5</span></label></div></div><div class="frage"><label for="d_wort"><p>Mein neues Wort heute:</p></label><input class="zeile" id="d_wort" type="text" autocomplete="off"></div><div class="frage"><label for="d_bed"><p>Das bedeutet:</p></label><input class="zeile" id="d_bed" type="text" autocomplete="off"></div><div class="frage"><p>Sollen Jugendliche schon ab 14 Jahren wählen dürfen?</p><div class="opts"><label class="opt"><input type="radio" id="d_streit_0" name="d_streit"><span>ja</span></label><label class="opt"><input type="radio" id="d_streit_1" name="d_streit"><span>nein</span></label><label class="opt"><input type="radio" id="d_streit_2" name="d_streit"><span>weiß ich noch nicht</span></label></div></div><div class="frage"><label for="d_weil"><p>Ich finde das, weil …</p></label><textarea class="zeile" id="d_weil" rows="2"></textarea></div><div class="frage"><p>Wie gut hast du die Sendung verstanden?</p><div class="opts"><label class="opt"><input type="radio" id="d_versteh_0" name="d_versteh"><span>sehr gut</span></label><label class="opt"><input type="radio" id="d_versteh_1" name="d_versteh"><span>ganz gut</span></label><label class="opt"><input type="radio" id="d_versteh_2" name="d_versteh"><span>nur ein bisschen</span></label></div></div></section>
+<details class="lehrer"><summary>Für die Lehrkraft</summary>
+<p>Politik-Detektiv – Lösung: 1, 2. Die Meinungsfrage hat keine richtige Antwort (Beutelsbacher Konsens). Quelle: ZDF/KiKA, logo.de · Sendung 19:50 Uhr.</p></details>
+</main><nav class="navleiste"><a href="../">← Zur aktuellen Sendung</a><a href="logo_2026-10-25.pdf">Als PDF drucken</a><a href="../verzeichnis.html">Alle Sendungen</a></nav></body></html>
