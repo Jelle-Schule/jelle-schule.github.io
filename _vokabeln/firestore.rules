@@ -2,9 +2,11 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
 
+    // Lehrkraft = genau dieses Konto (Firebase Authentication, E-Mail/Passwort, justin.ellegast@gmail.com).
+    // Geprüft wird die feste Nutzer-UID, nicht die E-Mail: Eine E-Mail könnte sich jeder selbst registrieren.
     function isTeacher() {
       return request.auth != null
-        && request.auth.token.email == 'justin.ellegast@googlemail.com';
+        && request.auth.uid == 'Qf19CUb4CDOfFAiUEmxorm6k6eN2';
     }
 
     // ===================== Einmaleins-Blitz (unverändert) =====================

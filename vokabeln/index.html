@@ -97,6 +97,9 @@ h3{font-family:var(--f-display);font-weight:700;font-size:1.3rem;margin:0}
 .book[aria-pressed="true"]{background:var(--sel);border-color:var(--sel);color:var(--sel-ink);box-shadow:var(--shadow)}
 .book[aria-pressed="true"] small{color:var(--sel-ink);opacity:.85}
 .units{display:flex;flex-direction:column;gap:10px}
+.utiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(104px,1fr));gap:8px}
+.utiles .book{align-items:flex-start;justify-content:center;min-height:62px}
+.utiles .book b{font-size:1.3rem}
 .ugroup{display:grid;grid-template-columns:128px minmax(0,1fr);gap:8px;align-items:stretch}
 .ugroup.solo{grid-template-columns:128px}
 .usolo{display:grid;grid-template-columns:repeat(auto-fill,minmax(128px,1fr));gap:8px}
@@ -344,7 +347,7 @@ details.more[open] > summary{margin-bottom:8px}
       <span class="badge" aria-hidden="true">EN<i></i>DE</span>
       <div>
         <h1>Vokabel-Blitz</h1>
-        <p class="sub">Wähle Unit oder Topic und tippe so schnell wie möglich die richtige Antwort.</p>
+        <p class="sub">Wähle deine Unit und tippe so schnell wie möglich die richtige Antwort.</p>
       </div>
     </div>
 
@@ -361,9 +364,14 @@ details.more[open] > summary{margin-bottom:8px}
     <p class="empty" id="noLists" hidden></p>
 
     <div id="pickWrap" class="sec" style="gap:22px">
-    <div class="sec">
-      <div class="sec-head"><span class="label">Jahrgangsstufe</span><span class="loading" id="listLoading" hidden>Wortlisten werden geladen …</span></div>
+    <div class="sec" id="gradeSec">
+      <span class="label">Jahrgangsstufe</span>
       <div class="books" id="books"></div>
+    </div>
+
+    <div class="sec" id="unitSec">
+      <div class="sec-head"><span class="label">Welche Unit?</span><span class="loading" id="listLoading" hidden>Wortlisten werden geladen …</span></div>
+      <div class="utiles" id="unitTiles"></div>
     </div>
 
     <div class="sec" id="modeWrap" hidden>
@@ -372,19 +380,19 @@ details.more[open] > summary{margin-bottom:8px}
       <div class="quick" id="listChips" hidden></div>
     </div>
 
-    <div class="sec">
+    <div class="sec" id="topicSec" hidden>
       <div class="sec-head">
-        <span class="label">Welche Units und Topics?</span>
+        <span class="label" id="topicLabel">Welche Topics?</span>
         <span class="hint" id="unitInfo"></span>
       </div>
       <div class="units" id="units"></div>
-      <div class="quick">
+      <div class="quick" hidden>
         <button class="pill" id="unitsAll">Alles</button>
         <button class="pill" id="unitsNone">Nichts</button>
-        <button class="pill weak" id="weakBtn" hidden></button>
       </div>
     </div>
 
+    <div class="sec" id="runWrap" hidden style="gap:22px">
     <div class="opts">
       <div class="sec" id="dirSec">
         <span class="label">Richtung</span>
@@ -406,10 +414,14 @@ details.more[open] > summary{margin-bottom:8px}
       </div>
     </div>
 
-    <button class="start" id="startBtn">Los geht’s!</button>
+    <div class="sec" style="gap:10px">
+      <button class="start" id="startBtn">Los geht’s!</button>
+      <button class="pill weak" id="weakBtn" hidden style="align-self:center"></button>
+    </div>
     <p class="pool" id="poolInfo"></p>
     <div class="records" id="records"></div>
     <p class="hint" style="text-align:center">Jeder Fehler: +3 Sekunden. Danach siehst du kurz die richtige Lösung.</p>
+    </div>
     </div>
   </div>
 </section>
@@ -3721,7 +3733,7 @@ The weather forecast says it ___ be cold next week. = will | is | was | did
     if (S.mode !== 'pending'){
       // Nach dem Freischalten einer Klasse gleich deren erste Liste zeigen
       const first = sortedLists()[0];
-      if (first && S.pickFirst){ sel.list = first.id; sel.units = firstUnit(first); S.pickFirst = false; store.set('vok-sel', sel); }
+      if (first && S.pickFirst){ sel.list = first.id; sel.units = firstUnit(first); sel.unit = null; sel.kind = null; S.pickFirst = false; store.set('vok-sel', sel); }
       fixSelection();
     }
   }
@@ -3740,7 +3752,7 @@ The weather forecast says it ___ be cold next week. = will | is | was | did
   // =====================================================================
   // Auswahl
   // =====================================================================
-  let sel = { list: null, units: [], typ: 'all', dir: 'mx', count: 20, ...store.get('vok-sel', {}) };
+  let sel = { list: null, units: [], unit: null, kind: null, typ: 'all', dir: 'mx', count: 20, ...store.get('vok-sel', {}) };
   const curList = () => S.lists.get(sel.list) || sortedLists()[0] || EMPTY;
   const firstUnit = L => L.groups.length ? L.groups[0].units.map(u => u.id) : [];   // Standard: ganze erste Unit
   function fixSelection(){
@@ -3749,7 +3761,41 @@ The weather forecast says it ___ be cold next week. = will | is | was | did
     const list = curList(), ids = new Set(list.units.map(u => u.id));
     sel.units = sel.units.filter(u => ids.has(u));
     if (!sel.units.length && list.units.length) sel.units = firstUnit(list);
+    if (S.lists.size) fixUnitSel();
   }
+  // Ablauf für die Kinder: erst die Unit, dann Wortschatz oder Grammatik, dann die Topics dieser Unit
+  const gkey = t => String(t || '').toLowerCase().replace(/\s+/g, ' ').trim();
+  function unitsOfGrade(k){
+    const seen = new Map();
+    sortedLists().filter(L => L.klasse === k).forEach(L => L.groups.forEach(g => {
+      const key = gkey(g.titel);
+      if (!seen.has(key)) seen.set(key, { key, titel: g.titel, kinds: new Set() });
+      seen.get(key).kinds.add(L.kind);
+    }));
+    // Units mit Nummer der Reihe nach, andere (z. B. „Welcome“) bleiben an ihrem Platz
+    const arr = [...seen.values()], num = t => { const m = String(t).match(/(\d+)/); return m ? +m[1] : null; };
+    const numbered = arr.filter(u => num(u.titel) !== null).sort((a, b) => num(a.titel) - num(b.titel));
+    let j = 0; return arr.map(u => num(u.titel) !== null ? numbered[j++] : u);
+  }
+  const listsWithUnit = (k, kind, key) => sortedLists().filter(L => L.klasse === k && L.kind === kind && L.groups.some(g => gkey(g.titel) === key));
+  const kindsOfUnit = (k, key) => ['vok', 'gram'].filter(kd => listsWithUnit(k, kd, key).length);
+  const unitGroup = (L, key) => L && L.groups.find(g => gkey(g.titel) === key);
+  function fixUnitSel(){
+    const k = curList().klasse, units = unitsOfGrade(k);
+    if (sel.unit && !units.some(u => u.key === sel.unit)) sel.unit = null;
+    if (!sel.unit && units.length === 1) sel.unit = units[0].key;   // nur eine Unit frei: gleich aufklappen
+    if (!sel.unit) return;
+    const kinds = kindsOfUnit(k, sel.unit);
+    if (sel.kind && !kinds.includes(sel.kind)) sel.kind = null;
+    if (!sel.kind && kinds.length === 1) sel.kind = kinds[0];
+    if (!sel.kind) return;
+    let L = S.lists.get(sel.list);
+    if (!L || L.klasse !== k || L.kind !== sel.kind || !unitGroup(L, sel.unit)){ L = listsWithUnit(k, sel.kind, sel.unit)[0]; sel.list = L.id; sel.units = []; }
+    const ids = unitGroup(L, sel.unit).units.map(u => u.id);
+    sel.units = sel.units.filter(id => ids.includes(id));
+    if (!sel.units.length) sel.units = ids;
+  }
+  const ready = () => !!(sel.unit && sel.kind && unitGroup(S.lists.get(sel.list), sel.unit));
   function selectedWords(list = curList(), unitIds = sel.units){
     const seen = new Set(), out = [];
     list.units.filter(u => unitIds.includes(u.id)).forEach(u => u.words.forEach(w => { const k = w.key + '|' + norm(w.de); if (!seen.has(k)){ seen.add(k); out.push(w); } }));
@@ -3847,31 +3893,57 @@ The weather forecast says it ___ be cold next week. = will | is | was | did
   const toggleIds = ids => { const all = ids.every(id => sel.units.includes(id)); sel.units = all ? sel.units.filter(x => !ids.includes(x)) : [...new Set([...sel.units, ...ids])]; changed(); };
   const gradesOf = () => [...new Set(sortedLists().map(L => L.klasse))];
   const listsOfGrade = (k, kind) => sortedLists().filter(L => L.klasse === k && (!kind || L.kind === kind));
-  function pickList(L){ if (!L || sel.list === L.id) return; sel.list = L.id; sel.units = firstUnit(L); changed(); }
+  function pickList(L){ if (!L || sel.list === L.id) return; sel.list = L.id; sel.units = []; fixSelection(); changed(); }
+  // nach einem Antippen den neuen Schritt ins Bild holen (ohne zu springen, wenn er schon zu sehen ist)
+  const reveal = sel_ => requestAnimationFrame(() => { const e = $(sel_); if (e && !e.hidden) e.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'nearest' }); });
+  const unitView = list => { const g = unitGroup(list, sel.unit); return g ? { ...list, groups: [g] } : { ...list, groups: [] }; };
   function buildChips(list){
-    // Jahrgangsstufen (immer genau eine)
+    // Jahrgangsstufen: nur zeigen, wenn die Klasse mehr als eine hat
     booksEl.textContent = '';
-    gradesOf().forEach(k => {
+    const grades = gradesOf();
+    grades.forEach(k => {
       const ls = listsOfGrade(k), b = el('button', 'book'); b.dataset.k = k;
       b.append(el('b', null, k ? k + '. Klasse' : 'Weitere'), el('small', null, [...new Set(ls.map(L => L.kind === 'gram' ? 'Grammatik' : 'Wortschatz'))].join(' · ')));
-      b.addEventListener('click', () => { if (curList().klasse !== k) pickList(listsOfGrade(k, 'vok')[0] || ls[0]); });
+      b.addEventListener('click', () => {
+        if (curList().klasse === k) return;
+        sel.unit = null; sel.list = (listsOfGrade(k, 'vok')[0] || ls[0]).id; sel.units = []; fixSelection(); changed(); reveal('#unitSec');
+      });
       booksEl.append(b);
     });
-    // Wortschatz oder Grammatik
-    const vok = listsOfGrade(list.klasse, 'vok'), gram = listsOfGrade(list.klasse, 'gram');
+    $('#gradeSec').hidden = grades.length <= 1;
+    // Units der Stufe (Wortschatz und Grammatik zusammen)
+    const ut = $('#unitTiles'); ut.textContent = '';
+    unitsOfGrade(list.klasse).forEach(u => {
+      const b = el('button', 'book'); b.dataset.u = u.key;
+      b.append(el('b', null, u.titel));
+      b.addEventListener('click', () => {
+        if (sel.unit === u.key){ sel.unit = null; changed(); return; }   // nochmal antippen: zuklappen
+        sel.unit = u.key; sel.units = []; fixSelection(); changed();
+        reveal(sel.kind ? '#topicSec' : '#modeWrap');
+      });
+      ut.append(b);
+    });
+    // Wortschatz oder Grammatik (nur was es in dieser Unit gibt)
     const ms = $('#modeSeg'); ms.textContent = '';
-    if (vok.length && gram.length) [['vok', 'Wortschatz', 'Wörter übersetzen'], ['gram', 'Grammatik', 'Sätze ergänzen']].forEach(([kind, label, sub]) => {
+    const kinds = sel.unit ? kindsOfUnit(list.klasse, sel.unit) : [];
+    if (kinds.length > 1) [['vok', 'Wortschatz', 'Wörter übersetzen'], ['gram', 'Grammatik', 'Sätze ergänzen']].forEach(([kind, label, sub]) => {
       const b = el('button', 'book'); b.dataset.kind = kind; b.append(el('b', null, label), el('small', null, sub));
-      b.addEventListener('click', () => { if (curList().kind !== kind) pickList(listsOfGrade(curList().klasse, kind)[0]); });
+      b.addEventListener('click', () => {
+        if (sel.kind === kind && curList().kind === kind) return;
+        sel.kind = kind; sel.units = []; fixSelection(); changed(); reveal($('#topicSec').hidden ? '#runWrap' : '#topicSec');
+      });
       ms.append(b);
     });
-    ms.hidden = !(vok.length && gram.length);
-    // mehrere Wortlisten in derselben Stufe
+    ms.hidden = kinds.length < 2;
+    // mehrere Wortlisten in derselben Stufe mit dieser Unit
+    const vok = sel.unit ? listsWithUnit(list.klasse, 'vok', sel.unit) : [];
     const lc = $('#listChips'); lc.textContent = '';
-    if (list.kind === 'vok' && vok.length > 1) vok.forEach(L => { const b = el('button', 'pill', L.titel); b.dataset.id = L.id; b.addEventListener('click', () => pickList(L)); lc.append(b); });
-    lc.hidden = !(list.kind === 'vok' && vok.length > 1);
-    $('#modeWrap').hidden = ms.hidden && lc.hidden;
-    unitGrid(unitsEl, list, toggleIds);
+    const showChips = sel.kind === 'vok' && vok.length > 1;
+    if (showChips) vok.forEach(L => { const b = el('button', 'pill', L.titel); b.dataset.id = L.id; b.addEventListener('click', () => pickList(L)); lc.append(b); });
+    lc.hidden = !showChips;
+    $('#modeWrap').hidden = !sel.unit || (ms.hidden && lc.hidden);
+    // Topics nur der gewählten Unit
+    unitGrid(unitsEl, unitView(list), toggleIds);
   }
   // Unit-Kacheln: links die ganze Unit, rechts die Teile (auch im Lehrkraft-Bereich)
   function unitGrid(box, list, onToggle){
@@ -3916,15 +3988,22 @@ The weather forecast says it ___ be cold next week. = will | is | was | did
     $('#listLoading').hidden = S.mode !== 'pending';
     renderKbar();
     const list = curList();
-    const sig = sortedLists().map(L => L.id + ':' + L.kind + ':' + L.klasse + ':' + L.titel + ':' + L.units.length).join(',') + '#' + list.id + ':' + list.units.map(u => u.id + ':' + u.titel + ':' + u.words.length).join(',');
+    const sig = sortedLists().map(L => L.id + ':' + L.kind + ':' + L.klasse + ':' + L.titel + ':' + L.units.length).join(',') + '#' + list.id + ':' + list.units.map(u => u.id + ':' + u.titel + ':' + u.words.length).join(',') + '#' + sel.unit + ':' + sel.kind;
     if (sig !== chipSig){ chipSig = sig; buildChips(list); }
     booksEl.querySelectorAll('.book').forEach(b => b.setAttribute('aria-pressed', +b.dataset.k === list.klasse));
-    $$('#modeSeg button').forEach(b => b.setAttribute('aria-pressed', b.dataset.kind === list.kind));
+    $$('#unitTiles .book').forEach(b => b.setAttribute('aria-pressed', b.dataset.u === sel.unit));
+    $$('#modeSeg button').forEach(b => b.setAttribute('aria-pressed', !!sel.kind && b.dataset.kind === list.kind));
     $$('#listChips button').forEach(b => b.setAttribute('aria-pressed', b.dataset.id === list.id));
     const gram = list.kind === 'gram', what = gram ? 'Sätze' : 'Wörter';
     $('#dirSec').hidden = gram; $('#typSec').hidden = gram;
     $('#countLabel').textContent = gram ? 'Wie viele Sätze?' : 'Wie viele Wörter?';
-    markGrid(unitsEl, list, id => sel.units.includes(id));
+    // Schritt für Schritt aufklappen: Unit → Wortschatz/Grammatik → Topics → Start
+    const ok = ready(), g = ok ? unitGroup(list, sel.unit) : null;
+    const fg = g && list.full && list.full.groups.find(x => x.titel === g.titel);
+    $('#topicSec').hidden = !ok || (g.units.length < 2 && !(fg && fg.units.length > g.units.length));
+    $('#topicLabel').textContent = gram ? 'Welche Themen?' : 'Welche Topics?';
+    $('#runWrap').hidden = !ok;
+    markGrid(unitsEl, unitView(list), id => sel.units.includes(id));
     // Leer: noch keine Klasse / keine Liste
     const noLists = !S.lists.size;
     $('#pickWrap').hidden = noLists;
@@ -3936,6 +4015,7 @@ The weather forecast says it ___ be cold next week. = will | is | was | did
       $('#toBoard').hidden = true;
       return;
     }
+    if (!ok){ $('#toBoard').hidden = !boardOn(); return; }
     const words = selectedWords(), n = sel.units.length;
     $('#unitInfo').textContent = n === 0 ? 'Bitte mindestens einen Teil antippen' : words.length + ' ' + what + ' gewählt';
     // Wortarten mit Anzahl
