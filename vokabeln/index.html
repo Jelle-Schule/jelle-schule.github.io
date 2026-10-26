@@ -3539,6 +3539,7 @@ The weather forecast says it ___ be cold next week. = will | is | was | did
               kcode: store.get(CL.active, null),     // aktive Klasse
               kdoc: null, kstate: 'none',            // none | loading | ok | invalid | offline
               klists: {},                            // Wortlisten der aktiven Klasse
+              klistsSeen: new Set(),                 // Listen, zu denen die Datenbank schon geantwortet hat
               allKlassen: {}, allLists: {},          // nur für die Lehrkraft
               cur: { sk: null, key: null, all: [], week: [] }, listView: { sk: null, id: null, period: null, items: [] },
               delMode: false, viewBoard: null, period: 'week', saving: false };
@@ -3698,6 +3699,7 @@ The weather forecast says it ___ be cold next week. = will | is | was | did
       if (listSubs.has(id)) return;
       listSubs.set(id, null);
       const un = DB.watchList(id, data => {
+        S.klistsSeen.add(id);
         if (data) S.klists[id] = data; else delete S.klists[id];
         saveCache(); rebuildLists(); subscribeBoard(); renderAll();
       });
@@ -3780,14 +3782,16 @@ The weather forecast says it ___ be cold next week. = will | is | was | did
   const listsWithUnit = (k, kind, key) => sortedLists().filter(L => L.klasse === k && L.kind === kind && L.groups.some(g => gkey(g.titel) === key));
   const kindsOfUnit = (k, key) => ['vok', 'gram'].filter(kd => listsWithUnit(k, kd, key).length);
   const unitGroup = (L, key) => L && L.groups.find(g => gkey(g.titel) === key);
+  // Erst automatisch auswählen, wenn alle Listen der Klasse da sind (Grammatik ist eingebaut und sonst immer zuerst da)
+  const listsSettled = () => !S.kdoc || (Array.isArray(S.kdoc.lists) ? S.kdoc.lists : []).every(id => isGrammarId(id) || S.klists[id] || S.klistsSeen.has(id));
   function fixUnitSel(){
-    const k = curList().klasse, units = unitsOfGrade(k);
-    if (sel.unit && !units.some(u => u.key === sel.unit)) sel.unit = null;
-    if (!sel.unit && units.length === 1) sel.unit = units[0].key;   // nur eine Unit frei: gleich aufklappen
+    const k = curList().klasse, units = unitsOfGrade(k), settled = listsSettled();
+    if (sel.unit && !units.some(u => u.key === sel.unit)){ if (!settled) return; sel.unit = null; }
+    if (!sel.unit && units.length === 1 && settled) sel.unit = units[0].key;   // nur eine Unit frei: gleich aufklappen
     if (!sel.unit) return;
     const kinds = kindsOfUnit(k, sel.unit);
-    if (sel.kind && !kinds.includes(sel.kind)) sel.kind = null;
-    if (!sel.kind && kinds.length === 1) sel.kind = kinds[0];
+    if (sel.kind && !kinds.includes(sel.kind)){ if (!settled) return; sel.kind = null; }
+    if (!sel.kind && kinds.length === 1 && settled) sel.kind = kinds[0];
     if (!sel.kind) return;
     let L = S.lists.get(sel.list);
     if (!L || L.klasse !== k || L.kind !== sel.kind || !unitGroup(L, sel.unit)){ L = listsWithUnit(k, sel.kind, sel.unit)[0]; sel.list = L.id; sel.units = []; }
@@ -3795,7 +3799,7 @@ The weather forecast says it ___ be cold next week. = will | is | was | did
     sel.units = sel.units.filter(id => ids.includes(id));
     if (!sel.units.length) sel.units = ids;
   }
-  const ready = () => !!(sel.unit && sel.kind && unitGroup(S.lists.get(sel.list), sel.unit));
+  const ready = () => { const L = S.lists.get(sel.list); return !!(sel.unit && sel.kind && L && L.kind === sel.kind && unitGroup(L, sel.unit)); };
   function selectedWords(list = curList(), unitIds = sel.units){
     const seen = new Set(), out = [];
     list.units.filter(u => unitIds.includes(u.id)).forEach(u => u.words.forEach(w => { const k = w.key + '|' + norm(w.de); if (!seen.has(k)){ seen.add(k); out.push(w); } }));
