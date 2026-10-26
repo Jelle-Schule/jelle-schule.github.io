@@ -3632,6 +3632,9 @@ The weather forecast says it ___ be cold next week. = will | is | was | did
       F = { fs, au, db: fs.getFirestore(app), auth: au.getAuth(app), user: null };
       // Erreichbarkeit und Regeln prüfen, bevor wir uns festlegen (eine Klasse mit diesem Namen gibt es nicht)
       await Promise.race([fs.getDoc(fs.doc(F.db, 'klassen', 'verbindungstest')), timeout(8000)]);
+      // Erst auf die Datenbank umschalten, dann auf die Anmeldung hören: Eine gespeicherte Anmeldung meldet sich
+      // sofort zurück, und die Lehrkraft-Abos müssen dann schon die Datenbank nutzen, nicht den Gerätespeicher.
+      S.mode = 'fire'; DB = fire;
       au.onAuthStateChanged(F.auth, u => { F.user = u; if (u) startTeacherSubs(); else { S.delMode = false; stopTeacherSubs(); } renderAll(); });
       return true;
     } catch(e){ F = null; return false; }
