@@ -1,0 +1,120 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isTeacher() {
+      return request.auth != null
+        && request.auth.token.email == 'justin.ellegast@googlemail.com';
+    }
+
+    // ===================== Einmaleins-Blitz (unverändert) =====================
+    function validScore(d) {
+      return d.keys().hasOnly(['board', 'name', 'time', 'raw', 'errors', 'at', 'period'])
+        && d.name is string && d.name.size() > 0 && d.name.size() <= 16
+        && d.board is string && d.board.size() > 0 && d.board.size() <= 80
+        && d.period is string && d.period.size() <= 10
+        && d.time is int && d.time > 1000 && d.time < 3600000
+        && d.raw is int && d.raw > 0 && d.raw <= d.time
+        && d.errors is int && d.errors >= 0 && d.errors <= 30
+        && d.at is int;
+    }
+
+    // Bestenliste: alle dürfen lesen und sich eintragen, aber nur verbessern
+    match /scores/{id} {
+      allow read: if true;
+      allow create: if validScore(request.resource.data);
+      allow update: if validScore(request.resource.data)
+        && (request.resource.data.time < resource.data.time || isTeacher());
+      allow delete: if isTeacher();
+    }
+
+    // Einstellungen (Bestenliste an/aus, Klassenliste): nur die Lehrkraft
+    match /config/{doc} {
+      allow read: if true;
+      allow write: if isTeacher()
+        && request.resource.data.keys().hasOnly(['board', 'names'])
+        && request.resource.data.board is bool
+        && request.resource.data.names is list
+        && request.resource.data.names.size() <= 40;
+    }
+
+    // ===================== Klassen (Lernkiste, zuerst Vokabel-Blitz) =====================
+    // Die Dokument-ID einer Klasse ist der geheime Klassen-Code (10 Zeichen, steckt im QR-Code).
+    // Wer den Code kennt, darf die Klasse lesen. Auflisten aller Klassen darf nur die Lehrkraft.
+    function validVokScore(d) {
+      return d.keys().hasOnly(['board', 'list', 'name', 'time', 'raw', 'errors', 'n', 'at', 'period'])
+        && d.name is string && d.name.size() > 0 && d.name.size() <= 16
+        && d.board is string && d.board.size() > 0 && d.board.size() <= 300
+        && d.list is string && d.list.size() > 0 && d.list.size() <= 40
+        && d.period is string && d.period.size() <= 10
+        && d.n is int && d.n >= 1 && d.n <= 1000
+        && d.time is int && d.time > 1000 && d.time < 3600000
+        && d.raw is int && d.raw > 0 && d.raw <= d.time
+        && d.errors is int && d.errors >= 0 && d.errors <= d.n
+        && d.at is int;
+    }
+    function validRound(d) {
+      return d.keys().hasOnly(['list', 'week', 'n', 'ok', 'ask', 'bad', 'at', 'practice'])
+        && d.list is string && d.list.size() > 0 && d.list.size() <= 40
+        && d.week is string && d.week.size() <= 10
+        && d.n is int && d.n > 0 && d.n <= 1000
+        && d.ok is int && d.ok >= 0 && d.ok <= d.n
+        && d.ask is list && d.ask.size() <= 400
+        && d.bad is list && d.bad.size() <= 400
+        && d.at is int
+        && d.practice is bool;
+    }
+
+    match /klassen/{code} {
+      allow get: if true;
+      allow list: if isTeacher();
+      allow create, update: if isTeacher() && code.size() >= 10
+        && request.resource.data.keys().hasOnly(['name', 'names', 'board', 'lists', 'frei', 'at'])
+        && request.resource.data.name is string && request.resource.data.name.size() > 0 && request.resource.data.name.size() <= 30
+        && request.resource.data.names is list && request.resource.data.names.size() <= 60
+        && request.resource.data.board is bool
+        && request.resource.data.lists is list && request.resource.data.lists.size() <= 30
+        && (!('frei' in request.resource.data) || (request.resource.data.frei is list && request.resource.data.frei.size() <= 400))
+        && request.resource.data.at is int;
+      allow delete: if isTeacher();
+
+      // Vokabel-Bestenliste der Klasse: wer den Code kennt, darf lesen und sich eintragen (nur verbessern)
+      match /vok_scores/{id} {
+        allow read: if true;
+        allow create: if validVokScore(request.resource.data);
+        allow update: if validVokScore(request.resource.data)
+          && (request.resource.data.time < resource.data.time || isTeacher());
+        allow delete: if isTeacher();
+      }
+      // Gespielte Runden (anonym, ohne Namen): eintragen ja, lesen nur die Lehrkraft
+      match /vok_rounds/{id} {
+        allow create: if validRound(request.resource.data);
+        allow read, delete: if isTeacher();
+      }
+    }
+
+    // Wortlisten: lesen nur mit bekannter (geheimer) ID, auflisten und schreiben nur die Lehrkraft
+    match /vok_lists/{id} {
+      allow get: if true;
+      allow list: if isTeacher();
+      allow create, update: if isTeacher() && id.size() >= 10
+        && request.resource.data.keys().hasOnly(['klasse', 'titel', 'units', 'at'])
+        && request.resource.data.klasse is int
+        && request.resource.data.titel is string && request.resource.data.titel.size() <= 60
+        && request.resource.data.units is list && request.resource.data.units.size() <= 80
+        && request.resource.data.at is int;
+      allow delete: if isTeacher();
+    }
+
+    // ===================== Aufrufzähler (ohne Cookies, ohne personenbezogene Daten) =====================
+    // Jedes Dokument zählt nur hoch, immer genau um 1.
+    match /zaehler/{id} {
+      allow get: if true;
+      allow create: if id.size() <= 40
+        && request.resource.data.keys().hasOnly(['n'])
+        && request.resource.data.n == 1;
+      allow update: if request.resource.data.keys().hasOnly(['n'])
+        && request.resource.data.n == resource.data.n + 1;
+    }
+  }
+}

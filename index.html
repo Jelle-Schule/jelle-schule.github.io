@@ -31,6 +31,7 @@ header{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;
 h1{font-family:var(--f-head);font-weight:600;font-size:clamp(1.9rem,6vw,2.7rem);line-height:1.05;margin:0;letter-spacing:-.01em}
 .kicker{font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);margin:0 0 6px}
 .count{color:var(--muted);font-size:.95rem;margin:0}
+.visits{color:var(--muted);font-size:.85rem;text-align:center;margin:20px 0 0;font-variant-numeric:tabular-nums}
 
 .search{position:sticky;top:0;z-index:5;background:var(--bg);padding:10px 0 14px;margin-bottom:6px}
 .sbox{display:flex;align-items:center;gap:10px;background:var(--card);border:2px solid var(--line);border-radius:16px;padding:4px 6px 4px 16px;box-shadow:var(--shadow)}
@@ -132,6 +133,7 @@ details.help ol{padding-left:1.2em}
       <li><b>Neue App dazu?</b> Einfach Claude sagen: „Stell die App in die Lernkiste.“</li>
     </ol>
   </details>
+  <p class="visits" id="visits" hidden></p>
 </div>
 
 <div id="board" role="dialog" aria-modal="true" aria-labelledby="btitle">
@@ -156,6 +158,16 @@ details.help ol{padding-left:1.2em}
    tags:   Suchwörter (Synonyme, Englisch, Tippvarianten)
    ========================================================== */
 const APPS = [
+  {
+    id: "vokabeln",
+    title: "Vokabel-Blitz",
+    url: "https://jelle-schule.github.io/vokabeln/",
+    fach: "Englisch", stufe: "Klasse 5–10",
+    desc: "Englisch-Vokabeln und Grammatik (z. B. simple past, did/didn't, irregular verbs) nach Unit üben: vier Antworten, Stoppuhr, Fehlerwörter gleich nochmal üben, Aussprache, Bestenliste und Unit-Champions.",
+    note: "Die Wortlisten sieht man nur mit dem QR-Code der Klasse (Lehrkraft-Bereich in der App). Jahrgangsstufe wählen, dann Unit oder einzelne Topics.",
+    tags: ["vokabeln","vokabel","vokabeltrainer","vocabulary","vocab","words","wortschatz","englisch","english","unit","units","abfragen","lernen","irregular verbs","unregelmäßige verben","grammatik","grammar","simple past","did","didn't","quiz","speed","spiel","ipad","tablet","bestenliste","klasse"],
+    added: "2026-10-25"
+  },
   {
     id: "kritzel",
     title: "Kritzel-Raten",
@@ -2718,6 +2730,30 @@ window.addEventListener("hashchange", () => { const a = APPS.find(x => x.id === 
 fromUrl();
 if (!board.classList.contains("open") && matchMedia("(pointer:fine)").matches) qIn.focus();
 })();
+</script>
+<script>
+/* Aufrufzähler: zählt nur, wie oft die Seite geöffnet wurde.
+   Keine Cookies, nichts auf dem Gerät gespeichert, keine Namen. Gleiche Datenbank wie die Bestenlisten. */
+function zaehleAufruf(app){
+  const DOCS = 'projects/x1-blitz/databases/(default)/documents';
+  const API = 'https://firestore.googleapis.com/v1/' + DOCS, KEY = 'AIzaSyBrMjH-YcHk9j6OI5s9tbPLmZSPA5j6wrQ';
+  const day = new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Berlin' });
+  const names = [app, app + '-' + day].map(id => DOCS + '/zaehler/' + id);
+  const post = (path, body) => fetch(API + path + '?key=' + KEY, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+  return post(':commit', { writes: names.map(name => ({ update: { name, fields: {} }, updateMask: { fieldPaths: [] }, updateTransforms: [{ fieldPath: 'n', increment: { integerValue: '1' } }] })) })
+    .then(r => r.ok ? post(':batchGet', { documents: names }) : Promise.reject(new Error('zaehler')))
+    .then(r => r.json())
+    .then(rows => {
+      const val = {}; (Array.isArray(rows) ? rows : []).forEach(x => { if (x.found) val[x.found.name] = +(((x.found.fields || {}).n || {}).integerValue) || 0; });
+      return { total: val[names[0]] || 0, today: val[names[1]] || 0 };
+    });
+}
+zaehleAufruf('lernkiste').then(v => {
+  if (!v.total) return;
+  const el = document.getElementById('visits'), f = n => n.toLocaleString('de-DE');
+  el.textContent = f(v.total) + (v.total === 1 ? ' Aufruf' : ' Aufrufe') + ' · heute ' + f(v.today);
+  el.hidden = false;
+}).catch(() => {});
 </script>
 </body>
 </html>
