@@ -40,6 +40,23 @@ service cloud.firestore {
         && request.resource.data.names.size() <= 40;
     }
 
+    // ===================== Plus-Minus-Blitz (wie Einmaleins-Blitz, eigene Sammlungen) =====================
+    match /pm_scores/{id} {
+      allow read: if true;
+      allow create: if validScore(request.resource.data);
+      allow update: if validScore(request.resource.data)
+        && (request.resource.data.time < resource.data.time || isTeacher());
+      allow delete: if isTeacher();
+    }
+    match /pm_config/{doc} {
+      allow read: if true;
+      allow write: if isTeacher()
+        && request.resource.data.keys().hasOnly(['board', 'names'])
+        && request.resource.data.board is bool
+        && request.resource.data.names is list
+        && request.resource.data.names.size() <= 40;
+    }
+
     // ===================== Klassen (Lernkiste, zuerst Vokabel-Blitz) =====================
     // Die Dokument-ID einer Klasse ist der geheime Klassen-Code (10 Zeichen, steckt im QR-Code).
     // Wer den Code kennt, darf die Klasse lesen. Auflisten aller Klassen darf nur die Lehrkraft.

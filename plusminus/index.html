@@ -1,0 +1,1092 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style></head><body><title>Plus-Minus-Blitz</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;700;800&display=swap">
+<style>
+/* Gleicher Look wie der Einmaleins-Blitz: Rechenheft-Karopapier, Karten zentriert, Spiel als Vollbild mit 2×2-Antwortfeld */
+:root{
+  --paper:#f2f7fd; --grid:#d5e5f5; --card:#ffffff; --ink:#1c2943; --muted:#5a6a85;
+  --line:#c9d8ea; --pen:#d93c33; --ok:#1d8f4e; --sel:#2b62d1; --sel-ink:#ffffff; --hl:#e3ecfb;
+  --a1:#2b62d1; --a2:#0f8577; --a3:#8a44b8; --a4:#c0650c; --btn-ink:#ffffff;
+  --gold:#f0c02c; --silver:#c3ccd8; --bronze:#d99256; --medal-ink:#1c2943;
+  --shadow:0 2px 0 rgba(28,41,67,.18);
+  --f-display:"Fredoka","Baloo 2","Trebuchet MS",system-ui,sans-serif;
+  --f-body:"Nunito","Segoe UI",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#121a29; --grid:#1c273b; --card:#1a2437; --ink:#e7eefb; --muted:#9ba9c3;
+  --line:#2d3b55; --pen:#ff6b5f; --ok:#3cc47a; --sel:#4a80ee; --sel-ink:#ffffff; --hl:#22335a;
+  --a1:#3a70e3; --a2:#13978a; --a3:#9b57cb; --a4:#cf7419; --btn-ink:#ffffff;
+  --gold:#e9b923; --silver:#b4bdca; --bronze:#d08a4d; --medal-ink:#141c2b;
+  --shadow:0 2px 0 rgba(0,0,0,.45); color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --paper:#121a29; --grid:#1c273b; --card:#1a2437; --ink:#e7eefb; --muted:#9ba9c3;
+  --line:#2d3b55; --pen:#ff6b5f; --ok:#3cc47a; --sel:#4a80ee; --sel-ink:#ffffff; --hl:#22335a;
+  --a1:#3a70e3; --a2:#13978a; --a3:#9b57cb; --a4:#cf7419; --btn-ink:#ffffff;
+  --gold:#e9b923; --silver:#b4bdca; --bronze:#d08a4d; --medal-ink:#141c2b;
+  --shadow:0 2px 0 rgba(0,0,0,.45); color-scheme:dark;}
+
+html,body{height:100%}
+body{
+  background-color:var(--paper);
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:22px 22px;
+  color:var(--ink); font-family:var(--f-body); font-size:16px;
+  -webkit-tap-highlight-color:transparent; touch-action:manipulation;
+  -webkit-user-select:none; user-select:none; overflow-x:hidden;
+}
+button{font:inherit;color:inherit;cursor:pointer;touch-action:manipulation}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--sel);outline-offset:3px}
+input,textarea,select{font:inherit;font-size:16px;color:var(--ink);background:var(--card);border:2px solid var(--line);border-radius:12px;padding:10px 12px;-webkit-user-select:text;user-select:text;box-sizing:border-box}
+.screen{min-height:100%;box-sizing:border-box;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.page{display:flex;justify-content:center;padding-block:28px}
+
+/* ---------- Karten / allgemein ---------- */
+.card{background:var(--card);border:2px solid var(--line);border-radius:22px;box-shadow:var(--shadow);
+  width:100%;max-width:760px;padding:28px clamp(18px,4vw,36px);display:flex;flex-direction:column;gap:24px;box-sizing:border-box;align-self:flex-start}
+.brand{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.badge{font-family:var(--f-display);font-weight:700;font-size:1.6rem;background:var(--pen);color:#fff;
+  border-radius:14px;padding:6px 14px;transform:rotate(-4deg);box-shadow:var(--shadow);letter-spacing:.02em;white-space:nowrap}
+h1{font-family:var(--f-display);font-weight:700;font-size:clamp(2rem,6vw,2.8rem);margin:0;line-height:1;text-wrap:balance}
+h2{font-family:var(--f-display);font-weight:700;font-size:clamp(1.5rem,4.5vw,2rem);margin:0;line-height:1.1;text-wrap:balance}
+.sub{color:var(--muted);margin:6px 0 0;font-weight:700}
+.sec{display:flex;flex-direction:column;gap:12px}
+.sec-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.label{font-size:.8rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.hint{color:var(--muted);font-weight:700;font-size:.95rem;margin:0}
+.row{display:flex;gap:16px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+.pill{border:2px solid var(--line);background:transparent;border-radius:999px;padding:7px 14px;font-weight:800;font-size:.92rem}
+.pill:active{transform:scale(.96)}
+.pill.strong{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end;margin-bottom:-8px}
+.seg{display:inline-flex;border:2px solid var(--line);border-radius:14px;overflow:hidden}
+.seg button{border:0;background:transparent;padding:10px 18px;font-family:var(--f-display);font-weight:600;font-size:1.15rem;color:var(--muted)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+/* große Auswahl-Leisten (Rechenart, Zahlenraum): volle Breite, gleich breite Felder */
+.seg.wide{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;width:100%;box-sizing:border-box}
+.seg.wide button{padding:14px 6px;font-size:clamp(1.15rem,3.6vw,1.5rem);line-height:1.1;border-left:2px solid var(--line)}
+.seg.wide button:first-child{border-left:0}
+.seg.wide button[aria-pressed="true"]{background:var(--sel);color:var(--sel-ink)}
+.seg.wide .sym{display:block;font-size:1.5em;line-height:1;margin-bottom:2px}
+.example{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0}
+.example .hint{margin-right:2px}
+.example .tag{font-size:1.15rem;padding:4px 12px}
+.start{font-family:var(--f-display);font-weight:700;font-size:clamp(1.6rem,5vw,2.1rem);color:#fff;background:var(--ok);
+  border:0;border-radius:18px;padding:16px 24px;box-shadow:0 5px 0 color-mix(in srgb,var(--ok) 60%,#000);width:100%}
+.start:active{transform:translateY(3px);box-shadow:0 2px 0 color-mix(in srgb,var(--ok) 60%,#000)}
+.start:disabled{opacity:.45;cursor:not-allowed}
+.btn2{border:2px solid var(--line);background:transparent;border-radius:18px;font-weight:800;font-size:1.05rem;padding:14px}
+.back{width:44px;height:44px;border-radius:12px;border:2px solid var(--line);background:var(--card);font-size:1.3rem;font-weight:800;color:var(--muted);flex:none}
+.headrow{display:flex;align-items:center;gap:14px}
+
+/* ---------- Start ---------- */
+.records{display:flex;flex-direction:column;gap:6px;align-items:center;color:var(--muted);font-weight:800;text-align:center}
+.records b{font-family:var(--f-display);color:var(--ink);font-size:1.15rem;font-variant-numeric:tabular-nums}
+.crown{color:var(--a4)}
+
+/* ---------- Countdown ---------- */
+#countdown{position:fixed;inset:0;display:grid;place-items:center;background:color-mix(in srgb,var(--paper) 88%,transparent);z-index:20}
+#countdown.going{background:transparent;pointer-events:none}
+#cd{font-family:var(--f-display);font-weight:700;font-size:min(48vmin,22rem);color:var(--pen);line-height:1}
+#cd.go{color:var(--ok);font-size:min(30vmin,14rem)}
+.pop{animation:pop .7s ease-out both}
+@keyframes pop{0%{transform:scale(1.6);opacity:0}25%{transform:scale(1);opacity:1}80%{opacity:1}100%{transform:scale(.85);opacity:0}}
+
+/* ---------- Spiel ---------- */
+#game{height:100%;display:grid;grid-template-rows:auto auto 1fr auto;gap:10px;padding-block:12px calc(14px + env(safe-area-inset-bottom,0px))}
+.top{display:flex;align-items:center;gap:12px}
+.prog-text{font-weight:800;color:var(--muted);font-variant-numeric:tabular-nums}
+.timer{margin-left:auto;font-family:var(--f-display);font-weight:600;font-size:clamp(1.6rem,5vw,2.4rem);font-variant-numeric:tabular-nums;
+  background:var(--card);border:2px solid var(--line);border-radius:14px;padding:2px 16px;min-width:5.5ch;text-align:right}
+.bar{height:10px;border-radius:99px;background:var(--line);overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--ok);border-radius:99px;transition:width .15s}
+.qwrap{display:grid;place-items:center;position:relative;min-height:0}
+.q{font-family:var(--f-display);font-weight:700;font-size:clamp(3.5rem,17vmin,11rem);line-height:1;font-variant-numeric:tabular-nums;white-space:nowrap}
+.q .eq{color:var(--muted)}
+.fb{position:absolute;bottom:4px;left:0;right:0;text-align:center;font-weight:800;font-size:1.15rem;color:var(--pen);min-height:1.4em}
+.answers{display:grid;grid-template-columns:1fr 1fr;gap:clamp(10px,2vw,18px);height:min(46vh,420px)}
+.ans{border:0;border-radius:22px;color:var(--btn-ink);font-family:var(--f-display);font-weight:700;
+  font-size:clamp(2.4rem,9vmin,5rem);font-variant-numeric:tabular-nums;box-shadow:0 6px 0 rgba(0,0,0,.22);position:relative}
+.ans:nth-child(1){background:var(--a1)}.ans:nth-child(2){background:var(--a2)}
+.ans:nth-child(3){background:var(--a3)}.ans:nth-child(4){background:var(--a4)}
+.ans:active{transform:translateY(3px);box-shadow:0 3px 0 rgba(0,0,0,.22)}
+.ans .k{position:absolute;top:8px;left:12px;font-size:.85rem;opacity:.55;font-family:var(--f-body)}
+#flash{position:fixed;inset:0;pointer-events:none;opacity:0;z-index:5}
+
+/* ---------- Ergebnis ---------- */
+.big-time{font-family:var(--f-display);font-weight:700;font-size:clamp(3.4rem,14vw,6rem);line-height:1;font-variant-numeric:tabular-nums}
+.verdict{font-family:var(--f-display);font-weight:700;font-size:clamp(1.5rem,5vw,2.1rem);margin:0;text-wrap:balance}
+.record{display:inline-block;background:var(--pen);color:#fff;border-radius:10px;padding:4px 12px;font-weight:800;transform:rotate(-3deg)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.stat{border:2px solid var(--line);border-radius:16px;padding:12px;text-align:center}
+.stat b{display:block;font-family:var(--f-display);font-size:1.7rem;font-variant-numeric:tabular-nums}
+.stat span{font-size:.8rem;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.list{display:flex;flex-wrap:wrap;gap:8px}
+.tag{border:2px solid var(--line);border-radius:12px;padding:6px 12px;font-family:var(--f-display);font-weight:600;font-size:1.2rem;font-variant-numeric:tabular-nums}
+.tag s{color:var(--pen);font-size:.95rem;margin-left:6px}
+.tag small{color:var(--muted);font-family:var(--f-body);font-weight:800;margin-left:6px;font-size:.85rem}
+/* Fehler mit Rechenweg darunter */
+.wlist{display:flex;flex-direction:column;gap:10px}
+.witem{display:flex;flex-direction:column;align-items:flex-start;gap:4px}
+.way{color:var(--muted);font-weight:800;font-size:.95rem;font-variant-numeric:tabular-nums;padding-left:4px}
+.way b{color:var(--ok);font-weight:800}
+.btns{display:grid;grid-template-columns:2fr 1fr;gap:10px}
+
+.entry{border:2px dashed var(--a4);border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:12px}
+.entry h3{font-family:var(--f-display);font-weight:700;font-size:1.4rem;margin:0}
+.names{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:8px}
+.names button{border:2px solid var(--line);background:var(--card);border-radius:12px;padding:12px 8px;font-weight:800;font-size:1.05rem;overflow-wrap:anywhere}
+.names button:active{background:var(--hl)}
+.namerow{display:flex;gap:8px;flex-wrap:wrap}
+.namerow input{flex:1 1 180px;min-width:0;font-size:1.15rem}
+.go-btn{border:0;border-radius:12px;background:var(--a4);color:#fff;font-weight:800;font-size:1.1rem;padding:10px 20px}
+.go-btn:disabled{opacity:.5}
+.link{border:0;background:none;color:var(--muted);font-weight:800;text-decoration:underline;padding:4px 0;align-self:flex-start}
+.msg{font-weight:800;margin:0}
+.msg.err{color:var(--pen)}
+.cheer{font-family:var(--f-display);font-weight:700;font-size:clamp(1.4rem,4.5vw,1.9rem);margin:0;text-wrap:balance}
+.cheer.gold{color:var(--a4)}
+
+/* ---------- Bestenliste ---------- */
+.rank{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.rank li{display:grid;grid-template-columns:42px 1fr auto auto;align-items:center;gap:12px;padding:8px 10px;border-radius:14px;border:2px solid var(--line)}
+.rank li.me{background:var(--hl);border-color:var(--sel)}
+.pos{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-family:var(--f-display);font-weight:700;font-size:1.1rem;background:var(--paper);border:2px solid var(--line)}
+.pos.p1{background:var(--gold);border-color:var(--gold);color:var(--medal-ink)}
+.pos.p2{background:var(--silver);border-color:var(--silver);color:var(--medal-ink)}
+.pos.p3{background:var(--bronze);border-color:var(--bronze);color:var(--medal-ink)}
+.rname{font-weight:800;font-size:1.1rem;min-width:0;overflow-wrap:anywhere}
+.rname small{display:block;color:var(--muted);font-size:.8rem}
+.rtime{font-family:var(--f-display);font-weight:600;font-size:1.3rem;font-variant-numeric:tabular-nums}
+.del{width:34px;height:34px;border-radius:10px;border:2px solid var(--pen);background:transparent;color:var(--pen);font-weight:800}
+.rank li.more{display:block;text-align:center;color:var(--muted);font-weight:800;border-style:dashed}
+.champs{display:grid;grid-template-columns:auto repeat(4,1fr);gap:8px;align-items:stretch}
+.champs .rowhead{font-family:var(--f-display);font-weight:700;font-size:1.5rem;display:grid;place-items:center;color:var(--muted);padding:0 4px}
+.champs .colhead{text-align:center;font-weight:800;font-size:.8rem;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.champ{border:2px solid var(--line);border-radius:14px;padding:8px 6px;text-align:center;background:var(--card);display:flex;flex-direction:column;gap:2px;min-width:0}
+.champ span{font-weight:800;font-size:.9rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.champ small{color:var(--muted);font-weight:700;font-variant-numeric:tabular-nums}
+.champ.has{border-color:var(--gold)}
+.champ.cur{outline:3px solid var(--sel);outline-offset:1px}
+select{font-weight:800;max-width:100%}
+
+/* ---------- Lehrkraft ---------- */
+.setrow{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px 0;border-bottom:2px solid var(--line)}
+.setrow:last-child{border-bottom:0}
+.setrow p{margin:2px 0 0;color:var(--muted);font-weight:700;font-size:.9rem}
+.setrow strong{font-size:1.05rem}
+.switch{width:62px;height:36px;border-radius:99px;border:0;background:var(--line);position:relative;flex:none}
+.switch::after{content:"";position:absolute;top:4px;left:4px;width:28px;height:28px;border-radius:50%;background:var(--card);box-shadow:var(--shadow);transition:left .15s}
+.switch[aria-checked="true"]{background:var(--ok)}
+.switch[aria-checked="true"]::after{left:30px}
+textarea{width:100%;min-height:150px;resize:vertical}
+.small-btn{border:2px solid var(--ink);background:var(--ink);color:var(--paper);border-radius:12px;padding:8px 16px;font-weight:800}
+
+@media (max-width:560px){
+  .btns{grid-template-columns:1fr}
+  .answers{height:min(44vh,360px)}
+  .champs{gap:5px}
+  .champ{padding:6px 3px}
+  .champ span{font-size:.8rem}
+  .rank li{grid-template-columns:38px 1fr auto auto;gap:8px}
+}
+@media (prefers-reduced-motion:reduce){.pop{animation:none}.bar i,.switch::after{transition:none}}
+</style>
+
+<!-- ===== START ===== -->
+<section id="setup" class="screen page">
+  <div class="card">
+    <div class="toolbar">
+      <button class="pill strong" id="toBoard">Bestenliste</button>
+      <button class="pill" id="toTeacher">Lehrkraft</button>
+    </div>
+    <div class="brand">
+      <span class="badge">+ −</span>
+      <div>
+        <h1>Plus-Minus-Blitz</h1>
+        <p class="sub">Tippe die richtige Antwort so schnell du kannst.</p>
+      </div>
+    </div>
+
+    <div class="sec">
+      <span class="label">Rechenart</span>
+      <div class="seg wide" id="opSeg">
+        <button data-op="plus"><span class="sym">+</span>Plus</button>
+        <button data-op="minus"><span class="sym">−</span>Minus</button>
+        <button data-op="mix"><span class="sym">±</span>Gemischt</button>
+      </div>
+    </div>
+
+    <div class="sec">
+      <span class="label">Zahlenraum bis</span>
+      <div class="seg wide" id="rangeSeg">
+        <button data-r="20">20</button><button data-r="50">50</button><button data-r="100">100</button><button data-r="1000">1000</button>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-head">
+        <span class="label" id="crossLabel">Über den Zehner</span>
+        <div class="seg" id="crossSeg">
+          <button data-c="1">Immer</button><button data-c="0">Manchmal</button>
+        </div>
+      </div>
+      <div class="example" id="example"></div>
+    </div>
+
+    <div class="row">
+      <div class="sec">
+        <span class="label">Aufgaben</span>
+        <div class="seg" id="countSeg">
+          <button data-n="10">10</button><button data-n="20">20</button><button data-n="30">30</button>
+        </div>
+      </div>
+      <p class="hint">Jeder Fehler: +3 Sekunden</p>
+    </div>
+
+    <button class="start" id="startBtn">Los geht’s!</button>
+    <div class="records" id="records"></div>
+  </div>
+</section>
+
+<!-- ===== COUNTDOWN ===== -->
+<div id="countdown" hidden><div id="cd">3</div></div>
+
+<!-- ===== SPIEL ===== -->
+<section id="game" class="screen" hidden>
+  <div class="top">
+    <button class="back" id="quitBtn" aria-label="Abbrechen">✕</button>
+    <span class="prog-text" id="progText">1 / 20</span>
+    <span class="timer" id="timer">0,0</span>
+  </div>
+  <div class="bar"><i id="barFill"></i></div>
+  <div class="qwrap">
+    <div class="q" id="question">14 + 17 <span class="eq">=</span> ?</div>
+    <div class="fb" id="feedback"></div>
+  </div>
+  <div class="answers">
+    <button class="ans"><span class="k">1</span><span class="v">31</span></button>
+    <button class="ans"><span class="k">2</span><span class="v">21</span></button>
+    <button class="ans"><span class="k">3</span><span class="v">32</span></button>
+    <button class="ans"><span class="k">4</span><span class="v">41</span></button>
+  </div>
+</section>
+<div id="flash"></div>
+
+<!-- ===== ERGEBNIS ===== -->
+<section id="result" class="screen page" hidden>
+  <div class="card">
+    <div class="sec" style="gap:10px">
+      <span class="label" id="rBoardLabel">Deine Zeit</span>
+      <div class="big-time" id="rTime">0,0 s</div>
+      <p class="hint" id="rCalc"></p>
+      <div id="rRecord"></div>
+      <p class="verdict" id="rVerdict"></p>
+    </div>
+
+    <div class="entry" id="entry" hidden>
+      <div id="entryForm" class="sec">
+        <h3>Trag dich in die Bestenliste ein!</h3>
+        <div class="names" id="nameBtns"></div>
+        <div class="namerow" id="nameRow">
+          <input id="nameIn" maxlength="16" placeholder="Dein Vorname" autocomplete="off" autocapitalize="words" enterkeyhint="done">
+          <button class="go-btn" id="saveBtn">Eintragen</button>
+        </div>
+        <p class="msg" id="entryMsg"></p>
+        <button class="link" id="skipBtn">Ohne Eintrag weiter</button>
+      </div>
+      <div id="entryDone" class="sec" hidden>
+        <p class="cheer" id="cheer"></p>
+        <p class="msg" id="progressMsg"></p>
+        <ol class="rank" id="miniRank"></ol>
+        <button class="link" id="fullBoardBtn">Ganze Bestenliste ansehen</button>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><b id="rRight">0</b><span>Richtig</span></div>
+      <div class="stat"><b id="rWrong">0</b><span>Fehler</span></div>
+      <div class="stat"><b id="rAvg">0</b><span>s pro Aufgabe</span></div>
+    </div>
+    <div class="sec" id="rWrongSec">
+      <span class="label">Das üben wir nochmal – so geht’s</span>
+      <div class="wlist" id="rWrongList"></div>
+    </div>
+    <div class="sec">
+      <span class="label">Hier hast du am längsten gebraucht</span>
+      <div class="list" id="rSlowList"></div>
+    </div>
+    <div class="btns">
+      <button class="start" id="againBtn">Nochmal!</button>
+      <button class="btn2" id="menuBtn">Auswahl ändern</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BESTENLISTE ===== -->
+<section id="board" class="screen page" hidden>
+  <div class="card">
+    <div class="headrow">
+      <button class="back" data-home aria-label="Zurück">←</button>
+      <div>
+        <span class="label">Bestenliste</span>
+        <h2 id="bTitle">Plus bis 100</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="seg" id="periodSeg">
+        <button data-p="week">Diese Woche</button><button data-p="all">Ewige Liste</button>
+      </div>
+      <select id="boardSel" aria-label="Andere Bestenliste wählen"></select>
+    </div>
+    <ol class="rank" id="bList"></ol>
+    <p class="hint" id="bEmpty" hidden>Hier hat sich noch niemand eingetragen. Spiel diese Auswahl und hol dir Platz 1!</p>
+    <div class="sec">
+      <span class="label" id="champLabel">Champions</span>
+      <div class="champs" id="champs"></div>
+      <p class="hint">Jede Rechenart und jeder Zahlenraum hat einen eigenen Champion. Tippe ein Feld an, um seine Liste zu sehen.</p>
+    </div>
+    <p class="hint" id="modeHint"></p>
+  </div>
+</section>
+
+<!-- ===== LEHRKRAFT ===== -->
+<section id="teacher" class="screen page" hidden>
+  <div class="card">
+    <div class="headrow">
+      <button class="back" data-home aria-label="Zurück">←</button>
+      <h2>Einstellungen für die Lehrkraft</h2>
+    </div>
+    <div id="tNoAccess" class="hint" hidden>Diese Einstellungen kann nur die Lehrkraft ändern, der die Seite gehört.</div>
+    <div id="tLogin" class="sec" hidden>
+      <p class="hint">Melde dich mit dem Lehrkraft-Konto an, das in Firebase angelegt ist. Die Kinder können hier nichts verstellen.</p>
+      <input id="loginMail" type="email" autocomplete="username" placeholder="E-Mail">
+      <input id="loginPw" type="password" autocomplete="current-password" placeholder="Passwort">
+      <div class="row"><span class="msg err" id="loginMsg"></span><button class="small-btn" id="loginBtn">Anmelden</button></div>
+    </div>
+    <div id="tGate" class="sec" hidden>
+      <p class="hint">Bitte PIN eingeben.</p>
+      <div class="namerow">
+        <input id="pinIn" type="password" inputmode="numeric" maxlength="8" autocomplete="off" placeholder="PIN">
+        <button class="small-btn" id="pinGo">Entsperren</button>
+      </div>
+      <p class="msg err" id="pinMsg"></p>
+    </div>
+    <div id="tPanel" hidden>
+      <div class="setrow">
+        <div><strong>Bestenliste</strong><p>Namen eintragen, Rekorde und Champions anzeigen.</p></div>
+        <button class="switch" role="switch" id="swBoard" aria-label="Bestenliste an oder aus"></button>
+      </div>
+      <div class="setrow">
+        <div><strong>Einträge löschen</strong><p>Zeigt in der Bestenliste ein ✕ neben jedem Eintrag, z. B. für Spaßnamen.</p></div>
+        <button class="switch" role="switch" id="swDel" aria-label="Löschmodus an oder aus"></button>
+      </div>
+      <div class="setrow" style="display:block">
+        <strong>Klassenliste</strong>
+        <p>Ein Vorname pro Zeile. Dann tippen die Kinder nach dem Spiel einfach ihren Namen an. Bleibt das Feld leer, tippen sie den Namen selbst ein.</p>
+        <div class="sec" style="margin-top:10px">
+          <textarea id="namesIn" placeholder="Mia&#10;Leon&#10;Emma"></textarea>
+          <div class="row"><span class="msg" id="namesMsg"></span><button class="small-btn" id="namesSave">Klassenliste speichern</button></div>
+        </div>
+      </div>
+      <div class="setrow" style="display:block" id="pinRow">
+        <strong>PIN für diese Einstellungen</strong>
+        <p>Damit die Kinder hier nichts verstellen. Leer lassen und speichern entfernt die PIN.</p>
+        <div class="namerow" style="margin-top:10px">
+          <input id="pinSet" inputmode="numeric" maxlength="8" autocomplete="off" placeholder="neue PIN">
+          <button class="small-btn" id="pinSave">PIN speichern</button>
+        </div>
+        <p class="msg" id="pinSetMsg"></p>
+      </div>
+      <p class="hint" id="tMode"></p>
+      <p class="hint" id="tVisits" hidden></p>
+      <button class="link" id="logoutBtn" hidden>Lehrkraft abmelden</button>
+    </div>
+  </div>
+</section>
+
+<script>
+/* Aufrufzähler: zählt nur, wie oft die Seite geöffnet wurde.
+   Keine Cookies, nichts auf dem Gerät gespeichert, keine Namen. Gleiche Datenbank wie die Bestenlisten. */
+function zaehleAufruf(app){
+  const DOCS = 'projects/x1-blitz/databases/(default)/documents';
+  const API = 'https://firestore.googleapis.com/v1/' + DOCS, KEY = 'AIzaSyBrMjH-YcHk9j6OI5s9tbPLmZSPA5j6wrQ';
+  const day = new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Berlin' });
+  const names = [app, app + '-' + day].map(id => DOCS + '/zaehler/' + id);
+  const post = (path, body) => fetch(API + path + '?key=' + KEY, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+  return post(':commit', { writes: names.map(name => ({ update: { name, fields: {} }, updateMask: { fieldPaths: [] }, updateTransforms: [{ fieldPath: 'n', increment: { integerValue: '1' } }] })) })
+    .then(r => r.ok ? post(':batchGet', { documents: names }) : Promise.reject(new Error('zaehler')))
+    .then(r => r.json())
+    .then(rows => {
+      const val = {}; (Array.isArray(rows) ? rows : []).forEach(x => { if (x.found) val[x.found.name] = +(((x.found.fields || {}).n || {}).integerValue) || 0; });
+      return { total: val[names[0]] || 0, today: val[names[1]] || 0 };
+    });
+}
+</script>
+
+<script id="gen">
+/* ===== Aufgaben-Generator (ohne Oberfläche, damit er sich einzeln testen lässt) =====
+   Jede Aufgabe entsteht als Plusaufgabe a + b = s. Minusaufgaben sind die Umkehrung: s − b = a.
+   "Über den Zehner" heißt: Die Ziffern an der Übergangsstelle u (1 = Einer, 10 = Zehner) ergeben zusammen 10 oder mehr.
+   Bis 1000 geht es um Zehner- UND Hunderterübergang (z. B. 347 + 8, 485 + 40, 380 + 250). */
+const PMGEN = (() => {
+  const rnd = (a, z) => a + Math.floor(Math.random() * (z - a + 1));
+  const dig = (n, u) => Math.floor(n / u) % 10;
+  const shuffle = a => { for (let i = a.length - 1; i > 0; i--){ const j = Math.random() * (i + 1) | 0; [a[i], a[j]] = [a[j], a[i]]; } return a; };
+
+  // Aufgabentypen je Zahlenraum: [Gewicht bei "Immer über den Zehner", Gewicht bei "Manchmal", Erzeuger → [a, b, u]]
+  const nz = (a, z) => { let v; do v = rnd(a, z); while (v % 10 === 0); return v; };   // keine Zehnerzahl
+  const TYPES = {
+    20: [
+      [85, 35, () => [rnd(2, 9), rnd(2, 9), 1]],                       // 8 + 7
+      [15, 65, () => [rnd(11, 18), rnd(1, 9), 1]]                      // 13 + 5, 13 + 7 = 20
+    ],
+    50: [
+      [45, 45, R => [nz(11, R - 2), rnd(2, 9), 1]],                    // 37 + 6
+      [55, 55, R => [nz(11, R - 11), nz(11, R - 11), 1]]               // 14 + 17
+    ],
+    1000: [
+      [25, 25, () => [nz(101, 998), rnd(2, 9), 1]],                    // 347 + 8
+      [20, 20, () => [nz(101, 989), nz(11, 99), 1]],                   // 356 + 27
+      [30, 30, () => [rnd(11, 89) * 10, rnd(11, 89) * 10, 10]],         // 380 + 250
+      [25, 25, () => [rnd(101, 999), rnd(2, 9) * 10, 10]]              // 485 + 40
+    ]
+  };
+  TYPES[100] = TYPES[50];
+
+  function pickType(R, cross){
+    const list = TYPES[R], w = list.map(t => t[cross ? 0 : 1]);
+    let x = Math.random() * w.reduce((s, v) => s + v, 0);
+    for (let i = 0; i < list.length; i++){ x -= w[i]; if (x < 0) return list[i]; }
+    return list[list.length - 1];
+  }
+  // Ein Paar a + b mit gewünschtem Übergang (wantCross) im Zahlenraum R
+  function pair(R, wantCross, op){
+    for (let tries = 0; tries < 400; tries++){
+      const t = pickType(R, wantCross), [a, b, u] = t[2](R), s = a + b;
+      if (s > R || a < 1 || b < 1) continue;
+      if (u === 10 && (a % 10) + (b % 10) >= 10) continue;            // bei Zehnerzahlen-Typen kein zusätzlicher Einerübergang
+      if (s === 10 * u) continue;                                      // 5 + 5, 10 − 5: kein echter Übergang
+      const ds = dig(a, u) + dig(b, u);
+      // ds = 10 (z. B. 13 + 7 = 20): bei Plus eher "zum Zehner ergänzen", bei Minus (20 − 7) echter Übergang
+      const cross = ds > 10 || (ds === 10 && Math.random() < (op === '-' ? 0.5 : 0.15));
+      const plain = ds < 10;
+      if (wantCross ? !cross : !plain) continue;
+      if (R === 20 && !wantCross && a + b < 6) continue;                // keine Mini-Aufgaben wie 2 + 3
+      return { a, b, u, s, cross: ds >= 10 };
+    }
+    return null;
+  }
+  // Eine Aufgabe: op 'plus' | 'minus' | 'mix', R Zahlenraum, cross true = immer Übergang
+  function task(op, R, cross){
+    const o = op === 'mix' ? (Math.random() < 0.5 ? '+' : '-') : op === 'plus' ? '+' : '-';
+    const wantCross = cross ? true : Math.random() < 0.5;
+    const p = pair(R, wantCross, o) || pair(R, !wantCross, o);
+    const big = Math.max(p.a, p.b), small = Math.min(p.a, p.b);
+    let x, y, c;
+    if (o === '+'){
+      // meist große Zahl zuerst (37 + 6), manchmal getauscht (6 + 37)
+      const swap = big - small >= 10 ? Math.random() < 0.25 : Math.random() < 0.5;
+      x = swap ? small : big; y = swap ? big : small; c = p.s;
+    } else {
+      // meist die kleinere Zahl abziehen (43 − 6), manchmal Ergänzen (43 − 37)
+      const takeSmall = big - small >= 10 ? Math.random() < 0.8 : Math.random() < 0.5;
+      x = p.s; y = takeSmall ? small : big; c = p.s - y;
+    }
+    return { op: o, x, y, c, u: p.u, R, cross: p.cross };
+  }
+  function tasks(op, R, cross, n){
+    const out = [], seen = new Set();
+    let guard = 0;
+    while (out.length < n && guard++ < n * 60){
+      const t = task(op, R, cross), key = t.x + t.op + t.y;
+      if (seen.has(key) && guard < n * 40) continue;
+      const prev = out[out.length - 1];
+      if (prev && (prev.c === t.c || (prev.x === t.x && prev.op === t.op))) continue;
+      seen.add(key); t.opts = options(t); out.push(t);
+    }
+    return out;
+  }
+
+  // Drei falsche Antworten, die typische Fehler zeigen:
+  // Übergang vergessen (14 + 17 = 21, 43 − 17 = 36), Ziffern verdreht abgezogen (43 − 17 = 34), knapp daneben (±1, ±2)
+  function options(t){
+    const { op, x, y, c, u, R } = t, T = 10 * u;
+    const used = new Set([c]), picks = [];
+    const ok = v => Number.isInteger(v) && v > 0 && v <= R && !used.has(v);
+    const take = (list, k) => { for (const v of list){ if (picks.length >= k) break; if (ok(v)){ picks.push(v); used.add(v); } } };
+    const forgot = op === '+' ? c - T : c + T, extra = op === '+' ? c + T : c - T;
+    let swapErr = null;
+    if (op === '-' && dig(x, u) < dig(y, u)) swapErr = c + T - (10 + 2 * dig(x, u) - 2 * dig(y, u)) * u;
+    const near = shuffle([c + u, c - u, c + 2 * u, c - 2 * u]);
+    take(t.cross ? (swapErr != null && Math.random() < 0.5 ? [swapErr, forgot] : [forgot, swapErr]) : shuffle([forgot, extra]), 1);
+    take(near, 2);
+    take(shuffle([extra, forgot, swapErr, near[2], near[3], c + T + u, c - T - u, c + T - u, c - T + u]), 3);
+    for (let k = 3; picks.length < 3 && k < 60; k++) take([c + k * u, c - k * u, c + k, c - k], 3);
+    return shuffle([c, ...picks]);
+  }
+
+  // Rechenweg als Text, nur bei Aufgaben mit Übergang (bzw. zweiteiligen Zahlen)
+  const M = '−';
+  function way(t){
+    const { op, x, y, c, u } = t, T = 10 * u;
+    if (op === '+'){
+      const A = Math.max(x, y), B = Math.min(x, y);
+      if (B < T){
+        if (!t.cross) return null;
+        if (u === 10 && A % 10){                                     // 666 + 50: erst 60 + 50 = 110 rechnen
+          const z = A % 100 - A % 10;
+          return z + ' + ' + B + ' = ' + (z + B) + ' · ' + A + ' + ' + B + ' = ' + c;
+        }
+        const d = T - A % T;                                         // bis zum nächsten Zehner (bzw. Hunderter) ergänzen
+        if (d === B) return A + ' + ' + d + ' = ' + c;
+        return A + ' + ' + d + ' = ' + (A + d) + ' · ' + (A + d) + ' + ' + (B - d) + ' = ' + c;
+      }
+      // stellenweise: Zehner zusammen, Einer zusammen, dann beides
+      const AL = A % T, BL = B % T, AH = A - AL, BH = B - BL;
+      return AH + ' + ' + BH + ' = ' + (AH + BH) + ' · ' + AL + ' + ' + BL + ' = ' + (AL + BL) + ' · ' + (AH + BH) + ' + ' + (AL + BL) + ' = ' + c;
+    }
+    // Minus schrittweise: erst die großen Stellen, dann bis zum Zehner, dann den Rest
+    if (u === 10 && y < T && x % 10 && t.cross){                    // 716 − 50: erst 110 − 50 = 60 rechnen
+      const z = x % 100 - x % 10 + 100;
+      return z + ' ' + M + ' ' + y + ' = ' + (z - y) + ' · ' + x + ' ' + M + ' ' + y + ' = ' + c;
+    }
+    const steps = []; let m = x, rest = y;
+    if (y >= T){ const YH = y - y % T; steps.push(m + ' ' + M + ' ' + YH + ' = ' + (m - YH)); m -= YH; rest = y % T; }
+    if (rest){
+      const d = m % T;                                               // zurück bis zum Zehner (bzw. Hunderter)
+      if (dig(m, u) < dig(rest, u)){
+        if (d) { steps.push(m + ' ' + M + ' ' + d + ' = ' + (m - d)); m -= d; rest -= d; }
+        else if (steps.length === 0){ return T + ' ' + M + ' ' + rest + ' = ' + (T - rest) + ' · ' + (m - T) + ' + ' + (T - rest) + ' = ' + c; }
+      }
+      steps.push(m + ' ' + M + ' ' + rest + ' = ' + (m - rest));
+    }
+    return steps.length > 1 ? steps.join(' · ') : null;
+  }
+
+  // Beispiel für die Startseite
+  function example(op, R, cross){
+    const ts = []; const seen = new Set();
+    const ops = op === 'mix' ? ['plus', 'minus'] : [op, op];
+    for (const o of ops){ for (let i = 0; i < 20; i++){ const t = task(o, R, cross); if (t.op === '+' && t.x < t.y) [t.x, t.y] = [t.y, t.x]; if (!seen.has(t.c)){ seen.add(t.c); ts.push(t); break; } } }
+    return ts;
+  }
+  return { task, tasks, options, way, example, dig };
+})();
+</script>
+
+<script>
+(() => {
+  const $ = s => document.querySelector(s);
+  const PENALTY = 3000, LOCK_MS = 140;
+  const store = {
+    get(k, d){ try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch(e){ return d; } },
+    set(k, v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){} }
+  };
+  const fmt = ms => (ms / 1000).toFixed(1).replace('.', ',');
+  const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+  const SIGN = { '+': '+', '-': '−' };
+  const tText = t => t.x + ' ' + SIGN[t.op] + ' ' + t.y;
+
+  function isoWeek(d = new Date()){
+    const t = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+    const day = t.getUTCDay() || 7; t.setUTCDate(t.getUTCDate() + 4 - day);
+    const y = t.getUTCFullYear(), w = Math.ceil(((t - Date.UTC(y, 0, 1)) / 864e5 + 1) / 7);
+    return y + '-W' + String(w).padStart(2, '0');
+  }
+  const WEEK = isoWeek();
+
+  // ---------- Firebase (gleiches Projekt wie Einmaleins-Blitz, eigene Sammlungen) ----------
+  const FIREBASE = {
+    apiKey: "AIzaSyBrMjH-YcHk9j6OI5s9tbPLmZSPA5j6wrQ",
+    authDomain: "x1-blitz.firebaseapp.com",
+    projectId: "x1-blitz",
+    storageBucket: "x1-blitz.firebasestorage.app",
+    messagingSenderId: "164347459422",
+    appId: "1:164347459422:web:b9672ca1a2ce970d9481cf"
+  };
+  const FB_VER = '10.12.2';
+  const COL_SCORES = 'pm_scores', COL_CFG = 'pm_config';
+  let F = null;
+
+  // ---------- Daten: geteilt (claude.ai-db oder Firebase) oder nur dieses Gerät ----------
+  const DEF_CFG = { board: true, names: [], pin: '' };
+  const S = { mode: 'pending', db: null, canAdmin: true, all: new Map(), week: new Map(), cfg: { ...DEF_CFG },
+              unlocked: false, delMode: false, viewBoard: null, period: 'week', visits: null };
+
+  function loadLocal(){
+    const obj = store.get('pmb-local-scores', {});
+    S.all = new Map(); S.week = new Map();
+    for (const [id, d] of Object.entries(obj)){
+      if (d.period === 'all') S.all.set(id, d); else if (d.period === WEEK) S.week.set(id, d);
+    }
+    S.cfg = { ...DEF_CFG, ...store.get('pmb-local-config', {}) };
+  }
+  async function saveScore(id, doc){
+    if (S.mode === 'shared'){ await S.db.collection('scores').doc(id).set(doc); }
+    else if (S.mode === 'fire'){ await F.fs.setDoc(F.fs.doc(F.db, COL_SCORES, id), doc); }
+    else {
+      const obj = store.get('pmb-local-scores', {}); obj[id] = doc; store.set('pmb-local-scores', obj);
+      (doc.period === 'all' ? S.all : S.week).set(id, doc);
+    }
+  }
+  async function deleteScore(id){
+    if (S.mode === 'shared'){ await S.db.doc('scores/' + id).delete(); }
+    else if (S.mode === 'fire'){ await F.fs.deleteDoc(F.fs.doc(F.db, COL_SCORES, id)); }
+    else { const obj = store.get('pmb-local-scores', {}); delete obj[id]; store.set('pmb-local-scores', obj); S.all.delete(id); S.week.delete(id); renderAll(); }
+  }
+  async function saveCfg(patch){
+    const next = { ...S.cfg, ...patch };
+    if (S.mode === 'shared'){ await S.db.doc('config/main').set(next); }
+    else if (S.mode === 'fire'){ await F.fs.setDoc(F.fs.doc(F.db, COL_CFG, 'main'), { board: next.board !== false, names: next.names || [] }); }
+    else { store.set('pmb-local-config', next); S.cfg = next; renderAll(); }
+  }
+
+  async function initData(){
+    let db = null, user = null;
+    try { if (window.claude && window.claude.use){ db = await window.claude.use('db'); user = await window.claude.use('user'); } } catch(e){ db = null; }
+    if (db){
+      S.mode = 'shared'; S.db = db;
+      try { S.canAdmin = user ? await user.canEdit() : false; } catch(e){ S.canAdmin = false; }
+      const col = db.collection('scores');
+      const onErr = () => {};
+      col.where('period', '==', 'all').limit(1000).onSnapshot(s => { S.all = new Map(s.docs.map(d => [d.id, d.data()])); renderAll(); }, onErr);
+      col.where('period', '==', WEEK).limit(1000).onSnapshot(s => { S.week = new Map(s.docs.map(d => [d.id, d.data()])); renderAll(); }, onErr);
+      db.doc('config/main').onSnapshot(s => { S.cfg = { ...DEF_CFG, ...(s.exists ? s.data() : {}) }; renderAll(); }, onErr);
+    } else if (!(await initFire())){
+      S.mode = 'local'; loadLocal();
+    }
+    renderAll();
+  }
+
+  async function initFire(){
+    try {
+      const base = 'https://www.gstatic.com/firebasejs/' + FB_VER + '/';
+      const load = Promise.all([import(base + 'firebase-app.js'), import(base + 'firebase-firestore.js'), import(base + 'firebase-auth.js')]);
+      const timeout = new Promise((_, rej) => setTimeout(() => rej(new Error('timeout')), 8000));
+      const [appMod, fs, au] = await Promise.race([load, timeout]);
+      const app = appMod.initializeApp(FIREBASE);
+      F = { fs, au, db: fs.getFirestore(app), auth: au.getAuth(app), user: null };
+      // Erreichbarkeit (und Regeln) prüfen, bevor wir uns festlegen
+      await Promise.race([fs.getDoc(fs.doc(F.db, COL_CFG, 'main')), new Promise((_, rej) => setTimeout(() => rej(new Error('timeout')), 8000))]);
+      // Erst auf die Datenbank umschalten, dann die Anmeldung beobachten (sonst Anmelde-Rennen wie beim Vokabel-Blitz)
+      S.mode = 'fire';
+      const col = fs.collection(F.db, COL_SCORES);
+      fs.onSnapshot(fs.query(col, fs.where('period', '==', 'all'), fs.limit(1000)), s => { S.all = new Map(s.docs.map(d => [d.id, d.data()])); renderAll(); }, () => {});
+      fs.onSnapshot(fs.query(col, fs.where('period', '==', WEEK), fs.limit(1000)), s => { S.week = new Map(s.docs.map(d => [d.id, d.data()])); renderAll(); }, () => {});
+      fs.onSnapshot(fs.doc(F.db, COL_CFG, 'main'), s => { S.cfg = { ...DEF_CFG, ...(s.exists() ? s.data() : {}) }; renderAll(); }, () => {});
+      au.onAuthStateChanged(F.auth, u => { F.user = u; S.unlocked = !!u; if (!u) S.delMode = false; renderAll(); });
+      return true;
+    } catch(e){ F = null; S.mode = 'pending'; return false; }
+  }
+
+  // ---------- Bestenlisten-Logik ----------
+  // Schlüssel: Rechenart-Zahlenraum-Übergang-Anzahl, z. B. "plus-100-u-20" (u = immer Übergang, m = manchmal)
+  const OPS = ['plus', 'minus', 'mix'], RANGES = [20, 50, 100, 1000];
+  const OP_NAME = { plus: 'Plus', minus: 'Minus', mix: 'Plus und Minus' };
+  const OP_SYM = { plus: '+', minus: '−', mix: '±' };
+  const boardKey = (op, r, cross, n) => op + '-' + r + '-' + (cross ? 'u' : 'm') + '-' + n;
+  function parseBoard(key){ const [op, r, c, n] = key.split('-'); return { op, range: +r, cross: c === 'u', count: +n }; }
+  function boardName(key){
+    const b = parseBoard(key);
+    return OP_NAME[b.op] + ' bis ' + b.range + (b.cross ? '' : ' (auch ohne Übergang)');
+  }
+  const boardFull = key => boardName(key) + ' · ' + parseBoard(key).count + ' Aufgaben';
+  function normName(s){
+    s = String(s || '').replace(/\s+/g, ' ').trim().slice(0, 16);
+    return s ? s.charAt(0).toUpperCase() + s.slice(1) : '';
+  }
+  const nameKey = n => Array.from(n.toLowerCase()).map(c => c.codePointAt(0).toString(36)).join('.');
+  const docId = (board, period, name) => board + '~' + period + '~' + nameKey(name);
+  function entries(board, period){
+    const m = period === 'all' ? S.all : S.week;
+    return [...m.entries()].map(([id, d]) => ({ id, ...d })).filter(d => d.board === board)
+      .sort((a, b) => a.time - b.time || a.at - b.at);
+  }
+  const boardOn = () => S.cfg.board !== false;
+
+  // ---------- Einstellungen ----------
+  const saved = store.get('pmb-sel', {});
+  let op = OPS.includes(saved.op) ? saved.op : 'plus';
+  let range = RANGES.includes(saved.range) ? saved.range : 100;
+  let cross = saved.cross !== false;
+  let count = [10, 20, 30].includes(saved.count) ? saved.count : 20;
+  const curBoard = () => boardKey(op, range, cross, count);
+
+  document.querySelectorAll('#opSeg button').forEach(b => b.addEventListener('click', () => { op = b.dataset.op; refreshSetup(); }));
+  document.querySelectorAll('#rangeSeg button').forEach(b => b.addEventListener('click', () => { range = +b.dataset.r; refreshSetup(); }));
+  document.querySelectorAll('#crossSeg button').forEach(b => b.addEventListener('click', () => { cross = b.dataset.c === '1'; refreshSetup(); }));
+  document.querySelectorAll('#countSeg button').forEach(b => b.addEventListener('click', () => { count = +b.dataset.n; refreshSetup(); }));
+
+  let exKey = '';
+  function refreshSetup(){
+    document.querySelectorAll('#opSeg button').forEach(b => b.setAttribute('aria-pressed', b.dataset.op === op));
+    document.querySelectorAll('#rangeSeg button').forEach(b => b.setAttribute('aria-pressed', +b.dataset.r === range));
+    document.querySelectorAll('#crossSeg button').forEach(b => b.setAttribute('aria-pressed', (b.dataset.c === '1') === cross));
+    document.querySelectorAll('#countSeg button').forEach(b => b.setAttribute('aria-pressed', +b.dataset.n === count));
+    $('#crossLabel').textContent = range === 1000 ? 'Über den Zehner oder Hunderter' : 'Über den Zehner';
+    // Beispiel nur neu würfeln, wenn sich die Auswahl ändert (nicht bei jedem Datenbank-Update)
+    const k = op + range + cross;
+    if (k !== exKey){
+      exKey = k;
+      const ex = $('#example'); ex.textContent = ''; ex.append(el('span', 'hint', 'Zum Beispiel:'));
+      PMGEN.example(op, range, cross).forEach(t => ex.append(el('span', 'tag', tText(t))));
+    }
+    $('#toBoard').hidden = !boardOn();
+    const rec = $('#records'); rec.textContent = '';
+    if (boardOn()){
+      const key = curBoard(), topA = entries(key, 'all')[0], topW = entries(key, 'week')[0];
+      const line = (label, e) => { const d = el('div'); d.append(label + ': '); const s = el('span', 'crown', e.name); d.append(s, ' '); d.append(el('b', null, fmt(e.time) + ' s')); return d; };
+      if (topA) rec.append(line('Rekord ' + boardName(key), topA));
+      if (topW && (!topA || topW.id !== topA.id.replace('~all~', '~' + WEEK + '~'))) rec.append(line('Diese Woche vorne', topW));
+      if (!topA && !topW) rec.append(el('div', null, 'Noch kein Rekord für ' + boardName(key) + '. Sei die oder der Erste!'));
+    } else {
+      const best = store.get('pmb-best-' + curBoard(), null);
+      const d = el('div', null, best ? 'Bestzeit auf diesem Gerät: ' : 'Noch keine Bestzeit für diese Auswahl');
+      if (best) d.append(el('b', null, fmt(best) + ' s'));
+      rec.append(d);
+    }
+    store.set('pmb-sel', { op, range, cross, count });
+  }
+
+  // ---------- Bildschirme ----------
+  const SCREENS = ['setup','game','result','board','teacher'];
+  const show = id => { SCREENS.forEach(s => { $('#' + s).hidden = s !== id; }); window.scrollTo(0, 0); renderAll(); };
+  const visible = id => !$('#' + id).hidden;
+  document.querySelectorAll('[data-home]').forEach(b => b.addEventListener('click', () => show('setup')));
+  $('#toBoard').addEventListener('click', () => { S.viewBoard = curBoard(); show('board'); });
+  $('#toTeacher').addEventListener('click', () => show('teacher'));
+
+  function renderAll(){
+    if (visible('setup')) refreshSetup();
+    if (visible('board')) renderBoard();
+    if (visible('teacher')) renderTeacher();
+    if (visible('result') && last && last.entered) renderEntryDone();
+    if (visible('result') && last && !last.entered && !S.saving){ setEntryBusy(false); if (S.mode !== 'pending' && $('#entryMsg').textContent.startsWith('Verbinde')) $('#entryMsg').textContent = ''; }
+  }
+
+  // ---------- Spielablauf ----------
+  const ansBtns = [...document.querySelectorAll('.ans')];
+  const vEls = ansBtns.map(b => b.querySelector('.v'));
+  const qEl = $('#question'), timerEl = $('#timer'), progEl = $('#progText'), barEl = $('#barFill'), fbEl = $('#feedback'), flashEl = $('#flash');
+  let qs = [], idx = 0, t0 = 0, tq = 0, lastHit = 0, running = false, log = [], raf = 0, cdTimer = 0, fbTimer = 0, wake = null, last = null, playBoard = null;
+  const css = n => getComputedStyle(document.documentElement).getPropertyValue(n);
+
+  function startGame(){
+    playBoard = curBoard();
+    qs = PMGEN.tasks(op, range, cross, count); idx = 0; log = [];
+    show('game'); renderQ(); qEl.style.visibility = 'hidden';
+    ansBtns.forEach(b => b.style.visibility = 'hidden');
+    timerEl.textContent = '0,0'; fbEl.textContent = '';
+    requestWake();
+    const steps = ['3','2','1','Los!'];
+    const cdWrap = $('#countdown'), cd = $('#cd');
+    cdWrap.hidden = false; cdWrap.classList.remove('going'); let i = 0;
+    const tick = () => {
+      if (i < steps.length){
+        cd.textContent = steps[i]; cd.className = i === 3 ? 'go' : '';
+        void cd.offsetWidth; cd.classList.add('pop');
+        if (i === 3){ cdWrap.classList.add('going'); beginRun(); }
+        i++; cdTimer = setTimeout(tick, i === 4 ? 450 : 700);
+      } else { cdWrap.hidden = true; }
+    };
+    tick();
+  }
+  function beginRun(){
+    qEl.style.visibility = ''; ansBtns.forEach(b => b.style.visibility = '');
+    running = true; t0 = tq = performance.now(); lastHit = 0;
+    const loop = () => { if (!running) return; timerEl.textContent = fmt(performance.now() - t0); raf = requestAnimationFrame(loop); };
+    raf = requestAnimationFrame(loop);
+  }
+  function renderQ(){
+    const q = qs[idx], txt = tText(q);
+    qEl.textContent = txt + ' '; const eq = el('span', 'eq', '='); qEl.append(eq, ' ?');
+    // lange Aufgaben (356 + 27 = ?) schrumpfen, damit sie auf schmalen Geräten in eine Zeile passen
+    const len = txt.length + 4;
+    qEl.style.fontSize = 'min(17vmin, 11rem, ' + (150 / len).toFixed(1) + 'vw)';
+    q.opts.forEach((v, i) => { vEls[i].textContent = v; });
+    progEl.textContent = (idx + 1) + ' / ' + qs.length;
+    barEl.style.width = (idx / qs.length * 100) + '%';
+  }
+  function answer(i){
+    if (!running) return;
+    const now = performance.now();
+    if (now - lastHit < LOCK_MS) return;
+    lastHit = now;
+    const q = qs[idx], val = q.opts[i], right = val === q.c;
+    log.push({ ...q, chosen: val, right, ms: now - tq });
+    tq = now; idx++;
+    if (idx >= qs.length) finish(now); else renderQ();
+    flash(right);
+    if (!right){
+      fbEl.textContent = '✗ ' + tText(q) + ' = ' + q.c;
+      clearTimeout(fbTimer); fbTimer = setTimeout(() => fbEl.textContent = '', 1400);
+    }
+  }
+  function flash(right){
+    if (!flashEl.animate) return;
+    const col = right ? css('--ok') : css('--pen');
+    flashEl.animate([{ opacity: right ? .16 : .3, background: col }, { opacity: 0, background: col }], { duration: right ? 180 : 320, easing: 'ease-out' });
+  }
+  ansBtns.forEach((b, i) => {
+    b.addEventListener('pointerdown', e => { e.preventDefault(); answer(i); });
+    b.addEventListener('click', e => { if (e.detail === 0) answer(i); });
+  });
+  document.addEventListener('keydown', e => {
+    if ($('#game').hidden) return;
+    const k = ['1','2','3','4'].indexOf(e.key);
+    if (k >= 0){ e.preventDefault(); answer(k); }
+  });
+  function stopRun(){
+    running = false; cancelAnimationFrame(raf); clearTimeout(cdTimer); clearTimeout(fbTimer);
+    $('#countdown').hidden = true; releaseWake();
+  }
+  $('#quitBtn').addEventListener('click', () => { stopRun(); show('setup'); });
+
+  function finish(now){
+    stopRun();
+    const raw = now - t0, wrong = log.filter(l => !l.right), total = raw + wrong.length * PENALTY;
+    barEl.style.width = '100%';
+    const key = playBoard;
+    last = { board: key, time: Math.round(total), raw: Math.round(raw), errors: wrong.length, entered: false };
+
+    const devKey = 'pmb-best-' + key, best = store.get(devKey, null), devRecord = best === null || total < best;
+    if (devRecord) store.set(devKey, Math.round(total));
+
+    $('#rBoardLabel').textContent = 'Deine Zeit · ' + boardFull(key);
+    $('#rTime').textContent = fmt(total) + ' s';
+    $('#rCalc').textContent = wrong.length ? fmt(raw) + ' s gerechnet + ' + wrong.length + ' × 3 s Strafzeit' : 'Ohne Fehler, keine Strafzeit';
+    const recEl = $('#rRecord'); recEl.textContent = '';
+    if (!boardOn()){
+      if (devRecord) recEl.append(el('span', 'record', best === null ? 'Erste Bestzeit!' : 'Neuer Rekord!'));
+      else recEl.append(el('span', 'hint', 'Bestzeit: ' + fmt(best) + ' s'));
+    }
+    const avg = raw / log.length / 1000;
+    $('#rVerdict').textContent =
+      wrong.length === 0 && avg < 2 ? 'Blitzschnell und fehlerfrei!' :
+      wrong.length === 0 ? 'Fehlerfrei! Jetzt noch schneller?' :
+      avg < 2.5 ? 'Super schnell! Achte noch auf die Fehler.' :
+      wrong.length <= 2 ? 'Stark gemacht!' : 'Gut gekämpft! Nochmal?';
+    $('#rRight').textContent = log.length - wrong.length;
+    $('#rWrong').textContent = wrong.length;
+    $('#rAvg').textContent = avg.toFixed(1).replace('.', ',');
+
+    // Fehler mit Rechenweg (gleiche Aufgabe nur einmal)
+    const wl = $('#rWrongList'); wl.textContent = '';
+    $('#rWrongSec').hidden = wrong.length === 0;
+    const seenW = new Set();
+    wrong.forEach(l => {
+      const k = tText(l); if (seenW.has(k)) return; seenW.add(k);
+      const item = el('div', 'witem');
+      const t = el('span', 'tag', k + ' = ' + l.c); t.append(el('s', null, l.chosen)); item.append(t);
+      const w = PMGEN.way(l); if (w) item.append(el('span', 'way', w));
+      wl.append(item);
+    });
+    const sl = $('#rSlowList'); sl.textContent = '';
+    log.slice().sort((x, y) => y.ms - x.ms).slice(0, 3).forEach(l => { const t = el('span', 'tag', tText(l) + ' = ' + l.c); t.append(el('small', null, fmt(l.ms) + ' s')); sl.append(t); });
+
+    setupEntry();
+    setTimeout(() => show('result'), 250);
+  }
+
+  // ---------- Eintragen ----------
+  function setupEntry(){
+    const box = $('#entry');
+    box.hidden = !boardOn();
+    $('#entryForm').hidden = false; $('#entryDone').hidden = true;
+    $('#entryMsg').textContent = ''; $('#entryMsg').className = 'msg';
+    $('#nameIn').value = '';
+    const names = (S.cfg.names || []).filter(Boolean);
+    const nb = $('#nameBtns'); nb.textContent = '';
+    nb.hidden = names.length === 0; $('#nameRow').hidden = names.length > 0;
+    names.forEach(n => { const b = el('button', null, n); b.addEventListener('click', () => submitName(n)); nb.append(b); });
+    setEntryBusy(false);
+  }
+  function setEntryBusy(on){
+    S.saving = on;
+    $('#saveBtn').disabled = on || S.mode === 'pending';
+    $('#nameBtns').querySelectorAll('button').forEach(b => b.disabled = on || S.mode === 'pending');
+    if (S.mode === 'pending' && !on) $('#entryMsg').textContent = 'Verbinde mit der Bestenliste …';
+  }
+  $('#saveBtn').addEventListener('click', () => submitName($('#nameIn').value));
+  $('#nameIn').addEventListener('keydown', e => { if (e.key === 'Enter') submitName($('#nameIn').value); });
+  $('#skipBtn').addEventListener('click', () => { $('#entry').hidden = true; });
+  $('#fullBoardBtn').addEventListener('click', () => { S.viewBoard = last.board; show('board'); });
+
+  async function submitName(raw){
+    const name = normName(raw), msg = $('#entryMsg');
+    if (!name){ msg.textContent = 'Bitte gib deinen Vornamen ein.'; msg.className = 'msg err'; return; }
+    if (!last || last.entered || S.mode === 'pending') return;
+    setEntryBusy(true); msg.className = 'msg'; msg.textContent = 'Wird eingetragen …';
+    const idAll = docId(last.board, 'all', name), idWeek = docId(last.board, WEEK, name);
+    const prevAll = S.all.get(idAll), prevWeek = S.week.get(idWeek);
+    const base = { board: last.board, name, time: last.time, raw: last.raw, errors: last.errors, at: Date.now() };
+    try {
+      if (!prevAll || last.time < prevAll.time) await saveScore(idAll, { ...base, period: 'all' });
+      if (!prevWeek || last.time < prevWeek.time) await saveScore(idWeek, { ...base, period: WEEK });
+    } catch(e){
+      msg.className = 'msg err';
+      msg.textContent = e && e.code === 'invalid_argument'
+        ? 'Mit diesem Konto kann man sich nicht eintragen, nur zuschauen.'
+        : e && e.code === 'permission-denied'
+        ? 'Die Bestenliste hat den Eintrag abgelehnt. Bitte der Lehrkraft Bescheid sagen.'
+        : 'Eintragen hat nicht geklappt. Bitte gleich nochmal versuchen.';
+      setEntryBusy(false); return;
+    }
+    last.entered = true; last.name = name; last.prevAll = prevAll ? prevAll.time : null;
+    $('#entryForm').hidden = true; $('#entryDone').hidden = false;
+    renderEntryDone();
+  }
+
+  function renderEntryDone(){
+    const L = last, wk = entries(L.board, 'week'), al = entries(L.board, 'all');
+    const k = nameKey(L.name);
+    const rankOf = list => list.findIndex(e => nameKey(e.name) === k) + 1;
+    const rW = rankOf(wk), rA = rankOf(al);
+    const cheer = $('#cheer'), pm = $('#progressMsg');
+    cheer.className = 'cheer';
+    if (rA === 1){ cheer.textContent = L.name + ', du hältst den Rekord in ' + boardName(L.board) + '!'; cheer.classList.add('gold'); }
+    else if (rW === 1){ cheer.textContent = L.name + ', du bist diese Woche die Nummer 1!'; cheer.classList.add('gold'); }
+    else if (rW && rW <= 10){ cheer.textContent = 'Platz ' + rW + ' diese Woche!'; }
+    else { cheer.textContent = 'Eingetragen, ' + L.name + '!'; }
+
+    let p = '';
+    if (L.prevAll == null) p = 'Das ist deine erste Zeit in dieser Liste. Ab jetzt kannst du sie knacken!';
+    else if (L.time < L.prevAll) p = 'Neue persönliche Bestzeit! ' + fmt(L.prevAll - L.time) + ' s schneller als vorher.';
+    else p = 'Deine Bestzeit bleibt ' + fmt(L.prevAll) + ' s. Dir fehlen nur ' + fmt(L.time - L.prevAll) + ' s!';
+    const mine = wk.find(e => nameKey(e.name) === k);
+    if (rW > 10 && wk[9] && mine) p += ' Bis Platz 10 diese Woche fehlen dir ' + fmt(mine.time - wk[9].time) + ' s.';
+    pm.textContent = p;
+
+    const mini = $('#miniRank'); mini.textContent = '';
+    wk.slice(0, 5).forEach((e, i) => mini.append(rankItem(e, i + 1, nameKey(e.name) === k, false)));
+  }
+
+  function rankItem(e, pos, me, canDel){
+    const li = el('li', me ? 'me' : '');
+    li.append(el('span', 'pos' + (pos <= 3 ? ' p' + pos : ''), pos));
+    const nm = el('span', 'rname', e.name);
+    nm.append(el('small', null, e.errors ? e.errors + ' Fehler' : 'fehlerfrei'));
+    li.append(nm, el('span', 'rtime', fmt(e.time) + ' s'));
+    if (canDel){
+      const d = el('button', 'del', '✕'); d.setAttribute('aria-label', e.name + ' löschen');
+      d.addEventListener('click', async () => { d.disabled = true; try { await deleteScore(e.id); } catch(err){ d.disabled = false; } });
+      li.append(d);
+    } else li.append(el('span'));
+    return li;
+  }
+
+  // ---------- Bestenliste ansehen ----------
+  document.querySelectorAll('#periodSeg button').forEach(b => b.addEventListener('click', () => { S.period = b.dataset.p; renderBoard(); }));
+  $('#boardSel').addEventListener('change', e => { S.viewBoard = e.target.value; renderBoard(); });
+  const validKey = k => { const b = parseBoard(String(k)); return OPS.includes(b.op) && RANGES.includes(b.range) && [10, 20, 30].includes(b.count); };
+
+  function renderBoard(){
+    const key = S.viewBoard || curBoard(), vb = parseBoard(key);
+    $('#bTitle').textContent = boardFull(key);
+    document.querySelectorAll('#periodSeg button').forEach(b => b.setAttribute('aria-pressed', b.dataset.p === S.period));
+    // Auswahl: alle Listen mit Einträgen
+    const keys = new Set([key, curBoard()]);
+    for (const m of [S.all, S.week]) for (const d of m.values()) if (validKey(d.board)) keys.add(d.board);
+    const order = k => { const b = parseBoard(k); return OPS.indexOf(b.op) * 1e6 + b.range * 100 + (b.cross ? 0 : 50) + b.count; };
+    const sorted = [...keys].sort((a, b) => order(a) - order(b));
+    const sel = $('#boardSel'); sel.textContent = '';
+    sorted.forEach(k => { const o = el('option', null, boardFull(k)); o.value = k; o.selected = k === key; sel.append(o); });
+
+    const list = entries(key, S.period), ul = $('#bList'); ul.textContent = '';
+    const del = S.delMode && S.unlocked;
+    const myName = last && last.entered && last.board === key ? nameKey(last.name) : null;
+    list.slice(0, 10).forEach((e, i) => ul.append(rankItem(e, i + 1, myName === nameKey(e.name), del)));
+    if (list.length > 10){
+      if (del) list.slice(10).forEach((e, i) => ul.append(rankItem(e, i + 11, false, true)));
+      else ul.append(el('li', 'more', '+ ' + (list.length - 10) + ' weitere Kinder haben sich eingetragen'));
+    }
+    $('#bEmpty').hidden = list.length > 0;
+
+    // Champions: Zeilen = Rechenart, Spalten = Zahlenraum (bei gleicher Aufgabenzahl und Übergang-Einstellung)
+    $('#champLabel').textContent = 'Champions · ' + vb.count + ' Aufgaben' + (vb.cross ? '' : ' · auch ohne Übergang') + ' · ' + (S.period === 'week' ? 'diese Woche' : 'ewig');
+    const ch = $('#champs'); ch.textContent = '';
+    ch.append(el('span'));
+    RANGES.forEach(r => ch.append(el('span', 'colhead', 'bis ' + r)));
+    OPS.forEach(o => {
+      const h = el('span', 'rowhead', OP_SYM[o]); h.title = OP_NAME[o]; ch.append(h);
+      RANGES.forEach(r => {
+        const bk = boardKey(o, r, vb.cross, vb.count), top = entries(bk, S.period)[0];
+        const t = el('button', 'champ' + (top ? ' has' : '') + (bk === key ? ' cur' : ''));
+        t.setAttribute('aria-label', boardName(bk));
+        t.append(el('span', null, top ? top.name : '–'), el('small', null, top ? fmt(top.time) + ' s' : 'frei'));
+        t.addEventListener('click', () => { S.viewBoard = bk; renderBoard(); window.scrollTo(0, 0); });
+        ch.append(t);
+      });
+    });
+    $('#modeHint').textContent = S.mode === 'local'
+      ? 'Diese Bestenliste gilt nur auf diesem Gerät.'
+      : S.mode === 'pending' ? '' : 'Die Bestenliste ist auf allen Geräten gleich. Wochenlisten starten jeden Montag neu.';
+  }
+
+  // ---------- Lehrkraft ----------
+  function renderTeacher(){
+    const fire = S.mode === 'fire';
+    const noAccess = S.mode === 'shared' && !S.canAdmin;
+    const needLogin = fire && !(F && F.user);
+    const needPin = !fire && !!S.cfg.pin && !S.unlocked;
+    $('#tNoAccess').hidden = !noAccess;
+    $('#tLogin').hidden = !needLogin;
+    $('#tGate').hidden = noAccess || !needPin;
+    $('#tPanel').hidden = noAccess || needPin || needLogin || S.mode === 'pending';
+    $('#pinRow').hidden = fire;
+    $('#logoutBtn').hidden = !fire;
+    if (noAccess || needPin || needLogin || S.mode === 'pending') return;
+    S.unlocked = true;
+    $('#swBoard').setAttribute('aria-checked', boardOn());
+    $('#swDel').setAttribute('aria-checked', S.delMode);
+    if (document.activeElement !== $('#namesIn') && !$('#namesIn').dataset.dirty) $('#namesIn').value = (S.cfg.names || []).join('\n');
+    $('#tMode').textContent = S.mode === 'local'
+      ? 'Diese Seite läuft gerade ohne gemeinsame Bestenliste: Einstellungen und Einträge gelten nur auf diesem Gerät.'
+      : 'Einstellungen gelten für alle Geräte, auf denen die Seite geöffnet ist.';
+    const v = S.visits, tv = $('#tVisits');
+    tv.hidden = !(v && v.total);
+    if (v && v.total) tv.textContent = 'Aufrufe dieser Seite: ' + v.total.toLocaleString('de-DE') + ' · heute ' + v.today.toLocaleString('de-DE');
+  }
+  $('#loginBtn').addEventListener('click', async () => {
+    const m = $('#loginMsg'); m.textContent = '';
+    if (!F) return;
+    try { await F.au.signInWithEmailAndPassword(F.auth, $('#loginMail').value.trim(), $('#loginPw').value); $('#loginPw').value = ''; }
+    catch(e){ m.textContent = 'Anmeldung fehlgeschlagen. E-Mail und Passwort prüfen.'; }
+  });
+  $('#loginPw').addEventListener('keydown', e => { if (e.key === 'Enter') $('#loginBtn').click(); });
+  $('#logoutBtn').addEventListener('click', async () => { try { await F.au.signOut(F.auth); } catch(e){} show('setup'); });
+  $('#pinGo').addEventListener('click', () => {
+    if ($('#pinIn').value === String(S.cfg.pin)){ S.unlocked = true; $('#pinIn').value = ''; $('#pinMsg').textContent = ''; renderTeacher(); }
+    else $('#pinMsg').textContent = 'Die PIN stimmt nicht.';
+  });
+  $('#pinIn').addEventListener('keydown', e => { if (e.key === 'Enter') $('#pinGo').click(); });
+  $('#swBoard').addEventListener('click', async () => { try { await saveCfg({ board: !boardOn() }); } catch(e){} });
+  $('#swDel').addEventListener('click', () => { S.delMode = !S.delMode; renderTeacher(); });
+  $('#namesIn').addEventListener('input', () => { $('#namesIn').dataset.dirty = '1'; $('#namesMsg').textContent = ''; });
+  $('#namesSave').addEventListener('click', async () => {
+    const seen = new Set(), names = [];
+    $('#namesIn').value.split('\n').map(normName).forEach(n => { if (n && !seen.has(n.toLowerCase())){ seen.add(n.toLowerCase()); names.push(n); } });
+    try { await saveCfg({ names: names.slice(0, 40) }); delete $('#namesIn').dataset.dirty; $('#namesIn').value = names.join('\n'); $('#namesMsg').textContent = names.length ? names.length + ' Namen gespeichert' : 'Klassenliste geleert'; }
+    catch(e){ $('#namesMsg').textContent = 'Speichern hat nicht geklappt.'; }
+  });
+  $('#pinSave').addEventListener('click', async () => {
+    const p = $('#pinSet').value.trim();
+    try { await saveCfg({ pin: p }); $('#pinSet').value = ''; $('#pinSetMsg').textContent = p ? 'PIN gespeichert.' : 'PIN entfernt.'; }
+    catch(e){ $('#pinSetMsg').textContent = 'Speichern hat nicht geklappt.'; }
+  });
+
+  async function requestWake(){ try { wake = await navigator.wakeLock?.request('screen'); } catch(e){ wake = null; } }
+  function releaseWake(){ try { wake?.release(); } catch(e){} wake = null; }
+
+  $('#startBtn').addEventListener('click', startGame);
+  $('#againBtn').addEventListener('click', startGame);
+  $('#menuBtn').addEventListener('click', () => show('setup'));
+
+  refreshSetup();
+  initData();
+  if (location.hostname.endsWith('github.io')) zaehleAufruf('plusminus').then(v => { S.visits = v; renderAll(); }).catch(() => {});
+})();
+</script>
+
+</body></html>
