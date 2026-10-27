@@ -4999,6 +4999,129 @@
      ]
     }
    ]
+  },
+  {
+   "datum": "2026-10-26",
+   "wochentag": "Montag",
+   "zeit": "19:50",
+   "url": "https://www.logo.de/logo-vom-montag-26-oktober-2026-100.html",
+   "streitfrage": {
+    "text": "Sollen Schülerinnen und Schüler auch während der Schulzeit demonstrieren dürfen?",
+    "optionen": [
+     "ja",
+     "nein",
+     "weiß ich noch nicht"
+    ]
+   },
+   "beitraege": [
+    {
+     "titel": "Kreuzfahrtschiff stößt gegen Containerschiffe",
+     "kurz": "Im Hafen von Bremerhaven ist das Kreuzfahrtschiff „Mein Schiff 3“ beim Ablegen gegen Containerschiffe gestoßen. Eine starke Windböe hatte es abgetrieben. Die Schiffe wurden beschädigt, die geplante Reise fällt aus.",
+     "themen": [
+      "Verkehr & Mobilität"
+     ],
+     "politisch": false,
+     "link": "https://www.zdfheute.de/panorama/schiff-kreuzfahrt-bremerhaven-unfall-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Warum ist das Kreuzfahrtschiff gegen die Containerschiffe gestoßen?",
+       "optionen": [
+        "Eine starke Windböe hat es abgetrieben.",
+        "Der Motor ist plötzlich ausgefallen.",
+        "Ein Schlepper hat es falsch gezogen.",
+        "Das Ruder hat nicht mehr funktioniert."
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Wen betrifft der Unfall? Nenne zwei Gruppen von Menschen."
+      }
+     ]
+    },
+    {
+     "titel": "Wahl in Serbien",
+     "kurz": "In Serbien wurde ein neues Parlament gewählt. Gewonnen hat eine Liste von Studierenden, die fast zwei Jahre gegen die Regierung protestiert haben. Die Partei des bisherigen Machthabers Vučić hat verloren.",
+     "themen": [
+      "Wahlen & Demokratie",
+      "Europa",
+      "Protest & Beteiligung"
+     ],
+     "politisch": true,
+     "link": "https://www.zdfheute.de/politik/ausland/serbien-vucic-niederlage-wahl-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Wer hat die Wahl in Serbien gewonnen?",
+       "optionen": [
+        "eine Liste von Studierenden",
+        "die Partei von Aleksandar Vučić",
+        "ein Bündnis von Gewerkschaften",
+        "eine Partei von Bauern"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Warum haben so viele junge Menschen in Serbien gegen die Regierung protestiert?"
+      }
+     ]
+    },
+    {
+     "titel": "Jugendhaus-Projekt rund ums Essen",
+     "kurz": "In einem Jugendhaus gibt es ein Projekt rund ums Essen. logo! zeigt, was die Kinder und Jugendlichen dort machen.",
+     "themen": [
+      "Gesellschaft & Zusammenleben",
+      "Gesundheit & Ernährung"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Warum gibt es so ein Essensprojekt? Dann hör genau hin.",
+       "optionen": [
+        "Manche bekommen zu Hause kein warmes Essen.",
+        "Kinder sollen selbst kochen lernen.",
+        "Gemeinsam essen bringt Menschen zusammen.",
+        "Essen soll nicht weggeworfen werden."
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Würdest du bei so einem Projekt mitmachen? Begründe kurz."
+      }
+     ]
+    },
+    {
+     "titel": "Schutz für Meeresschildkröten",
+     "kurz": "Viele Meeresschildkröten sind vom Aussterben bedroht. Schon ihre Eier im Sand sind in Gefahr. Tierschützer helfen den Babys, sicher ins Meer zu kommen.",
+     "themen": [
+      "Umwelt, Klima & Energie",
+      "Natur & Wissen"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/schildkroetenschutz-einfach-erklaert-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Was ist für Schildkröten-Eier im Sand gefährlich? Dann hör genau hin.",
+       "optionen": [
+        "Tiere, die Eier fressen",
+        "Menschen am Strand",
+        "Licht von Hotels und Straßen",
+        "hohe Wellen bei Sturm"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Was passiert im Meer, wenn es keine Meeresschildkröten mehr gibt? Vermute."
+      }
+     ]
+    }
+   ]
   }
  ]
 }
