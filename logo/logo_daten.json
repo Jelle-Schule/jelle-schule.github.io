@@ -5122,6 +5122,129 @@
      ]
     }
    ]
+  },
+  {
+   "datum": "2026-10-27",
+   "wochentag": "Dienstag",
+   "zeit": "19:50",
+   "url": "https://www.logo.de/logo-vom-dienstag-27-oktober-2026-100.html",
+   "streitfrage": {
+    "text": "Soll ein Endlager dort gebaut werden, wo es am sichersten ist – auch wenn die Menschen dort dagegen sind?",
+    "optionen": [
+     "ja",
+     "nein",
+     "weiß ich noch nicht"
+    ]
+   },
+   "beitraege": [
+    {
+     "titel": "Suche nach einem Endlager für Atommüll",
+     "kurz": "In Deutschland wird ein sicherer Ort für Atommüll gesucht, ein Endlager. Jetzt steht fest: In fünf Bundesländern kommt dafür kein Gebiet mehr in Frage. Bis ein Ort gefunden ist, kann es noch viele Jahre dauern.",
+     "themen": [
+      "Umwelt, Klima & Energie",
+      "Regierung & Parlament"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/atommuell-endlager-suche-104.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Wie lange muss Atommüll sicher eingeschlossen bleiben?",
+       "optionen": [
+        "mindestens 1.000 Jahre",
+        "mindestens 10.000 Jahre",
+        "mindestens 100.000 Jahre",
+        "mindestens eine Million Jahre"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Warum ist die Suche nach einem Endlager in Deutschland so schwierig?"
+      }
+     ]
+    },
+    {
+     "titel": "Welttag des audiovisuellen Erbes",
+     "kurz": "Am 27. Oktober ist der Welttag des audiovisuellen Erbes. Dabei geht es um alte Filme, Fotos und Tonaufnahmen. logo! erklärt, warum es wichtig ist, sie gut aufzubewahren.",
+     "themen": [
+      "Geschichte",
+      "Digitales & Medien",
+      "Kultur & Feiertage"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/audiovisuelles-erbe-einfach-erklaert-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Was gehört zum audiovisuellen Erbe? Dann hör genau hin.",
+       "optionen": [
+        "alte Filme",
+        "alte Tonaufnahmen",
+        "alte Fernsehsendungen",
+        "alte Briefe"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Welche Aufnahme aus deinem Leben sollte man in 100 Jahren noch ansehen können?"
+      }
+     ]
+    },
+    {
+     "titel": "Motorrad fährt über Wasser",
+     "kurz": "logo! zeigt, wie ein Motorrad über das Wasser fährt, ohne unterzugehen.",
+     "themen": [
+      "Natur & Wissen",
+      "Verkehr & Mobilität"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Warum geht das Motorrad nicht sofort unter? Dann hör genau hin.",
+       "optionen": [
+        "Es fährt sehr schnell.",
+        "Es ist besonders leicht.",
+        "Es hat Schwimmkörper.",
+        "Die Reifen sind voller Luft."
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was passiert wohl, wenn das Motorrad auf dem Wasser zu langsam wird?"
+      }
+     ]
+    },
+    {
+     "titel": "Filmhund Lassie",
+     "kurz": "Lassie ist einer der berühmtesten Filmhunde der Welt. Die Hündin spielt seit vielen Jahrzehnten in Filmen und Serien mit. logo! berichtet über sie.",
+     "themen": [
+      "Kultur & Feiertage",
+      "Digitales & Medien"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Schätz zuerst: Seit wann gibt es Filme mit Lassie?",
+       "optionen": [
+        "seit etwa 10 Jahren",
+        "seit etwa 30 Jahren",
+        "seit etwa 50 Jahren",
+        "seit über 80 Jahren"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Wie geht es wohl einem Hund, der für einen Film arbeitet? Was ist wichtig?"
+      }
+     ]
+    }
+   ]
   }
  ]
 }
