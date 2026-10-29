@@ -5245,6 +5245,153 @@
      ]
     }
    ]
+  },
+  {
+   "datum": "2026-10-28",
+   "wochentag": "Mittwoch",
+   "zeit": "19:50",
+   "url": "https://www.logo.de/logo-vom-mittwoch-28-oktober-2026-102.html",
+   "streitfrage": {
+    "text": "Sollen Jugendliche schon ab 16 Jahren bei der Bundestagswahl wählen dürfen?",
+    "optionen": [
+     "ja",
+     "nein",
+     "weiß ich noch nicht"
+    ]
+   },
+   "beitraege": [
+    {
+     "titel": "Zugunglück in Spanien",
+     "kurz": "In Spanien sind zwei Schnellzüge zusammengestoßen. Viele Menschen sind gestorben oder wurden verletzt. Jetzt wird untersucht, wie es dazu kommen konnte.",
+     "themen": [
+      "Verkehr & Mobilität",
+      "Europa"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Was genau ist in Spanien passiert?",
+       "optionen": [
+        "Zwei Schnellzüge sind zusammengestoßen.",
+        "Ein Zug ist von einer Brücke gestürzt.",
+        "Ein Zug ist mit einem Lkw zusammengestoßen.",
+        "Ein Zug ist im Tunnel stecken geblieben."
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Warum ist es wichtig, die Ursache für das Unglück herauszufinden?"
+      }
+     ]
+    },
+    {
+     "titel": "Wahl in Israel",
+     "kurz": "In Israel wurde ein neues Parlament gewählt. So viele Menschen wie lange nicht haben mitgewählt. Einen klaren Sieger gibt es aber nicht, deshalb ist noch unklar, wer das Land regieren wird.",
+     "themen": [
+      "Wahlen & Demokratie",
+      "Welt & Internationales"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/israel-wahl-parlament-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Wie ist die Wahl in Israel ausgegangen?",
+       "optionen": [
+        "Es gibt keinen klaren Sieger.",
+        "Netanjahu hat klar gewonnen.",
+        "Eisenkot hat klar gewonnen.",
+        "Die Wahl muss wiederholt werden."
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was passiert, wenn keine Partei allein genug Stimmen für eine Regierung hat?"
+      }
+     ]
+    },
+    {
+     "titel": "Laubfärbung im Herbst",
+     "kurz": "Jedes Jahr im Herbst färben sich viele Blätter bunt und fallen dann vom Baum. logo! erklärt, warum das so ist.",
+     "themen": [
+      "Natur & Wissen"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/herbst-blaetter-farbe-einfach-erklaert-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Warum werden Blätter im Herbst bunt? Dann hör genau hin.",
+       "optionen": [
+        "Der Baum holt den grünen Farbstoff zurück.",
+        "Die Kälte färbt die Blätter.",
+        "Die Sonne bleicht die Blätter aus.",
+        "Der Regen spült das Grün weg."
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Warum werfen viele Bäume im Herbst ihre Blätter ab?"
+      }
+     ]
+    },
+    {
+     "titel": "Seerosen",
+     "kurz": "logo! zeigt Seerosen. Das sind Pflanzen, deren Blätter und Blüten auf dem Wasser schwimmen.",
+     "themen": [
+      "Natur & Wissen"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Wo hat die Seerose ihre Wurzeln? Dann hör genau hin.",
+       "optionen": [
+        "im Boden unter dem Wasser",
+        "frei schwimmend im Wasser",
+        "im Boden am Ufer",
+        "an Steinen im Wasser"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Welche Tiere nutzen Seerosen wohl? Wofür?"
+      }
+     ]
+    },
+    {
+     "titel": "Er will Sternekoch werden",
+     "kurz": "Jonas ist 13 Jahre alt und kocht schon wie ein Profi. Sein großer Traum: Er will einmal Sternekoch werden.",
+     "themen": [
+      "Gesundheit & Ernährung",
+      "Gesellschaft & Zusammenleben"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/sternekoch-jonas-102.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Was ist ein Sternekoch?",
+       "optionen": [
+        "Ein Koch, dessen Restaurant eine besondere Auszeichnung hat.",
+        "Ein Koch, der regelmäßig im Fernsehen kocht.",
+        "Ein Koch, der in einem großen Hotel arbeitet.",
+        "Ein Koch, der viele Kochbücher geschrieben hat."
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was ist dein großer Traum? Was müsstest du dafür üben?"
+      }
+     ]
+    }
+   ]
   }
  ]
 }
