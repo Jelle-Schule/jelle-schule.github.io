@@ -5392,6 +5392,154 @@
      ]
     }
    ]
+  },
+  {
+   "datum": "2026-10-29",
+   "wochentag": "Donnerstag",
+   "zeit": "19:50",
+   "url": "https://www.logo.de/logo-vom-donnerstag-29-oktober-2026-102.html",
+   "streitfrage": {
+    "text": "Sollen Schülerinnen und Schüler mitentscheiden, wofür ihre Schule Geld ausgibt?",
+    "optionen": [
+     "ja",
+     "nein",
+     "weiß ich noch nicht"
+    ]
+   },
+   "beitraege": [
+    {
+     "titel": "Probleme an Schulen",
+     "kurz": "An vielen Schulen in Deutschland gibt es Probleme: zu volle Klassen, kaputte Toiletten oder undichte Fenster. logo! berichtet schon seit 30 Jahren darüber.",
+     "themen": [
+      "Schule & Bildung"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/30-jahre-bildungsmisere-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Welche Probleme an Schulen werden genannt? Kreuze an.",
+       "optionen": [
+        "zu volle Klassen",
+        "kaputte Toiletten",
+        "undichte Fenster",
+        "zu lange Ferien"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Welches dieser Probleme spürst du an deiner Schule am meisten? Warum?"
+      }
+     ]
+    },
+    {
+     "titel": "Erklärt: Warum die Probleme nicht gelöst werden",
+     "kurz": "Viele Probleme an Schulen sind schon lange bekannt. Trotzdem werden sie nicht gelöst. logo! erklärt, woran das liegt.",
+     "themen": [
+      "Schule & Bildung",
+      "Regierung & Parlament"
+     ],
+     "politisch": true,
+     "link": "https://www.zdf.de/video/magazine/logo-154/bildungsproblem-einfach-erklaert-102",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Woran liegt es, dass Schulprobleme bleiben? Dann hör genau hin.",
+       "optionen": [
+        "Es fehlt Geld.",
+        "Es fehlen Lehrkräfte.",
+        "Viele Stellen sind zuständig.",
+        "Niemand weiß von den Problemen."
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Wer müsste sich deiner Meinung nach zuerst um die Probleme kümmern?"
+      }
+     ]
+    },
+    {
+     "titel": "Wahlbetrug-Vorwürfe in Brasilien",
+     "kurz": "In Brasilien hat Präsident Lula die Stichwahl gewonnen. Sein Gegner Flávio Bolsonaro behauptet, es habe Wahlbetrug gegeben. Beweise dafür hat er nicht genannt.",
+     "themen": [
+      "Wahlen & Demokratie",
+      "Welt & Internationales"
+     ],
+     "politisch": true,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Was behauptet der Verlierer der Wahl in Brasilien?",
+       "optionen": [
+        "Die Wahl sei betrogen worden.",
+        "Er habe knapp verloren.",
+        "Die Wahl müsse verschoben werden.",
+        "Es hätten zu wenige gewählt."
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was passiert mit einer Demokratie, wenn Verlierer Wahlen nicht anerkennen?"
+      }
+     ]
+    },
+    {
+     "titel": "Vorfreude auf Halloween",
+     "kurz": "In der Nacht vom 31. Oktober auf den 1. November ist Halloween. Viele verkleiden sich und sammeln Süßigkeiten. Dabei gelten aber Regeln: Es darf nichts beschädigt werden.",
+     "themen": [
+      "Kultur & Feiertage",
+      "Gesellschaft & Zusammenleben"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/halloween-regeln-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Was ist an Halloween erlaubt? Kreuze an.",
+       "optionen": [
+        "an Türen klingeln und fragen",
+        "sich gruselig verkleiden",
+        "Zahnpasta auf Autos schmieren",
+        "Eier an Hauswände werfen"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Was würdest du tun, wenn deine Gruppe an Halloween etwas beschädigen will?"
+      }
+     ]
+    },
+    {
+     "titel": "Spinnenforscher",
+     "kurz": "logo! stellt einen Forscher vor, der sich mit Spinnen beschäftigt.",
+     "themen": [
+      "Natur & Wissen"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/spinnenforscher-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Schätz zuerst: Was finden Forscher an Spinnen besonders spannend? Dann hör genau hin.",
+       "optionen": [
+        "ihre Netze und Spinnfäden",
+        "ihr Gift",
+        "ihr Verhalten bei der Jagd",
+        "ihre vielen Augen"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Wie geht es dir mit Spinnen – und hat sich das durch den Beitrag verändert?"
+      }
+     ]
+    }
+   ]
   }
  ]
 }
