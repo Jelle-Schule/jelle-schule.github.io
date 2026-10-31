@@ -5540,6 +5540,276 @@
      ]
     }
    ]
+  },
+  {
+   "datum": "2026-10-30",
+   "wochentag": "Freitag",
+   "zeit": "19:25",
+   "url": "https://www.logo.de/logo-vom-freitag-30-oktober-2026-102.html",
+   "streitfrage": {
+    "text": "Soll Deutschland heute gezielt Arbeitskräfte aus anderen Ländern holen?",
+    "optionen": [
+     "ja",
+     "nein",
+     "weiß ich noch nicht"
+    ]
+   },
+   "beitraege": [
+    {
+     "titel": "Kanzler Merz reist nach Asien",
+     "kurz": "Bundeskanzler Friedrich Merz ist in Asien unterwegs. Er besucht Singapur, Japan und Südkorea.",
+     "themen": [
+      "Regierung & Parlament",
+      "Welt & Internationales",
+      "Wirtschaft & Preise"
+     ],
+     "politisch": true,
+     "link": "https://www.bundesregierung.de/breg-de/suche/bundeskanzler-merz-reist-nach-singapur-japan-und-in-die-republik-korea-2458120",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Worüber spricht der Kanzler bei so einer Reise? Dann hör genau hin.",
+       "optionen": [
+        "Handel zwischen den Ländern",
+        "Zusammenarbeit von Firmen",
+        "Sicherheit in der Welt",
+        "Umwelt und Klima"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Was haben Menschen in Deutschland davon, wenn der Kanzler so weit reist?"
+      }
+     ]
+    },
+    {
+     "titel": "Erklärt: 65 Jahre Anwerbeabkommen mit der Türkei",
+     "kurz": "1961 haben Deutschland und die Türkei einen Vertrag geschlossen. Deutsche Firmen suchten Arbeitskräfte. Darum leben heute knapp drei Millionen Menschen mit türkischen Wurzeln in Deutschland.",
+     "themen": [
+      "Geschichte",
+      "Flucht & Migration",
+      "Gesellschaft & Zusammenleben"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/abkommen-tuerkei-deutschland-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Warum kamen ab 1961 viele Menschen aus der Türkei nach Deutschland?",
+       "optionen": [
+        "Deutsche Firmen suchten Arbeitskräfte.",
+        "Sie flohen vor einem Krieg.",
+        "Sie wollten hier studieren.",
+        "Ihre Familien lebten schon hier."
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Wie ging es den ersten Arbeitern aus der Türkei hier wohl? Hör genau hin."
+      }
+     ]
+    },
+    {
+     "titel": "Slackline-Rekord",
+     "kurz": "Auf einer Slackline wurde ein neuer Rekord aufgestellt. Eine Slackline ist ein schmales Band, das zwischen zwei Punkten gespannt ist.",
+     "themen": [
+      "Sport"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Welche Art Rekord ist es? Dann hör genau hin.",
+       "optionen": [
+        "die längste Strecke",
+        "die größte Höhe",
+        "die längste Zeit",
+        "die meisten Leute"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was braucht man, um so etwas zu schaffen? Nenne zwei Dinge."
+      }
+     ]
+    },
+    {
+     "titel": "Seehundstation vor dem Aus",
+     "kurz": "Eine Station, die kranken oder verlassenen Seehunden hilft, hat zu wenig Geld. Deshalb muss sie vielleicht schließen.",
+     "themen": [
+      "Natur & Wissen",
+      "Umwelt, Klima & Energie"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/seehundstation-aus-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Woher bekommt so eine Station ihr Geld? Dann hör genau hin.",
+       "optionen": [
+        "Spenden",
+        "Eintrittsgeld",
+        "Geld vom Staat",
+        "Patenschaften"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Was passiert mit den Seehunden, wenn die Station schließen muss?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "datum": "2026-10-31",
+   "wochentag": "Samstag",
+   "zeit": "19:50",
+   "url": "https://www.logo.de/logo-vom-samstag-31-oktober-2026-100.html",
+   "streitfrage": {
+    "text": "Sollen Schülerinnen und Schüler auch während der Schulzeit demonstrieren dürfen?",
+    "optionen": [
+     "ja",
+     "nein",
+     "weiß ich noch nicht"
+    ]
+   },
+   "beitraege": [
+    {
+     "titel": "Junge Menschen demonstrieren",
+     "kurz": "In mehr als 30 deutschen Städten sind Jugendliche auf die Straße gegangen. Sie fordern zum Beispiel besser ausgestattete Schulen und mehr Lehrkräfte.",
+     "themen": [
+      "Protest & Beteiligung",
+      "Schule & Bildung"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/genz-demonstriert-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Was fordern die Jugendlichen? Dann hör genau hin.",
+       "optionen": [
+        "bessere Schulen",
+        "mehr Lehrkräfte",
+        "mehr Klimaschutz",
+        "mehr Mitbestimmung"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Viele Schülervertretungen machen nicht mit. Warum wohl?"
+      }
+     ]
+    },
+    {
+     "titel": "Neues zum Ebola-Ausbruch",
+     "kurz": "In mehreren Ländern in Afrika gibt es einen Ausbruch der gefährlichen Krankheit Ebola. logo! berichtet, wie es dort gerade aussieht.",
+     "themen": [
+      "Gesundheit & Ernährung",
+      "Welt & Internationales"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Wie steckt man sich mit Ebola an?",
+       "optionen": [
+        "über Körperflüssigkeiten kranker Menschen",
+        "über die Luft, wie bei Schnupfen",
+        "durch Mückenstiche",
+        "durch Leitungswasser"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was bedeutet so ein Ausbruch für die Menschen, die dort leben?"
+      }
+     ]
+    },
+    {
+     "titel": "Dackelkunst",
+     "kurz": "In diesem Beitrag geht es um Kunst, bei der Dackel eine Rolle spielen.",
+     "themen": [
+      "Kultur & Feiertage"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Was ist mit „Dackelkunst“ gemeint? Dann schau genau hin.",
+       "optionen": [
+        "Bilder von Dackeln",
+        "Figuren in Dackelform",
+        "Kunststücke von Dackeln",
+        "Bilder, die Dackel malen"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Ist das für dich Kunst? Begründe deine Meinung."
+      }
+     ]
+    },
+    {
+     "titel": "Ein Halloween-Haus",
+     "kurz": "Zu Halloween schmücken manche Menschen ihr Haus besonders gruselig. logo! zeigt so ein Haus.",
+     "themen": [
+      "Kultur & Feiertage",
+      "Gesellschaft & Zusammenleben"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Schätz zuerst: Wie lange dauert es, so ein Haus zu schmücken?",
+       "optionen": [
+        "einen Tag",
+        "eine Woche",
+        "mehrere Wochen",
+        "mehrere Monate"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Wie finden das wohl die Nachbarn? Was meinst du?"
+      }
+     ]
+    },
+    {
+     "titel": "Erklärt: Deshalb kann Gruseln gut sein",
+     "kurz": "Viele Menschen gruseln sich gern, zum Beispiel an Halloween. logo! erklärt, warum Gruseln sogar guttun kann.",
+     "themen": [
+      "Natur & Wissen",
+      "Gesundheit & Ernährung"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Warum kann Gruseln guttun? Dann hör genau hin.",
+       "optionen": [
+        "Man fühlt sich danach erleichtert.",
+        "Man übt, mit Angst umzugehen.",
+        "Man erlebt etwas gemeinsam.",
+        "Der Körper wird wach und aufmerksam."
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Wann gruselst du dich gern – und wann nicht mehr?"
+      }
+     ]
+    }
+   ]
   }
  ]
 }
