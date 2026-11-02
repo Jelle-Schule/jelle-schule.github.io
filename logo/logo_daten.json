@@ -5810,6 +5810,153 @@
      ]
     }
    ]
+  },
+  {
+   "datum": "2026-11-01",
+   "wochentag": "Sonntag",
+   "zeit": "19:50",
+   "url": "https://www.logo.de/logo-vom-sonntag-1-november-2026-100.html",
+   "streitfrage": {
+    "text": "Sollten Jugendliche bei politischen Entscheidungen mehr mitbestimmen dürfen?",
+    "optionen": [
+     "ja",
+     "nein",
+     "weiß ich noch nicht"
+    ]
+   },
+   "beitraege": [
+    {
+     "titel": "Gen-Z-Proteste",
+     "kurz": "Viele junge Menschen haben in Deutschland für bessere Bildung und mehr Klimaschutz demonstriert. Die meisten blieben friedlich, in einigen Städten gab es danach aber Gewalt.",
+     "themen": [
+      "Protest & Beteiligung",
+      "Schule & Bildung"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/demo-ausschreitung-genz-regelt-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Wofür sind die jungen Menschen auf die Straße gegangen?",
+       "optionen": [
+        "bessere Bildung",
+        "mehr Klimaschutz",
+        "niedrigere Handypreise",
+        "längere Sommerferien"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Was kann passieren, wenn es nach einer friedlichen Demo Gewalt gibt?"
+      }
+     ]
+    },
+    {
+     "titel": "logo! erklärt: Wiederherstellung der Ökosysteme",
+     "kurz": "Wälder, Flüsse und Meere brauchen Hilfe. Die meisten Länder arbeiten daran, Lebensräume wieder gesund zu machen – das hilft Tieren, Pflanzen und Menschen.",
+     "themen": [
+      "Umwelt, Klima & Energie",
+      "Natur & Wissen"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/oekosystem-einfach-erklaert-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Wem hilft es, wenn Lebensräume wieder gesund werden?",
+       "optionen": [
+        "nur Tieren",
+        "nur Pflanzen",
+        "Tieren, Pflanzen und Menschen",
+        "nur Bauern und Förstern"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was könnte man in deiner Umgebung tun, damit die Natur gesünder wird?"
+      }
+     ]
+    },
+    {
+     "titel": "Foto des Monats",
+     "kurz": "Das Foto des Monats Oktober zeigt einen jungen Luchs im Thüringer Wald. Luchse waren in Deutschland ausgestorben, jetzt leben dort wieder welche.",
+     "themen": [
+      "Natur & Wissen"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/foto-des-monats-oktober-134.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Schätz zuerst: Wie viele Luchse leben ungefähr in Deutschland?",
+       "optionen": [
+        "etwa 20",
+        "etwa 190",
+        "etwa 2.000",
+        "etwa 20.000"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Warum freuen sich viele, dass der Luchs zurückkommt? Was könnte manche stören?"
+      }
+     ]
+    },
+    {
+     "titel": "Youth Olympic Games",
+     "kurz": "In Senegal in Afrika haben die Olympischen Jugendspiele begonnen. Zum ersten Mal findet eine olympische Veranstaltung in Afrika statt.",
+     "themen": [
+      "Sport",
+      "Welt & Internationales"
+     ],
+     "politisch": false,
+     "link": "https://www.zdfheute.de/sport/youth-olympic-games-yog-dakar-faq-2026-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Schätz zuerst: Wie viele junge Sportlerinnen und Sportler machen mit?",
+       "optionen": [
+        "etwa 270",
+        "etwa 2.700",
+        "etwa 27.000"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was bedeutet es wohl für Afrika, zum ersten Mal Olympia auszurichten?"
+      }
+     ]
+    },
+    {
+     "titel": "Skydiving-Rekord",
+     "kurz": "Fallschirmspringerinnen und Fallschirmspringer haben einen Rekord aufgestellt. logo! zeigt, wie das in der Luft aussieht.",
+     "themen": [
+      "Sport"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Was ist beim Rekordsprung wohl am schwierigsten? Dann schau genau hin.",
+       "optionen": [
+        "sich genau abzusprechen",
+        "in der Luft Formationen zu bilden",
+        "die Höhe auszuhalten",
+        "rechtzeitig den Schirm zu öffnen"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Würdest du dich trauen, aus einem Flugzeug zu springen? Warum (nicht)?"
+      }
+     ]
+    }
+   ]
   }
  ]
 }
