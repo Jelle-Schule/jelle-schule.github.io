@@ -5957,6 +5957,296 @@
      ]
     }
    ]
+  },
+  {
+   "datum": "2026-11-02",
+   "wochentag": "Montag",
+   "zeit": "19:50",
+   "url": "https://www.logo.de/logo-vom-montag-2-november-2026-100.html",
+   "beitraege": [
+    {
+     "titel": "Halloween: Nadeln in Süßigkeiten",
+     "kurz": "In mindestens neun Bundesländern wurden in Halloween-Süßigkeiten Nadeln und andere Metallteile gefunden. Ein Mädchen hat sich leicht verletzt, die Polizei ermittelt.",
+     "themen": [
+      "Gewalt & Sicherheit",
+      "Kultur & Feiertage"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Woran kann man verdächtige Süßigkeiten erkennen?",
+       "optionen": [
+        "kleine Einstichlöcher",
+        "kaputte Verpackung",
+        "komischer Geruch",
+        "bunte Farbe"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Was sollte man tun, wenn man eine verdächtige Süßigkeit findet?"
+      }
+     ]
+    },
+    {
+     "titel": "logo! erklärt: SOS-Notsignal",
+     "kurz": "Das Notsignal SOS gibt es seit 120 Jahren und es ist auf der ganzen Welt bekannt. Es gibt auch andere Zeichen, mit denen man um Hilfe bitten kann, zum Beispiel ein stilles Handzeichen.",
+     "themen": [
+      "Natur & Wissen",
+      "Gewalt & Sicherheit",
+      "Geschichte"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/alternativen-sos-signal-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Schätz zuerst: Seit wie vielen Jahren gibt es das SOS-Zeichen?",
+       "optionen": [
+        "seit 20 Jahren",
+        "seit 60 Jahren",
+        "seit 120 Jahren",
+        "seit 300 Jahren"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Warum ist ein stilles Handzeichen manchmal besser als laut rufen?"
+      }
+     ]
+    },
+    {
+     "titel": "Ritterspiele auf Rädern",
+     "kurz": "Bei diesem Wettkampf treten die Teilnehmenden wie Ritter gegeneinander an – aber auf Rädern statt auf Pferden.",
+     "themen": [
+      "Sport",
+      "Geschichte"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Worauf sitzen die Ritter hier? Dann schau genau hin.",
+       "optionen": [
+        "auf Fahrrädern",
+        "auf Rollstühlen",
+        "auf Rollern",
+        "auf Skateboards"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was ist bei diesem Wettkampf gleich wie bei echten Ritterspielen, was ist anders?"
+      }
+     ]
+    },
+    {
+     "titel": "Jüngster Formel-1-Weltmeister",
+     "kurz": "Der Italiener Kimi Antonelli ist neuer Formel-1-Weltmeister. Beim Rennen in Mexiko wurde er Dritter und hat sich damit den Titel gesichert.",
+     "themen": [
+      "Sport"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Schätz zuerst: Wie alt ist der neue Weltmeister Kimi Antonelli?",
+       "optionen": [
+        "17 Jahre",
+        "20 Jahre",
+        "24 Jahre",
+        "28 Jahre"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was braucht man außer einem schnellen Auto, um Weltmeister zu werden?"
+      }
+     ]
+    },
+    {
+     "titel": "USA-Extra mit Reporterin Isabelle",
+     "kurz": "logo!-Reporterin Isabelle ist durch die USA gereist. Sie zeigt, wie Kinder dort leben, und beantwortet Fragen zu ihrer Reise.",
+     "themen": [
+      "Welt & Internationales",
+      "Gesellschaft & Zusammenleben"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/vereinigte-staaten-von-amerika-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Was ist für Kinder in den USA anders als bei uns?",
+       "optionen": [
+        "Fahrt im gelben Schulbus",
+        "viel Sport in der Schule",
+        "Schule nur am Vormittag",
+        "Schuluniform an jeder Schule"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Was würdest du ein Kind in den USA gern fragen?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "datum": "2026-11-03",
+   "wochentag": "Dienstag",
+   "zeit": "19:50",
+   "url": "https://www.logo.de/logo-vom-dienstag-3-november-2026-104.html",
+   "streitfrage": {
+    "text": "Sollte es auch in Deutschland eine Wahl in der Mitte der Regierungszeit geben?",
+    "optionen": [
+     "ja",
+     "nein",
+     "weiß ich noch nicht"
+    ]
+   },
+   "beitraege": [
+    {
+     "titel": "Die US-Zwischenwahlen",
+     "kurz": "Heute wählen die Menschen in den USA neue Abgeordnete. Präsident Donald Trump und seine Partei, die Republikaner, kämpfen darum, die Mehrheit zu behalten.",
+     "themen": [
+      "Wahlen & Demokratie",
+      "Welt & Internationales"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/midterms-wahlkampf-usa-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Was wird für den Präsidenten schwieriger, wenn seine Partei die Mehrheit verliert?",
+       "optionen": [
+        "neue Gesetze machen",
+        "ins Ausland reisen",
+        "Reden halten",
+        "im Weißen Haus wohnen"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Warum ist diese Wahl auch für Menschen in Deutschland wichtig?"
+      }
+     ]
+    },
+    {
+     "titel": "logo! erklärt: Was sind die Midterms?",
+     "kurz": "Midterms heißt Zwischenwahlen. Sie finden in der Mitte der vierjährigen Amtszeit des Präsidenten statt. Gewählt werden alle Abgeordneten des Repräsentantenhauses und ein Teil des Senats.",
+     "themen": [
+      "Wahlen & Demokratie",
+      "Regierung & Parlament"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/midterms-wahlkampf-usa-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Wer wird bei den Midterms neu gewählt?",
+       "optionen": [
+        "alle Abgeordneten im Repräsentantenhaus",
+        "ein Teil des Senats",
+        "der Präsident",
+        "die Richter am obersten Gericht"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Was hat es für Folgen, wenn die Menschen mit dem Präsidenten unzufrieden sind?"
+      }
+     ]
+    },
+    {
+     "titel": "Was für ein Land sind die USA?",
+     "kurz": "Die USA sind ein riesiges Land mit 50 Bundesstaaten. logo! stellt das Land in einem kurzen Steckbrief vor.",
+     "themen": [
+      "Welt & Internationales",
+      "Natur & Wissen"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/vereinigte-staaten-von-amerika-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Schätz zuerst: Aus wie vielen Bundesstaaten bestehen die USA?",
+       "optionen": [
+        "16",
+        "25",
+        "50",
+        "100"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "wort",
+       "text": "Schreib ein Wort auf, das du im Beitrag nicht kanntest."
+      }
+     ]
+    },
+    {
+     "titel": "Was bewegt die Menschen im Land?",
+     "kurz": "logo! zeigt, worüber sich die Menschen in den USA vor der Wahl Gedanken machen und was ihnen wichtig ist.",
+     "themen": [
+      "Gesellschaft & Zusammenleben",
+      "Wahlen & Demokratie"
+     ],
+     "politisch": true,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Welche Themen sind den Menschen wichtig? Dann hör genau hin.",
+       "optionen": [
+        "Preise und Geld",
+        "Arbeit",
+        "Sicherheit",
+        "Umwelt"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Welches Thema wäre dir wichtig, wenn du wählen dürftest? Warum?"
+      }
+     ]
+    },
+    {
+     "titel": "Reporterin Isabelle berichtet aus den USA",
+     "kurz": "logo!-Reporterin Isabelle war in Texas und Kalifornien unterwegs. Sie hat dort Kinder getroffen und erzählt, wie sie leben.",
+     "themen": [
+      "Welt & Internationales",
+      "Gesellschaft & Zusammenleben"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/logo-extra-mit-euren-fragen-durch-die-usa-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "In welchen Bundesstaaten war Isabelle unterwegs?",
+       "optionen": [
+        "Texas",
+        "Kalifornien",
+        "Florida",
+        "Alaska"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Wie geht es den Kindern, die Isabelle trifft? Was ist ihnen wichtig?"
+      }
+     ]
+    }
+   ]
   }
  ]
 }
