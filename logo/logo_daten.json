@@ -6247,6 +6247,152 @@
      ]
     }
    ]
+  },
+  {
+   "datum": "2026-11-04",
+   "wochentag": "Mittwoch",
+   "zeit": "19:50",
+   "url": "https://www.logo.de/logo-vom-mittwoch-4-november-2026-102.html",
+   "streitfrage": {
+    "text": "Sollten schon 16-Jährige bei allen Wahlen wählen dürfen?",
+    "optionen": [
+     "ja",
+     "nein",
+     "weiß ich noch nicht"
+    ]
+   },
+   "beitraege": [
+    {
+     "titel": "USA: Die Ergebnisse der Midterms",
+     "kurz": "In den USA wurde gewählt. Jetzt wird ausgezählt, welche Partei im Parlament die Mehrheit bekommt. Die Wahl gilt als Test für Präsident Donald Trump.",
+     "themen": [
+      "Wahlen & Demokratie",
+      "Welt & Internationales"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/midterms-wahlkampf-usa-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Welche Partei hat bei der Wahl gut abgeschnitten? Dann hör genau hin.",
+       "optionen": [
+        "die Demokraten",
+        "die Republikaner",
+        "beide etwa gleich",
+        "ist noch nicht klar"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was kann die Gegenpartei tun, wenn sie im Parlament die Mehrheit hat?"
+      }
+     ]
+    },
+    {
+     "titel": "Schalte in die USA",
+     "kurz": "Eine Reporterin oder ein Reporter berichtet live aus den USA, wie die Menschen dort auf die Wahl reagieren.",
+     "themen": [
+      "Wahlen & Demokratie",
+      "Welt & Internationales"
+     ],
+     "politisch": true,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Was zeigt eine Wahl in der Mitte der Amtszeit vor allem?",
+       "optionen": [
+        "wie zufrieden die Menschen mit der Regierung sind",
+        "wer der nächste Präsident wird",
+        "wie viele Menschen in den USA leben"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Wie geht es wohl den Menschen, deren Partei verloren hat?"
+      }
+     ]
+    },
+    {
+     "titel": "logo! erklärt: Blutspenden",
+     "kurz": "In Deutschland werden jeden Tag 14.000 bis 15.000 Blutkonserven gebraucht, zum Beispiel nach Unfällen. Doch es spenden zu wenige Menschen. Blut spenden dürfen nur Erwachsene ab 18 Jahren.",
+     "themen": [
+      "Gesundheit & Ernährung",
+      "Gesellschaft & Zusammenleben"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/zu-wenig-blutkonserven-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Warum fehlt im Herbst oft Blut? Kreuze alle passenden Gründe an.",
+       "optionen": [
+        "viele haben Erkältung oder Grippe",
+        "viele sind im Urlaub",
+        "Blut hält nicht lange",
+        "Blut wird im Herbst teurer"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Was würdest du einem Erwachsenen sagen, damit er Blut spenden geht?"
+      }
+     ]
+    },
+    {
+     "titel": "Weltreisender zu Hause angekommen",
+     "kurz": "Der Brite Karl Bushby ist 28 Jahre lang um die Welt gegangen – rund 50.000 Kilometer, fast nur zu Fuß. Jetzt ist er in seiner Heimatstadt Hull in England angekommen.",
+     "themen": [
+      "Gesellschaft & Zusammenleben",
+      "Welt & Internationales"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Schätz zuerst: Wie lange war Karl Bushby unterwegs?",
+       "optionen": [
+        "8 Jahre",
+        "18 Jahre",
+        "28 Jahre",
+        "38 Jahre"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was hat Karl Bushby wohl am meisten vermisst? Warum?"
+      }
+     ]
+    },
+    {
+     "titel": "Weltrekord auf der Slackline",
+     "kurz": "Der Tiroler Florian Zoller ist über ein Band zwischen zwei Seilbahn-Gondeln balanciert. Das Band war etwa 144 Meter lang und hing rund 150 Meter über dem Boden. Das ist ein Weltrekord.",
+     "themen": [
+      "Sport"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Schätz zuerst: Wie lange brauchte er für die 144 Meter?",
+       "optionen": [
+        "etwa 2 Minuten",
+        "etwa 5 Minuten",
+        "etwa 15 Minuten",
+        "etwa eine Stunde"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was macht diesen Rekord so schwierig? Nenne einen Grund."
+      }
+     ]
+    }
+   ]
   }
  ]
 }
