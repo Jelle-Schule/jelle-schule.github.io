@@ -6393,6 +6393,240 @@
      ]
     }
    ]
+  },
+  {
+   "datum": "2026-11-05",
+   "wochentag": "Donnerstag",
+   "zeit": "19:50",
+   "url": "https://www.logo.de/logo-vom-donnerstag-5-november-2026-100.html",
+   "beitraege": [
+    {
+     "titel": "Hackerangriff auf Kühltheken",
+     "kurz": "Hacker haben Kühlanlagen von Supermärkten in mehreren Ländern Europas über das Internet verstellt, auch in Deutschland. Statt zu kühlen, wurden manche Kühltheken heiß. Viele Lebensmittel mussten weggeworfen werden.",
+     "themen": [
+      "Digitales & Medien",
+      "Gewalt & Sicherheit"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Wie konnten die Hacker an die Kühlanlagen kommen? Kreuze alle passenden an.",
+       "optionen": [
+        "Die Anlagen waren über das Internet erreichbar",
+        "Es wurden einfache Standard-Passwörter genutzt",
+        "Die Hacker waren nachts im Laden",
+        "Ein Kassierer hat geholfen"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Was passiert mit den Lebensmitteln, wenn die Kühlung ausfällt?"
+      }
+     ]
+    },
+    {
+     "titel": "Youth Olympic Games",
+     "kurz": "In Dakar im Senegal finden die Olympischen Jugend-Sommerspiele statt. Etwa 2.700 junge Sportlerinnen und Sportler zwischen 15 und 17 Jahren treten an. Zum ersten Mal gibt es Olympische Spiele in Afrika.",
+     "themen": [
+      "Sport",
+      "Welt & Internationales"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/youth-olympic-games-102.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Schätz zuerst: Wie alt sind die Sportler bei den Jugendspielen?",
+       "optionen": [
+        "10 bis 12 Jahre",
+        "12 bis 14 Jahre",
+        "15 bis 17 Jahre",
+        "18 bis 21 Jahre"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Warum ist es besonders, dass die Spiele diesmal in Afrika stattfinden?"
+      }
+     ]
+    },
+    {
+     "titel": "Weltclownstag",
+     "kurz": "Es gibt einen eigenen Tag für Clowns. logo! zeigt, was zur Arbeit von Clowns gehört.",
+     "themen": [
+      "Kultur & Feiertage",
+      "Gesellschaft & Zusammenleben"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Wo arbeiten Clowns? Kreuze an, dann hör genau hin.",
+       "optionen": [
+        "im Zirkus",
+        "im Krankenhaus",
+        "im Theater",
+        "bei Festen"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Warum kann Lachen Menschen guttun, zum Beispiel wenn sie krank sind?"
+      }
+     ]
+    },
+    {
+     "titel": "Reporterin Teresa testet Trampolinturnen",
+     "kurz": "Reporterin Teresa probiert Trampolinturnen aus. Das ist auch eine olympische Sportart.",
+     "themen": [
+      "Sport"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Was ist beim Trampolinturnen am schwierigsten?",
+       "optionen": [
+        "hoch genug springen",
+        "in der Mitte landen",
+        "Drehungen in der Luft",
+        "die Spannung im Körper halten"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Welche Sportart würdest du gern einmal ausprobieren? Warum?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "datum": "2026-11-06",
+   "wochentag": "Freitag",
+   "zeit": "19:25",
+   "url": "https://www.logo.de/logo-vom-freitag-6-november-2026-102.html",
+   "streitfrage": {
+    "text": "Sollten auch kleine Schlachthöfe Kameras haben müssen?",
+    "optionen": [
+     "ja",
+     "nein",
+     "weiß ich noch nicht"
+    ]
+   },
+   "beitraege": [
+    {
+     "titel": "Überwachung für Tierschutz",
+     "kurz": "Der Bundestag hat beschlossen: Größere Schlachthöfe müssen Kameras aufhängen. So soll kontrolliert werden, ob die Tiere nach den Regeln behandelt werden. Das Gesetz gilt ab 2027.",
+     "themen": [
+      "Regierung & Parlament",
+      "Natur & Wissen",
+      "Gesundheit & Ernährung"
+     ],
+     "politisch": true,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Was soll mit den Kameras in Schlachthöfen kontrolliert werden?",
+       "optionen": [
+        "ob die Tiere nach den Regeln behandelt werden",
+        "ob die Arbeiter pünktlich kommen",
+        "ob das Fleisch billig genug ist",
+        "ob genug Tiere geschlachtet werden"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Warum sind manche Politiker gegen die Kameras? Hör genau hin."
+      }
+     ]
+    },
+    {
+     "titel": "logo! erklärt: Internet",
+     "kurz": "logo! erklärt, wie das Internet funktioniert.",
+     "themen": [
+      "Digitales & Medien",
+      "Natur & Wissen"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/internet-soziale-netzwerke-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Wie kommen Daten zum Beispiel von Amerika zu uns?",
+       "optionen": [
+        "über Kabel im Meer",
+        "nur über Satelliten",
+        "über Handymasten",
+        "über das Stromnetz"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "wort",
+       "text": "Schreib ein Wort aus dem Beitrag auf, das du nicht kanntest."
+      }
+     ]
+    },
+    {
+     "titel": "Vogelspinnen geschmuggelt?",
+     "kurz": "logo! berichtet über geschmuggelte Vogelspinnen. Für Tiere aus Ländern außerhalb der EU gibt es strenge Regeln, wenn man sie einführen will.",
+     "themen": [
+      "Natur & Wissen",
+      "Gewalt & Sicherheit"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Warum ist es verboten, Tiere einfach so ins Land zu bringen? Kreuze alle passenden an.",
+       "optionen": [
+        "Tiere können beim Transport leiden",
+        "Manche Arten sind geschützt",
+        "Tiere können Krankheiten mitbringen",
+        "Tiere sind zu teuer"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Wie geht es wohl den Spinnen, wenn sie versteckt in einem Paket reisen?"
+      }
+     ]
+    },
+    {
+     "titel": "Solaranlagen sorgen für mehr Pflanzen",
+     "kurz": "Solaranlagen machen Strom aus Sonnenlicht. Forscher haben untersucht, ob unter und zwischen Solarpanels mehr Pflanzen wachsen.",
+     "themen": [
+      "Umwelt, Klima & Energie",
+      "Natur & Wissen"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Warum könnten unter Solarpanels mehr Pflanzen wachsen? Dann hör genau hin.",
+       "optionen": [
+        "Der Boden bleibt feuchter",
+        "Es gibt mehr Schatten",
+        "Weniger Wind trocknet den Boden",
+        "Die Panels düngen den Boden"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Was wäre gut daran, wenn Solaranlagen Strom machen und Pflanzen helfen?"
+      }
+     ]
+    }
+   ]
   }
  ]
 }
