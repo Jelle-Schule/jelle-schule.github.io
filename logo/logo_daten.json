@@ -6627,6 +6627,129 @@
      ]
     }
    ]
+  },
+  {
+   "datum": "2026-11-07",
+   "wochentag": "Samstag",
+   "zeit": "19:50",
+   "url": "https://www.logo.de/logo-vom-samstag-7-november-2026-102.html",
+   "streitfrage": {
+    "text": "Sollte man Menschen, die auf der Straße um Geld bitten, etwas geben?",
+    "optionen": [
+     "ja",
+     "nein",
+     "weiß ich noch nicht"
+    ]
+   },
+   "beitraege": [
+    {
+     "titel": "Bombendrohungen an Flughäfen?",
+     "kurz": "Seit Anfang November gab es in Europa viele Drohungen gegen Flüge und Flughäfen. Flüge wurden umgeleitet, manche Flughäfen kurz geschlossen. Eine echte Bombe wurde nicht gefunden.",
+     "themen": [
+      "Gewalt & Sicherheit",
+      "Verkehr & Mobilität",
+      "Europa"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Schätz zuerst: Wie viele Flüge waren in einer Woche von Drohungen betroffen?",
+       "optionen": [
+        "etwa 5",
+        "etwa 15",
+        "mehr als 50",
+        "mehr als 500"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was passiert mit einem Flug, wenn es eine Drohung gibt? Hör genau hin."
+      }
+     ]
+    },
+    {
+     "titel": "Sicher am Flughafen – einfach erklärt",
+     "kurz": "logo! erklärt, wie am Flughafen dafür gesorgt wird, dass Fliegen sicher ist.",
+     "themen": [
+      "Verkehr & Mobilität",
+      "Gewalt & Sicherheit"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Was darf nicht ins Handgepäck? Kreuze alle passenden an.",
+       "optionen": [
+        "ein Taschenmesser",
+        "eine große Wasserflasche",
+        "ein Buch",
+        "ein Ladekabel"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Warum gibt es am Flughafen so strenge Kontrollen?"
+      }
+     ]
+    },
+    {
+     "titel": "Lara checkt Hamburger Straßenmagazin",
+     "kurz": "Reporterin Lara besucht in Hamburg das Straßenmagazin „Hinz&Kunzt“. Sie zeigt, wie so eine Zeitung Menschen ohne Wohnung helfen kann.",
+     "themen": [
+      "Gesellschaft & Zusammenleben",
+      "Digitales & Medien"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/reporterin-lara-strassenmagazin-hamburg-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Wer verkauft das Straßenmagazin auf der Straße?",
+       "optionen": [
+        "Menschen ohne Wohnung",
+        "Reporter der Zeitung",
+        "Mitarbeiter der Stadt",
+        "Schüler als Ferienjob"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Wie hilft der Verkauf der Zeitung den Verkäufern? Nenne zwei Dinge."
+      }
+     ]
+    },
+    {
+     "titel": "Sport im Museum",
+     "kurz": "Im Kunstpalast in Düsseldorf stehen gerade Fitness- und Sportgeräte. Das Museum wird so zu einer Art Fitnessstudio.",
+     "themen": [
+      "Kultur & Feiertage",
+      "Sport"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/sport-im-museum-102.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Warum stellt ein Kunstmuseum Sportgeräte auf?",
+       "optionen": [
+        "Kunst soll mit Bewegung erlebt werden",
+        "Die Geräte sind selbst Kunstwerke",
+        "Ein Sportverein braucht gerade Platz",
+        "Das Museum will neue Besucher locken"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Würdest du lieber in so ein Museum gehen? Begründe deine Meinung."
+      }
+     ]
+    }
+   ]
   }
  ]
 }
