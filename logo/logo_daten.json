@@ -6750,6 +6750,153 @@
      ]
     }
    ]
+  },
+  {
+   "datum": "2026-11-08",
+   "wochentag": "Sonntag",
+   "zeit": "19:50",
+   "url": "https://www.logo.de/logo-vom-sonntag-8-november-2026-102.html",
+   "streitfrage": {
+    "text": "Sollten alle Menschen in Deutschland den Bundespräsidenten direkt wählen dürfen?",
+    "optionen": [
+     "ja",
+     "nein",
+     "weiß ich noch nicht"
+    ]
+   },
+   "beitraege": [
+    {
+     "titel": "Überflutete Zelte im Gazastreifen",
+     "kurz": "Im Gazastreifen leben wegen des Krieges viele Familien in Zelten. Starker Regen hat viele dieser Zelte überflutet.",
+     "themen": [
+      "Krieg & Konflikte",
+      "Welt & Internationales"
+     ],
+     "politisch": true,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Warum leben dort so viele Familien in Zelten?",
+       "optionen": [
+        "Viele Häuser wurden im Krieg zerstört",
+        "Wohnungen dort sind zu teuer",
+        "Zelte sind dort so üblich",
+        "Die Häuser werden gerade renoviert"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Wie geht es den Menschen, wenn ihr Zelt nass ist? Hör genau hin."
+      }
+     ]
+    },
+    {
+     "titel": "Was der Bundespräsident macht – einfach erklärt",
+     "kurz": "logo! erklärt, welche Aufgaben der Bundespräsident hat. Seit 2017 ist das Frank-Walter Steinmeier.",
+     "themen": [
+      "Regierung & Parlament",
+      "Wahlen & Demokratie"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/frank-walter-steinmeier-122.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Was gehört zu den Aufgaben des Bundespräsidenten? Kreuze alle passenden an.",
+       "optionen": [
+        "Gesetze unterschreiben",
+        "Deutschland bei Staatsbesuchen vertreten",
+        "Gesetze im Bundestag beschließen",
+        "die Regierung leiten"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Warum ist es wichtig, dass der Bundespräsident für alle Menschen spricht?"
+      }
+     ]
+    },
+    {
+     "titel": "Adler bekommt Prothese",
+     "kurz": "Ein verletzter Adler hat eine Prothese bekommen. Eine Prothese ist ein künstliches Ersatzteil für einen Körperteil.",
+     "themen": [
+      "Natur & Wissen"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Für welchen Körperteil bekommt der Adler eine Prothese?",
+       "optionen": [
+        "Schnabel",
+        "Bein",
+        "Flügel",
+        "Kralle"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was würde mit dem verletzten Adler ohne Hilfe passieren?"
+      }
+     ]
+    },
+    {
+     "titel": "Windkraftanlagen in China",
+     "kurz": "China baut so viele Windräder wie kein anderes Land der Welt. Windräder erzeugen Strom aus Wind.",
+     "themen": [
+      "Umwelt, Klima & Energie",
+      "Welt & Internationales"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Warum baut China so viele Windräder? Kreuze alle passenden an.",
+       "optionen": [
+        "Strom ohne Abgase erzeugen",
+        "weniger Kohle verbrauchen",
+        "viel Strom für viele Menschen",
+        "Windräder brauchen keinen Platz"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Fändest du ein Windrad in der Nähe deines Wohnorts gut? Warum?"
+      }
+     ]
+    },
+    {
+     "titel": "Schulklasse sammelt Pilze",
+     "kurz": "Eine Schulklasse sammelt im Wald Pilze. Pilze sind wichtig, damit das Leben im Wald funktioniert.",
+     "themen": [
+      "Natur & Wissen",
+      "Schule & Bildung"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/pilze-wald-einfach-erklaert-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Warum sind Pilze wichtig für den Wald? Kreuze alle passenden an.",
+       "optionen": [
+        "Sie zersetzen totes Laub und Holz",
+        "Sie helfen Bäumen, Wasser aufzunehmen",
+        "Sie fangen Sonnenlicht für die Bäume ein",
+        "Sie machen den Waldboden fruchtbar"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Warum sollte man gesammelte Pilze von Fachleuten prüfen lassen?"
+      }
+     ]
+    }
+   ]
   }
  ]
 }
