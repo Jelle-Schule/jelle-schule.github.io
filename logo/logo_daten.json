@@ -6897,6 +6897,303 @@
      ]
     }
    ]
+  },
+  {
+   "datum": "2026-11-09",
+   "wochentag": "Montag",
+   "zeit": "19:50",
+   "url": "https://www.logo.de/logo-vom-montag-9-november-2026-102.html",
+   "streitfrage": {
+    "text": "Sollten reiche Länder ärmeren Ländern Geld für Klimaschutz zahlen?",
+    "optionen": [
+     "ja",
+     "nein",
+     "weiß ich noch nicht"
+    ]
+   },
+   "beitraege": [
+    {
+     "titel": "Weltklimakonferenz COP 31 beginnt",
+     "kurz": "In der Türkei hat die Weltklimakonferenz begonnen. Fast 200 Länder beraten bis zum 20. November, wie man die Erderwärmung bremsen kann.",
+     "themen": [
+      "Umwelt, Klima & Energie",
+      "Welt & Internationales"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/weltklimakonferenz-cop-31-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Worum geht es bei der Weltklimakonferenz? Kreuze alle passenden an.",
+       "optionen": [
+        "Erderwärmung bremsen",
+        "Geld für Klimaschutz verteilen",
+        "Strompreise in Deutschland festlegen",
+        "neue Länder in die EU aufnehmen"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Was passiert, wenn sich die Länder wieder nicht einigen?"
+      }
+     ]
+    },
+    {
+     "titel": "logo! erklärt: 9. November 1918 – Ausrufung der Republik",
+     "kurz": "Am 9. November 1918 wurde in Berlin die Republik ausgerufen. Der Kaiser verlor seine Macht, und Deutschland ging den ersten Schritt zur Demokratie.",
+     "themen": [
+      "Geschichte",
+      "Wahlen & Demokratie"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/9-november-deutsche-geschichte-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Wer hatte in Deutschland vor dem 9. November 1918 die Macht?",
+       "optionen": [
+        "ein Kaiser",
+        "ein Bundeskanzler",
+        "ein gewählter Präsident",
+        "der Bundestag"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Warum ist es wichtig, dass das Volk seine Regierung selbst wählt?"
+      }
+     ]
+    },
+    {
+     "titel": "NASA sucht Astronautinnen und Astronauten",
+     "kurz": "Die US-Weltraumbehörde NASA sucht neue Astronautinnen und Astronauten. Wer sich bewirbt, muss einige Voraussetzungen erfüllen.",
+     "themen": [
+      "Natur & Wissen",
+      "Welt & Internationales"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/astronaut-gesucht-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Was braucht man, um Astronaut zu werden? Dann hör genau hin.",
+       "optionen": [
+        "sehr gute Gesundheit",
+        "Teamfähigkeit",
+        "ein Studium",
+        "Erfahrung als Pilot"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Würdest du gern ins Weltall fliegen? Warum oder warum nicht?"
+      }
+     ]
+    },
+    {
+     "titel": "Schimpanse bei Flut versorgt",
+     "kurz": "In einer Auffangstation für Schimpansen gab es eine Überschwemmung. Die Tiere mussten trotzdem jeden Tag Futter bekommen.",
+     "themen": [
+      "Natur & Wissen",
+      "Umwelt, Klima & Energie"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Wie kommt Futter zu einem Tier, wenn alles überflutet ist?",
+       "optionen": [
+        "mit einer Drohne",
+        "mit einem Boot",
+        "mit einem Traktor",
+        "mit einem Hubschrauber"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Warum konnten die Tierpfleger nicht einfach wie sonst zum Gehege fahren?"
+      }
+     ]
+    },
+    {
+     "titel": "Kinderreporter trifft ZAH1DE",
+     "kurz": "Ein logo!-Kinderreporter hat die Musikerin ZAH1DE interviewt. Sie ist erst 16 Jahre alt und schon ein Star.",
+     "themen": [
+      "Kultur & Feiertage",
+      "Digitales & Medien"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/abstimmung-kinderreporter-interviews-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Was ist an ZAH1DE besonders?",
+       "optionen": [
+        "Sie ist schon mit 16 ein Star",
+        "Sie hat eine eigene Fernsehshow",
+        "Sie spielt in einer Nationalmannschaft",
+        "Sie hat ein Kinderbuch geschrieben"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was wäre schwierig, wenn du neben der Schule berühmt wärst?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "datum": "2026-11-10",
+   "wochentag": "Dienstag",
+   "zeit": "19:50",
+   "url": "https://www.logo.de/logo-vom-dienstag-10-november-2026-102.html",
+   "streitfrage": {
+    "text": "Sollte Deutschland mehr Geld für Schulen in Kriegsgebieten geben?",
+    "optionen": [
+     "ja",
+     "nein",
+     "weiß ich noch nicht"
+    ]
+   },
+   "beitraege": [
+    {
+     "titel": "Schulkinder im Libanon",
+     "kurz": "Im Libanon gibt es Kämpfe zwischen Israel und der Hisbollah. Viele Kinder können deshalb nicht normal zur Schule gehen.",
+     "themen": [
+      "Krieg & Konflikte",
+      "Schule & Bildung",
+      "Welt & Internationales"
+     ],
+     "politisch": true,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Warum können dort viele Kinder nicht zur Schule? Dann hör genau hin.",
+       "optionen": [
+        "In Schulen wohnen geflüchtete Familien",
+        "Schulgebäude wurden beschädigt",
+        "Familien mussten ihr Zuhause verlassen",
+        "Der Schulweg ist zu gefährlich"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Wie geht es Kindern, die lange nicht zur Schule gehen können?"
+      }
+     ]
+    },
+    {
+     "titel": "logo! erklärt: Konflikt zwischen Israel und der Hisbollah",
+     "kurz": "logo! erklärt, warum Israel und die Hisbollah im Libanon gegeneinander kämpfen. Es gibt zwar eine Waffenruhe, aber sie wird immer wieder gebrochen.",
+     "themen": [
+      "Krieg & Konflikte",
+      "Welt & Internationales"
+     ],
+     "politisch": true,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Was ist die Hisbollah? Kreuze alle passenden an.",
+       "optionen": [
+        "eine bewaffnete Gruppe im Libanon",
+        "eine Partei im Libanon",
+        "die Armee des Libanon",
+        "eine Hilfsorganisation für Kinder"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Warum gibt es trotz Waffenruhe keinen echten Frieden? Hör genau hin."
+      }
+     ]
+    },
+    {
+     "titel": "Roboter läuft Marathon in der Antarktis",
+     "kurz": "In der Antarktis ist ein menschenähnlicher Roboter bei einem Marathon mitgelaufen. Ein Marathon ist ein Lauf über gut 42 Kilometer.",
+     "themen": [
+      "Digitales & Medien",
+      "Sport",
+      "Natur & Wissen"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Was ist für einen Roboter im Eis besonders schwierig?",
+       "optionen": [
+        "Kälte schwächt den Akku",
+        "rutschiger Boden",
+        "starker Wind",
+        "Schnee stört die Sensoren"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Wofür könnten solche Roboter später nützlich sein?"
+      }
+     ]
+    },
+    {
+     "titel": "Surfunterricht im Senegal",
+     "kurz": "Im Senegal in Westafrika bekommen Kinder Unterricht im Surfen. logo! zeigt, was ihnen der Sport bedeutet.",
+     "themen": [
+      "Sport",
+      "Welt & Internationales"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Wie kann Surfen den Kindern dort helfen? Dann hör genau hin.",
+       "optionen": [
+        "Sie werden mutiger",
+        "Sie finden Freunde",
+        "Sie gehen lieber zur Schule",
+        "Sie verdienen Geld"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Welcher Sport oder welches Hobby ist dir wichtig? Warum?"
+      }
+     ]
+    },
+    {
+     "titel": "Walhai",
+     "kurz": "Im Beitrag geht es um den Walhai. Er ist der größte Fisch der Welt.",
+     "themen": [
+      "Natur & Wissen"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Was ist der Walhai?",
+       "optionen": [
+        "ein Fisch",
+        "ein Wal",
+        "ein Säugetier wie der Delfin",
+        "ein Reptil"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Warum interessieren sich Forschende für den Walhai? Hör genau hin."
+      }
+     ]
+    }
+   ]
   }
  ]
 }
