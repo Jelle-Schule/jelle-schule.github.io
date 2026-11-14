@@ -7340,6 +7340,294 @@
      ]
     }
    ]
+  },
+  {
+   "datum": "2026-11-12",
+   "wochentag": "Donnerstag",
+   "zeit": "19:50",
+   "url": "https://www.logo.de/logo-vom-donnerstag-12-november-2026-102.html",
+   "streitfrage": {
+    "text": "Sollten Schüler während der Schulzeit für das Klima demonstrieren dürfen?",
+    "optionen": [
+     "ja",
+     "nein",
+     "weiß ich noch nicht"
+    ]
+   },
+   "beitraege": [
+    {
+     "titel": "Bombendrohungen an Schulen",
+     "kurz": "In mehreren Ländern Europas, zum Beispiel in Italien, Irland und Schottland, haben Tausende Schulen Drohungen per E-Mail bekommen. Die Polizei hält sie für falsch, an manchen Schulen fiel trotzdem der Unterricht aus.",
+     "themen": [
+      "Gewalt & Sicherheit",
+      "Schule & Bildung",
+      "Europa"
+     ],
+     "politisch": true,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Auf welchem Weg kamen die Drohungen an die Schulen?",
+       "optionen": [
+        "per E-Mail",
+        "per Brief",
+        "per Telefonanruf",
+        "über soziale Netzwerke"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Warum schicken Schulen Kinder nach Hause, obwohl die Polizei keine Gefahr sieht?"
+      }
+     ]
+    },
+    {
+     "titel": "Isabelle bei Fridays for Future",
+     "kurz": "Reporterin Isabelle hat in Berlin eine Gruppe von Fridays for Future begleitet. Sie hat gesehen, wie sich die Jugendlichen auf eine Demo am Freitag vorbereiten.",
+     "themen": [
+      "Protest & Beteiligung",
+      "Umwelt, Klima & Energie"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/fridays-for-future-klimaschutz-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Was gehört zur Vorbereitung einer Demo? Dann hör genau hin.",
+       "optionen": [
+        "Plakate malen",
+        "Route mit der Polizei absprechen",
+        "Reden üben",
+        "Leute einladen"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Wofür würdest du selbst auf die Straße gehen? Begründe kurz."
+      }
+     ]
+    },
+    {
+     "titel": "logo! erklärt: Fridays for Future",
+     "kurz": "Angefangen hat alles 2018 mit Greta Thunberg, die vor dem Parlament in Schweden für das Klima protestierte. Daraus wurde eine weltweite Bewegung, die von der Politik mehr Klimaschutz fordert.",
+     "themen": [
+      "Protest & Beteiligung",
+      "Umwelt, Klima & Energie"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/fridays-for-future-geschichte-einfach-erklaert-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Was fordert Fridays for Future in Deutschland? Kreuze alle passenden an.",
+       "optionen": [
+        "Kohleausstieg bis 2030",
+        "mehr Geld für Bus und Bahn",
+        "mehr Fahrradwege",
+        "Verbot aller Autos ab 2030"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Was hat sich durch die Bewegung verändert? Nenne eine Sache."
+      }
+     ]
+    },
+    {
+     "titel": "6 Tage in der Wildnis überlebt",
+     "kurz": "Ein 17-jähriger Junge hat sich in Australien in der Wildnis verirrt. Nach sechs Tagen allein hat ihn ein Polizeihubschrauber gefunden und gerettet.",
+     "themen": [
+      "Welt & Internationales",
+      "Natur & Wissen"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Schätz zuerst: Wie viele Helfer haben nach dem Jungen gesucht?",
+       "optionen": [
+        "etwa 10",
+        "etwa 30",
+        "mehr als 100",
+        "mehr als 1000"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was hat dem Jungen geholfen, sechs Tage durchzuhalten?"
+      }
+     ]
+    },
+    {
+     "titel": "Mehr Mitglieder in Sportvereinen",
+     "kurz": "Die Sportvereine in Deutschland haben einen Rekord bei den Mitgliedern. Besonders beliebt sind sie bei Kindern zwischen 7 und 14 Jahren.",
+     "themen": [
+      "Sport",
+      "Gesellschaft & Zusammenleben"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/mehr-mitglieder-sportvereinen-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Bei welcher Altersgruppe sind Sportvereine besonders beliebt?",
+       "optionen": [
+        "bis 6 Jahre",
+        "7 bis 14 Jahre",
+        "15 bis 18 Jahre",
+        "Erwachsene"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was bringt dir ein Sportverein außer dem Sport selbst?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "datum": "2026-11-13",
+   "wochentag": "Freitag",
+   "zeit": "19:25",
+   "url": "https://www.logo.de/logo-vom-freitag-13-november-2026-102.html",
+   "beitraege": [
+    {
+     "titel": "Weltweite Microsoft-Störung",
+     "kurz": "Am Donnerstag sind wichtige Programme von Microsoft ausgefallen, zum Beispiel das E-Mail-Programm Outlook und Teams. Menschen in vielen Ländern konnten deshalb stundenlang nicht richtig arbeiten. Nach einem Hackerangriff sieht es laut Microsoft nicht aus.",
+     "themen": [
+      "Digitales & Medien",
+      "Welt & Internationales"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Welche Programme waren von der Störung betroffen? Kreuze alle passenden an.",
+       "optionen": [
+        "Outlook (E-Mail)",
+        "Teams",
+        "WhatsApp",
+        "YouTube"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Was passiert an einer Schule, wenn plötzlich alle Computerprogramme ausfallen?"
+      }
+     ]
+    },
+    {
+     "titel": "Was macht euch wütend?",
+     "kurz": "Wut ist ein normales Gefühl, zum Beispiel wenn etwas unfair ist. logo! erklärt, warum Wut auch gut sein kann und was hilft, wenn sie zu groß wird.",
+     "themen": [
+      "Gesellschaft & Zusammenleben",
+      "Gesundheit & Ernährung"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/wut-132.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Was hilft laut Fachleuten, wenn die Wut zu groß wird? Kreuze alle passenden an.",
+       "optionen": [
+        "tief durchatmen",
+        "Abstand gewinnen",
+        "mit jemandem reden",
+        "laut schreien und Türen knallen"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Wann kann Wut sogar etwas Gutes bewirken?"
+      }
+     ]
+    },
+    {
+     "titel": "Taucherin knackt Rekord",
+     "kurz": "Eine Taucherin hat einen neuen Rekord aufgestellt. Im Beitrag erfahrt ihr, was sie geschafft hat.",
+     "themen": [
+      "Sport"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Schätz zuerst: Wie tief kann ein Mensch mit einem Atemzug tauchen?",
+       "optionen": [
+        "etwa 10 Meter",
+        "etwa 30 Meter",
+        "etwa 90 Meter",
+        "etwa 300 Meter"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was muss eine Taucherin können, um so einen Rekord zu schaffen?"
+      }
+     ]
+    },
+    {
+     "titel": "Frauen-Eishockey WM-Viertelfinale",
+     "kurz": "Bei der Eishockey-Weltmeisterschaft der Frauen hat die deutsche Mannschaft das Viertelfinale erreicht. Dort hat sie gegen Finnland verloren und ist ausgeschieden.",
+     "themen": [
+      "Sport"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Wie ging das Viertelfinale gegen Finnland aus? Dann hör genau hin.",
+       "optionen": [
+        "Deutschland gewann knapp",
+        "Finnland gewann knapp",
+        "Finnland gewann deutlich",
+        "Entscheidung erst im Penaltyschießen"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Wie geht es den Spielerinnen wohl nach dem Aus? Was könnte sie trösten?"
+      }
+     ]
+    },
+    {
+     "titel": "logo! erklärt: Warum wir im Winter häufiger krank werden",
+     "kurz": "Im Herbst und Winter sind viele Menschen erkältet. logo! erklärt, welche Rolle Viren, trockene Luft und wenig Sonne dabei spielen.",
+     "themen": [
+      "Gesundheit & Ernährung",
+      "Natur & Wissen"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/haeufiger-krank-im-winter-einfach-erklaert-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Was macht uns im Winter anfälliger für Erkältungen? Dann hör genau hin.",
+       "optionen": [
+        "Viren",
+        "trockene Luft",
+        "wenig Sonne",
+        "kalte Luft"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Was kannst du selbst tun, um im Winter gesund zu bleiben?"
+      }
+     ]
+    }
+   ]
   }
  ]
 }
