@@ -7628,6 +7628,155 @@
      ]
     }
    ]
+  },
+  {
+   "datum": "2026-11-14",
+   "wochentag": "Samstag",
+   "zeit": "19:50",
+   "url": "https://www.zdf.de/video/magazine/logo-154/logo-vom-samstag-14-november-2026-102",
+   "streitfrage": {
+    "text": "Sollen Geheimdienste in Deutschland mehr Rechte bekommen?",
+    "optionen": [
+     "ja",
+     "nein",
+     "weiß ich noch nicht"
+    ]
+   },
+   "beitraege": [
+    {
+     "titel": "Dahlia hat Diabetes",
+     "kurz": "Am 14. November ist Weltdiabetestag. logo! stellt Dahlia vor, die Diabetes hat, und zeigt, wie sie mit der Krankheit im Alltag lebt.",
+     "themen": [
+      "Gesundheit & Ernährung",
+      "Gesellschaft & Zusammenleben"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Bei Diabetes ist zu viel Zucker im Blut. Welcher Stoff fehlt dem Körper?",
+       "optionen": [
+        "Insulin",
+        "Vitamin C",
+        "Eisen",
+        "Kalzium"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was muss Dahlia an einem Schultag anders machen als andere Kinder?"
+      }
+     ]
+    },
+    {
+     "titel": "logo! erklärt: Reform der Geheimdienste",
+     "kurz": "Der Bundestag hat beschlossen, dass die deutschen Geheimdienste mehr dürfen. Sie sollen sich zum Beispiel gegen Hackerangriffe wehren und mehr Daten auswerten können. Kritiker befürchten, dass Menschen dadurch stärker überwacht werden.",
+     "themen": [
+      "Regierung & Parlament",
+      "Gewalt & Sicherheit",
+      "Digitales & Medien"
+     ],
+     "politisch": true,
+     "link": "https://www.zdfheute.de/politik/deutschland/nachrichtendienst-reform-bundestag-bnd-gesetz-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Was dürfen die Geheimdienste nach der Reform? Kreuze alle passenden an.",
+       "optionen": [
+        "sich gegen Hackerangriffe wehren",
+        "Daten mit KI auswerten",
+        "Menschen ins Gefängnis stecken",
+        "Gesetze selbst beschließen"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Warum machen sich manche Menschen Sorgen, wenn Geheimdienste mehr dürfen?"
+      }
+     ]
+    },
+    {
+     "titel": "USA: Kreuzfahrtschiff kentert",
+     "kurz": "In New Orleans in den USA ist ein großes Tankschiff gegen ein Flusskreuzfahrtschiff gefahren. Das Kreuzfahrtschiff ist umgekippt. Alle Menschen an Bord haben überlebt, einige wurden verletzt. Warum der Tanker außer Kontrolle geriet, wird noch untersucht.",
+     "themen": [
+      "Welt & Internationales",
+      "Verkehr & Mobilität"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Schätz zuerst: Wie schnell ist das Schiff umgekippt? Dann hör genau hin.",
+       "optionen": [
+        "in etwa 15 Minuten",
+        "in etwa 2 Stunden",
+        "in etwa einem halben Tag",
+        "erst am nächsten Tag"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Warum sprechen viele Menschen nach dem Unglück von einem Wunder?"
+      }
+     ]
+    },
+    {
+     "titel": "Fußball: Deutschland gegen Serbien",
+     "kurz": "Die deutsche Fußball-Nationalmannschaft der Männer hat in der Nations League in Serbien 3:1 gewonnen. Am Montag spielt Deutschland in Berlin gegen die Niederlande. Dann entscheidet sich, ob es weitergeht.",
+     "themen": [
+      "Sport"
+     ],
+     "politisch": false,
+     "link": "https://www.dfb.de/news/souveraener-sieg-in-serbien",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Wie ist das Spiel Serbien gegen Deutschland ausgegangen?",
+       "optionen": [
+        "1:3",
+        "2:2",
+        "1:0",
+        "0:3"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Ein Spieler hat zum ersten Mal mitgespielt und gleich getroffen. Wie fühlt er sich wohl?"
+      }
+     ]
+    },
+    {
+     "titel": "Ende der Youth Olympic Games",
+     "kurz": "In Dakar im Senegal sind die Olympischen Jugendspiele zu Ende gegangen. Etwa 2700 Sportlerinnen und Sportler unter 18 Jahren haben mitgemacht. Es waren die ersten Olympischen Spiele in Afrika. Das deutsche Team hat acht Medaillen gewonnen.",
+     "themen": [
+      "Sport",
+      "Welt & Internationales"
+     ],
+     "politisch": false,
+     "link": "https://www.dosb.de/aktuelles/news/detail/die-youth-olympic-games-dakar-2026-sind-offiziell-beendet",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Auf welchem Kontinent gab es zum ersten Mal Olympische Spiele?",
+       "optionen": [
+        "Afrika",
+        "Südamerika",
+        "Asien",
+        "Australien"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was hat es mit dir zu tun, wenn Jugendliche in deinem Alter bei Olympia starten?"
+      }
+     ]
+    }
+   ]
   }
  ]
 }
