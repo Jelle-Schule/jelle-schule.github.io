@@ -7777,6 +7777,444 @@
      ]
     }
    ]
+  },
+  {
+   "datum": "2026-11-15",
+   "wochentag": "Sonntag",
+   "zeit": "19:50",
+   "url": "https://www.logo.de/logo-vom-sonntag-15-november-2026-102.html",
+   "streitfrage": {
+    "text": "Sollen reiche Länder ärmeren Ländern mehr Geld für Klimaschutz geben?",
+    "optionen": [
+     "ja",
+     "nein",
+     "weiß ich noch nicht"
+    ]
+   },
+   "beitraege": [
+    {
+     "titel": "Schülerzeitung wird ausgezeichnet",
+     "kurz": "Eine Schülerzeitung hat einen Preis gewonnen. Schülerinnen und Schüler schreiben darin selbst über Themen, die ihnen wichtig sind.",
+     "themen": [
+      "Schule & Bildung",
+      "Digitales & Medien"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Wer macht eine Schülerzeitung? Dann hör genau hin.",
+       "optionen": [
+        "Schülerinnen und Schüler",
+        "Lehrkräfte allein",
+        "eine Zeitungsfirma",
+        "die Schulleitung allein"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Worüber würdest du in einer Schülerzeitung an deiner Schule schreiben?"
+      }
+     ]
+    },
+    {
+     "titel": "COP31: Weltklimakonferenz",
+     "kurz": "In Antalya in der Türkei findet bis zum 20. November die Weltklimakonferenz COP31 statt. Fast 200 Länder beraten, wie sie die Erderwärmung bremsen und wer den Klimaschutz bezahlt.",
+     "themen": [
+      "Umwelt, Klima & Energie",
+      "Welt & Internationales"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/weltklimakonferenz-cop-31-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Worüber verhandeln die Länder bei der Klimakonferenz? Kreuze alle passenden an.",
+       "optionen": [
+        "Erderwärmung bremsen",
+        "Geld für Klimaschutz",
+        "Schutz vor Klimafolgen",
+        "neue Grenzen zwischen Ländern"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Warum ist es so schwer, dass sich fast 200 Länder einigen?"
+      }
+     ]
+    },
+    {
+     "titel": "Tastentelefon feiert Geburtstag",
+     "kurz": "Das Tastentelefon gibt es seit 50 Jahren. Vorher wählte man eine Nummer mit einer runden Wählscheibe.",
+     "themen": [
+      "Digitales & Medien",
+      "Geschichte"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Womit wählte man eine Nummer, bevor es Tasten gab?",
+       "optionen": [
+        "mit einer Wählscheibe",
+        "mit einem Touchscreen",
+        "mit Sprachbefehlen",
+        "mit einer Fernbedienung"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was wäre für dich anders, wenn es keine Handys gäbe?"
+      }
+     ]
+    },
+    {
+     "titel": "SpaceX",
+     "kurz": "Die Raumfahrtfirma SpaceX hat wieder eine große Rakete getestet. Im Beitrag erfahrt ihr, was dabei passiert ist.",
+     "themen": [
+      "Natur & Wissen"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/weltall-raumfahrt-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Warum testet SpaceX seine Raketen so oft? Dann hör genau hin.",
+       "optionen": [
+        "um sie sicherer zu machen",
+        "weil Tests Geld bringen",
+        "weil es Vorschrift für jede Firma ist",
+        "weil die alten Raketen kaputt sind"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was spricht dafür, Raketen wiederzuverwenden statt sie wegzuwerfen?"
+      }
+     ]
+    },
+    {
+     "titel": "Leo singt in der Oper",
+     "kurz": "Leo steht auf der Bühne einer Oper und singt mit. Der Beitrag zeigt, wie es hinter den Kulissen aussieht.",
+     "themen": [
+      "Kultur & Feiertage"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Was gehört zu einer Oper? Kreuze alle passenden an.",
+       "optionen": [
+        "Gesang",
+        "Orchester",
+        "Kostüme",
+        "Kommentator wie beim Fußball"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Wie fühlt man sich wohl vor dem ersten Auftritt auf einer großen Bühne?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "datum": "2026-11-16",
+   "wochentag": "Montag",
+   "zeit": "19:50",
+   "url": "https://www.logo.de/logo-vom-montag-16-november-2026-102.html",
+   "streitfrage": {
+    "text": "Soll der Staat Firmen mit Geld helfen, damit Arbeitsplätze erhalten bleiben?",
+    "optionen": [
+     "ja",
+     "nein",
+     "weiß ich noch nicht"
+    ]
+   },
+   "beitraege": [
+    {
+     "titel": "Stahlgipfel",
+     "kurz": "In Salzgitter haben sich Politiker, Stahlfirmen und die Gewerkschaft IG Metall zu einem Stahlgipfel getroffen. Die Firmen haben Probleme wegen hoher Energiepreise und billiger Konkurrenz aus dem Ausland.",
+     "themen": [
+      "Wirtschaft & Preise",
+      "Regierung & Parlament"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/gruener-stahl-einfach-erklaert-102.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Warum haben die deutschen Stahlfirmen Probleme? Kreuze alle passenden an.",
+       "optionen": [
+        "hohe Energiepreise",
+        "billiger Stahl aus dem Ausland",
+        "teurer Umbau zu klimafreundlichem Stahl",
+        "zu wenig Eisen auf der Welt"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Wen betrifft es, wenn ein Stahlwerk schließen muss?"
+      }
+     ]
+    },
+    {
+     "titel": "Wie Tiere miteinander reden – einfach erklärt",
+     "kurz": "Tiere verständigen sich auf ganz unterschiedliche Arten. Honigbienen tanzen, Elefanten nutzen tiefe Töne, die Menschen nicht hören, und Ameisen legen Duftspuren.",
+     "themen": [
+      "Natur & Wissen"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/die-sprache-der-tiere-104.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Wie zeigen Honigbienen anderen Bienen den Weg zum Futter?",
+       "optionen": [
+        "mit einem Tanz",
+        "mit Summen in hohen Tönen",
+        "mit Duftspuren am Boden",
+        "mit Farbwechseln am Körper"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Warum ist es für Tiere wichtig, sich zu verständigen?"
+      }
+     ]
+    },
+    {
+     "titel": "Toleranz: Was ist das?",
+     "kurz": "Am 16. November ist der Internationale Tag der Toleranz. Toleranz heißt, andere Meinungen und Menschen gelten zu lassen, auch wenn sie anders sind als man selbst.",
+     "themen": [
+      "Gesellschaft & Zusammenleben"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/toleranz-einfach-erklaert-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Was bedeutet Toleranz?",
+       "optionen": [
+        "andere gelten lassen, auch wenn sie anders denken",
+        "immer einer Meinung mit allen sein",
+        "alles gut finden, was andere tun",
+        "sich aus Streit komplett heraushalten"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Wann ist es dir schwergefallen, tolerant zu sein?"
+      }
+     ]
+    },
+    {
+     "titel": "Schafe in Nürnberg",
+     "kurz": "Jedes Jahr im Herbst zieht ein Schäfer mit Hunderten Schafen mitten durch Nürnberg zu den Winterweiden. Die Schafe pflegen in der Stadt Wiesen und helfen so Pflanzen und Tieren.",
+     "themen": [
+      "Natur & Wissen",
+      "Umwelt, Klima & Energie"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Schätz zuerst: Wie viele Schafe ziehen durch Nürnberg?",
+       "optionen": [
+        "etwa 60",
+        "etwa 200",
+        "etwa 600",
+        "etwa 2.000"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Warum lässt eine Stadt Schafe statt Rasenmäher auf ihre Wiesen?"
+      }
+     ]
+    },
+    {
+     "titel": "Rugby im Rollstuhl",
+     "kurz": "Rugby kann man auch im Rollstuhl spielen. logo! zeigt, wie der Sport funktioniert.",
+     "themen": [
+      "Sport"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/teresa-testet-rugby-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Was ist beim Rollstuhl-Rugby besonders wichtig? Dann hör genau hin.",
+       "optionen": [
+        "stabile Spezial-Rollstühle",
+        "Schnelligkeit und Teamwork",
+        "Werfen und Fangen",
+        "eine ruhige, kontaktlose Spielweise"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Was können Schulen tun, damit alle Kinder gemeinsam Sport machen können?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "datum": "2026-11-17",
+   "wochentag": "Dienstag",
+   "zeit": "19:50",
+   "url": "https://www.logo.de/logo-vom-dienstag-17-november-2026-102.html",
+   "streitfrage": {
+    "text": "Soll Deutschland mehr Geld für Hilfe im Gazastreifen ausgeben, auch wenn es dann woanders fehlt?",
+    "optionen": [
+     "ja",
+     "nein",
+     "weiß ich noch nicht"
+    ]
+   },
+   "beitraege": [
+    {
+     "titel": "Gaza vor dem Winter",
+     "kurz": "Im Gazastreifen gilt seit Oktober 2025 eine Waffenruhe, die aber immer wieder gebrochen wird. Viele Häuser sind zerstört, viele Menschen leben in Zelten. Jetzt kommt der Winter, und es fehlt an Essen, Wasser und Medikamenten.",
+     "themen": [
+      "Krieg & Konflikte",
+      "Welt & Internationales"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/konflikt-israel-palaestinenser-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Was fehlt den Menschen im Gazastreifen? Kreuze alle passenden an.",
+       "optionen": [
+        "Essen",
+        "sauberes Wasser",
+        "Medikamente",
+        "feste Häuser"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Warum wird der Winter für Menschen in Zelten besonders schwer?"
+      }
+     ]
+    },
+    {
+     "titel": "Sind Squishies gefährlich? – einfach erklärt",
+     "kurz": "Behörden warnen vor manchen billigen Squishies. In einigen wurden schädliche Stoffe gefunden, kleine Teile können verschluckt werden. Wer ein Squishy kauft, sollte auf den Geruch und die Herstellerangabe achten.",
+     "themen": [
+      "Gesundheit & Ernährung",
+      "Gesellschaft & Zusammenleben"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Woran kann man ein unsicheres Squishy erkennen? Kreuze alle passenden an.",
+       "optionen": [
+        "starker chemischer Geruch",
+        "keine Herstelleradresse auf der Packung",
+        "sehr bunte Farben",
+        "ein günstiger Preis"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Was würdest du tun, wenn dein Squishy plötzlich komisch riecht?"
+      }
+     ]
+    },
+    {
+     "titel": "Nations League",
+     "kurz": "Die deutsche Fußball-Nationalmannschaft der Männer hat ihre letzten Gruppenspiele in der Nations League gespielt, zuletzt gegen die Niederlande. Im Beitrag erfahrt ihr, wie es ausgegangen ist.",
+     "themen": [
+      "Sport"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Wie ging das Spiel gegen die Niederlande aus? Dann hör genau hin.",
+       "optionen": [
+        "Deutschland gewann",
+        "Unentschieden",
+        "die Niederlande gewannen"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was bedeutet das Ergebnis für die deutsche Mannschaft?"
+      }
+     ]
+    },
+    {
+     "titel": "Lebkuchenstadt",
+     "kurz": "Bald ist Advent, und in der Lebkuchenstadt wird viel Lebkuchen gebacken. Der Beitrag zeigt, wie das süße Gebäck entsteht.",
+     "themen": [
+      "Kultur & Feiertage",
+      "Gesundheit & Ernährung"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Welche deutsche Stadt ist besonders für Lebkuchen bekannt?",
+       "optionen": [
+        "Nürnberg",
+        "Hamburg",
+        "Köln",
+        "Dresden"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "wort",
+       "text": "Schreib eine Zutat auf, die im Lebkuchen steckt."
+      }
+     ]
+    },
+    {
+     "titel": "So schützen Bienen vor Elefanten",
+     "kurz": "In Afrika zertrampeln Elefanten manchmal Felder von Bauern. Bienenstöcke an Drähten helfen: Berührt ein Elefant den Draht, schwärmen die Bienen aus, und die Elefanten ziehen meistens weiter.",
+     "themen": [
+      "Natur & Wissen",
+      "Umwelt, Klima & Energie"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Warum haben Elefanten Angst vor Bienen?",
+       "optionen": [
+        "Stiche an Rüssel und Augen tun weh",
+        "Bienen fressen ihr Futter weg",
+        "das Summen schadet ihren Ohren",
+        "Bienen übertragen Krankheiten auf sie"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Warum ist das für Bauern besser als ein Zaun aus Stacheldraht?"
+      }
+     ]
+    }
+   ]
   }
  ]
 }
