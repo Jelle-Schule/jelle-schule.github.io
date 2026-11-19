@@ -8215,6 +8215,155 @@
      ]
     }
    ]
+  },
+  {
+   "datum": "2026-11-18",
+   "wochentag": "Mittwoch",
+   "zeit": "19:50",
+   "url": "https://www.logo.de/logo-vom-mittwoch-18-november-2026-102.html",
+   "streitfrage": {
+    "text": "Soll der Staat Strom billiger machen, auch wenn ihm dann Geld für andere Dinge fehlt?",
+    "optionen": [
+     "ja",
+     "nein",
+     "weiß ich noch nicht"
+    ]
+   },
+   "beitraege": [
+    {
+     "titel": "Stromsteuer in Deutschland",
+     "kurz": "Die Regierungsparteien CDU, CSU und SPD haben sich geeinigt: Die Stromsteuer soll 2027 für alle sinken, nicht nur für bestimmte Firmen. Das kostet den Staat etwa 5,4 Milliarden Euro. Der Bundestag muss noch zustimmen.",
+     "themen": [
+      "Wirtschaft & Preise",
+      "Regierung & Parlament",
+      "Umwelt, Klima & Energie"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/die-bundesregierung-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Für wen soll die Stromsteuer jetzt sinken?",
+       "optionen": [
+        "nur für große Firmen",
+        "nur für Familien mit Kindern",
+        "für alle Haushalte und Firmen",
+        "nur für Rentnerinnen und Rentner"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was hat eine niedrigere Stromsteuer mit deiner Familie zu tun?"
+      }
+     ]
+    },
+    {
+     "titel": "Masern in Amerika",
+     "kurz": "In den USA gibt es so viele Masern-Fälle wie seit über 35 Jahren nicht. Deshalb gelten die USA nicht mehr als masernfrei. Ein Grund: Immer weniger Menschen lassen sich impfen.",
+     "themen": [
+      "Gesundheit & Ernährung",
+      "Welt & Internationales"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/masern-verbreitung-who-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Warum breiten sich die Masern in den USA wieder aus?",
+       "optionen": [
+        "weniger Menschen sind geimpft",
+        "das Wetter ist wärmer geworden",
+        "es gibt kein Medikament mehr",
+        "die Krankheit ist ganz neu"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Warum schützt eine Impfung nicht nur dich, sondern auch andere?"
+      }
+     ]
+    },
+    {
+     "titel": "Welttoilettentag – einfach erklärt",
+     "kurz": "Am 19. November ist Welttoilettentag. Er erinnert daran, wie wichtig saubere Toiletten für die Gesundheit sind. Die Toilette mit Wasserspülung wurde schon im Jahr 1596 in England erfunden.",
+     "themen": [
+      "Gesundheit & Ernährung",
+      "Geschichte",
+      "Welt & Internationales"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/geschichte-toilette-einfach-erklaert-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Schätz zuerst: Seit wann gibt es die Toilette mit Wasserspülung? Dann hör genau hin.",
+       "optionen": [
+        "seit etwa 100 Jahren",
+        "seit etwa 200 Jahren",
+        "seit über 400 Jahren",
+        "seit über 2000 Jahren"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was passiert, wenn Menschen keine saubere Toilette haben?"
+      }
+     ]
+    },
+    {
+     "titel": "15-jährige Springreiterin",
+     "kurz": "Im Beitrag geht es um ein 15 Jahre altes Mädchen, das im Springreiten antritt. Beim Springreiten müssen Pferd und Reiterin gemeinsam über Hindernisse springen.",
+     "themen": [
+      "Sport"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Was braucht man im Springreiten am meisten? Dann hör genau hin.",
+       "optionen": [
+        "viel Training mit dem Pferd",
+        "Vertrauen zwischen Pferd und Reiterin",
+        "Mut vor hohen Hindernissen",
+        "ein teures Pferd"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Wie schafft sie Schule und Sport gleichzeitig? Hör genau hin."
+      }
+     ]
+    },
+    {
+     "titel": "Krabbenwanderung",
+     "kurz": "Jedes Jahr wandern Millionen rote Krabben vom Wald ans Meer, um dort ihre Eier abzulegen. Dabei überqueren sie auch Straßen. Im Beitrag seht ihr, wie die Menschen damit umgehen.",
+     "themen": [
+      "Natur & Wissen"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Warum wandern die Krabben ans Meer?",
+       "optionen": [
+        "um Eier abzulegen",
+        "um Futter zu suchen",
+        "um vor Kälte zu fliehen",
+        "um sich zu häuten"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was würdest du tun, wenn tausende Krabben vor deiner Haustür laufen?"
+      }
+     ]
+    }
+   ]
   }
  ]
 }
