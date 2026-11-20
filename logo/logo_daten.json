@@ -8364,6 +8364,130 @@
      ]
     }
    ]
+  },
+  {
+   "datum": "2026-11-19",
+   "wochentag": "Donnerstag",
+   "zeit": "19:50",
+   "url": "https://www.zdf.de/video/magazine/logo-154/logo-vom-donnerstag-19-november-2026-102",
+   "streitfrage": {
+    "text": "Sollen andere Länder der Ukraine helfen, sich gegen Angriffe zu schützen?",
+    "optionen": [
+     "ja",
+     "nein",
+     "weiß ich noch nicht"
+    ]
+   },
+   "beitraege": [
+    {
+     "titel": "Zwei große Politik-Treffen",
+     "kurz": "In Berlin haben sich Politikerinnen und Politiker aus rund 37 Ländern getroffen. Sie sprachen darüber, wie die Ukraine Frieden und Sicherheit bekommen kann. Fast zur gleichen Zeit trafen sich in China die Präsidenten der USA, Russlands und Chinas.",
+     "themen": [
+      "Krieg & Konflikte",
+      "Welt & Internationales",
+      "Europa"
+     ],
+     "politisch": true,
+     "link": "https://www.bundesregierung.de/breg-de/aktuelles/koalition-der-willigen-in-berlin-2461162",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Worum ging es beim Treffen in Berlin vor allem?",
+       "optionen": [
+        "Frieden und Sicherheit für die Ukraine",
+        "Preise für Strom und Gas",
+        "eine neue Fußball-Liga in Europa",
+        "Regeln für Handys an Schulen"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Warum treffen sich so viele Länder, um über einen Krieg zu reden?"
+      }
+     ]
+    },
+    {
+     "titel": "Vorlesen – einfach erklärt",
+     "kurz": "Am 20. November ist der Bundesweite Vorlesetag. Fachleute sagen: Wer oft vorgelesen bekommt, versteht Sprache besser und lernt leichter. Lesen trainiert auch Gedächtnis und Aufmerksamkeit.",
+     "themen": [
+      "Schule & Bildung",
+      "Kultur & Feiertage"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Was kann regelmäßiges Lesen im Kopf verbessern?",
+       "optionen": [
+        "das Gedächtnis",
+        "die Aufmerksamkeit",
+        "das Sprachverständnis",
+        "die Sehstärke der Augen"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Wem würdest du gern etwas vorlesen – und was?"
+      }
+     ]
+    },
+    {
+     "titel": "Van-Gogh-Gemälde versteigert",
+     "kurz": "Ein Bild des Malers Vincent van Gogh wurde in New York versteigert. Es heißt „Blühende Kastanienbäume“ und kostete rund 173 Millionen Euro – so viel wie noch nie ein Van-Gogh-Bild. Vorher gab es Streit, weil die Besitzer das Bild in der Nazi-Zeit verkaufen mussten.",
+     "themen": [
+      "Kultur & Feiertage",
+      "Geschichte"
+     ],
+     "politisch": false,
+     "link": "https://www.zdf.de/video/magazine/logo-154/van-gogh-versteigerung-100",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Schätz zuerst: Wie viel Geld hat das Bild ungefähr gekostet?",
+       "optionen": [
+        "17 Millionen Euro",
+        "73 Millionen Euro",
+        "173 Millionen Euro",
+        "1 Milliarde Euro"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Warum zahlen Menschen so viel Geld für ein altes Bild?"
+      }
+     ]
+    },
+    {
+     "titel": "Magic Pranks",
+     "kurz": "In der Sendung „Magic Pranks“ spielen Kinder mit den Zauberern Ehrlich Brothers anderen einen Streich. Diesmal legt Giulietta ihren fußballverrückten Papa auf einem Fußballplatz herein.",
+     "themen": [
+      "Digitales & Medien",
+      "Sport"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/magic-pranks-104.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Wen legt Giulietta herein? Dann hör genau hin.",
+       "optionen": [
+        "ihren Papa",
+        "ihre Trainerin",
+        "ihren Bruder",
+        "ihre Lehrerin"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Wann ist ein Streich lustig – und wann geht er zu weit?"
+      }
+     ]
+    }
+   ]
   }
  ]
 }
