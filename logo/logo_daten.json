@@ -8488,6 +8488,130 @@
      ]
     }
    ]
+  },
+  {
+   "datum": "2026-11-20",
+   "wochentag": "Freitag",
+   "zeit": "19:25",
+   "url": "https://www.logo.de/logo-vom-freitag-20-november-2026-102.html",
+   "streitfrage": {
+    "text": "Sollen die Rechte von Kindern extra im Grundgesetz stehen?",
+    "optionen": [
+     "ja",
+     "nein",
+     "weiß ich noch nicht"
+    ]
+   },
+   "beitraege": [
+    {
+     "titel": "Gen-Z-Proteste",
+     "kurz": "Am Freitag haben in mehr als 50 Städten in Deutschland tausende junge Leute demonstriert. Sie fordern zum Beispiel bessere Schulen, mehr Klimaschutz, keine Wehrpflicht und günstigere Mieten und Lebensmittel.",
+     "themen": [
+      "Protest & Beteiligung",
+      "Gesellschaft & Zusammenleben"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/gen-z-proteste-104.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Was fordern die jungen Leute bei den Protesten?",
+       "optionen": [
+        "bessere Schulen",
+        "mehr Klimaschutz",
+        "keine Wehrpflicht",
+        "längere Schultage",
+        "bezahlbares Leben"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Wofür würdest du auf die Straße gehen – und warum?"
+      }
+     ]
+    },
+    {
+     "titel": "Weltklimakonferenz",
+     "kurz": "In der Türkei verhandeln Vertreter aus fast 200 Ländern darüber, wie man den Klimawandel bremsen kann. Ärmere Länder wollen mehr Geld von reichen Ländern, weil sie die Folgen stärker spüren. Die Konferenz dauert länger als geplant.",
+     "themen": [
+      "Umwelt, Klima & Energie",
+      "Welt & Internationales"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/weltklimakonferenz-cop-31-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Warum dauert die Konferenz länger? Dann hör genau hin.",
+       "optionen": [
+        "Die Länder sind sich noch nicht einig.",
+        "Viele Flüge wurden gestrichen.",
+        "Es kamen mehr Länder als geplant.",
+        "Ein Unwetter hat alles gestoppt."
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Warum fordern ärmere Länder Geld von reichen Ländern?"
+      }
+     ]
+    },
+    {
+     "titel": "Tag der Kinderrechte – einfach erklärt",
+     "kurz": "Am 20. November ist der Internationale Tag der Kinderrechte. Fast alle Länder der Welt haben vereinbart, dass Kinder eigene Rechte haben – zum Beispiel auf Schule, Schutz vor Gewalt und Zeit zum Spielen.",
+     "themen": [
+      "Gesellschaft & Zusammenleben",
+      "Schule & Bildung"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/internationaler-tag-der-kinderrechte-102.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Welche dieser Rechte gehören zu den Kinderrechten?",
+       "optionen": [
+        "Recht auf Bildung",
+        "Schutz vor Gewalt",
+        "Recht auf Spiel und Freizeit",
+        "Recht auf ein eigenes Handy"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Welches Kinderrecht ist dir am wichtigsten? Begründe kurz."
+      }
+     ]
+    },
+    {
+     "titel": "Fransenfledermaus",
+     "kurz": "Die Fransenfledermaus ist zum Tier des Jahres 2027 gewählt worden. Sie lebt auch bei uns in Deutschland.",
+     "themen": [
+      "Natur & Wissen"
+     ],
+     "politisch": false,
+     "link": "https://www.zdfheute.de/panorama/fledermaus-tier-des-jahres-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Schätz zuerst: Wie findet eine Fledermaus nachts ihren Weg?",
+       "optionen": [
+        "mit Ultraschall-Rufen und Echo",
+        "nur mit sehr guten Augen",
+        "mit dem Geruchssinn",
+        "mit dem Erdmagnetfeld"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was können Menschen tun, damit Fledermäuse genug Platz zum Leben haben?"
+      }
+     ]
+    }
+   ]
   }
  ]
 }
