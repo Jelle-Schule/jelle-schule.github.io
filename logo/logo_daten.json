@@ -8612,6 +8612,129 @@
      ]
     }
    ]
+  },
+  {
+   "datum": "2026-11-21",
+   "wochentag": "Samstag",
+   "zeit": "19:50",
+   "url": "https://www.logo.de/logo-vom-samstag-21-november-2026-102.html",
+   "streitfrage": {
+    "text": "Soll Deutschland ärmeren Ländern mehr Geld gegen Klimafolgen geben?",
+    "optionen": [
+     "ja",
+     "nein",
+     "weiß ich noch nicht"
+    ]
+   },
+   "beitraege": [
+    {
+     "titel": "Weltklimakonferenz wird verlängert",
+     "kurz": "Bei der Weltklimakonferenz in der Türkei verhandeln Vertreter aus fast 200 Ländern über den Klimaschutz. Eigentlich sollte sie am 20. November enden. Weil sich die Länder noch nicht einig sind, wird weiter verhandelt.",
+     "themen": [
+      "Umwelt, Klima & Energie",
+      "Welt & Internationales"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/weltklimakonferenz-cop-31-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Schätz zuerst: Wie viele Länder verhandeln bei der Klimakonferenz?",
+       "optionen": [
+        "etwa 20",
+        "etwa 50",
+        "etwa 100",
+        "fast 200"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Warum ist es so schwer, dass sich so viele Länder einigen?"
+      }
+     ]
+    },
+    {
+     "titel": "Filter aus Fischknochen",
+     "kurz": "In diesem Beitrag geht es um einen Filter, der aus Fischknochen hergestellt wird. Hör genau hin, was er aus dem Wasser holen soll.",
+     "themen": [
+      "Natur & Wissen",
+      "Umwelt, Klima & Energie"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Was soll der Filter aus dem Wasser holen? Dann hör genau hin.",
+       "optionen": [
+        "Mikroplastik",
+        "Schadstoffe wie Metalle",
+        "Salz aus Meerwasser",
+        "Bakterien und Keime"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Warum ist es gut, Abfälle wie Fischknochen weiterzuverwenden?"
+      }
+     ]
+    },
+    {
+     "titel": "Sexualisierte Gewalt",
+     "kurz": "logo! erklärt, was sexualisierte Gewalt bedeutet und was man dagegen tun kann. Kinder und Jugendliche können sich Hilfe holen, zum Beispiel bei einem Hilfe-Telefon, das anonym und kostenlos ist.",
+     "themen": [
+      "Gewalt & Sicherheit",
+      "Gesellschaft & Zusammenleben"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/sexueller-missbrauch-104.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Wo können Kinder Hilfe bekommen? Kreuze an, was genannt wird.",
+       "optionen": [
+        "bei einer Vertrauensperson",
+        "bei einem Hilfe-Telefon",
+        "in einem Beratungs-Chat",
+        "bei einer Lehrkraft"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Warum ist es wichtig, sich jemandem anzuvertrauen?"
+      }
+     ]
+    },
+    {
+     "titel": "logo! erklärt: Begrüßungen weltweit",
+     "kurz": "Zum Welt-Hallo-Tag erklärt logo!, wie sich Menschen in verschiedenen Ländern begrüßen – zum Beispiel mit „Salut“, „Konnichiwa“ oder „Kia ora“.",
+     "themen": [
+      "Kultur & Feiertage",
+      "Gesellschaft & Zusammenleben"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/begruessung-einfach-erklaert-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Wie begrüßen sich Menschen weltweit? Dann hör genau hin.",
+       "optionen": [
+        "mit einer Verbeugung",
+        "mit Händeschütteln",
+        "Nase an Nase",
+        "mit Wangenküsschen"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Begrüßt du Freunde anders als Erwachsene? Warum?"
+      }
+     ]
+    }
+   ]
   }
  ]
 }
