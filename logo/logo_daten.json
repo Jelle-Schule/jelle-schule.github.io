@@ -8735,6 +8735,154 @@
      ]
     }
    ]
+  },
+  {
+   "datum": "2026-11-22",
+   "wochentag": "Sonntag",
+   "zeit": "19:50",
+   "url": "https://www.logo.de/logo-vom-sonntag-22-november-2026-102.html",
+   "streitfrage": {
+    "text": "Sollen Klimakonferenzen weitergehen, auch wenn es oft kein Ergebnis gibt?",
+    "optionen": [
+     "ja",
+     "nein",
+     "weiß ich noch nicht"
+    ]
+   },
+   "beitraege": [
+    {
+     "titel": "Weltklimakonferenz ohne Ergebnis",
+     "kurz": "Die Weltklimakonferenz in der Türkei ist zu Ende. Die fast 200 Länder konnten sich nicht auf gemeinsame Ziele beim Klimaschutz einigen.",
+     "themen": [
+      "Umwelt, Klima & Energie",
+      "Welt & Internationales"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/weltklimakonferenz-cop-31-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Worüber streiten die Länder? Dann hör genau hin.",
+       "optionen": [
+        "wer wie viel Geld bezahlt",
+        "wann Kohle, Öl und Gas enden",
+        "wie Wälder geschützt werden",
+        "wo die nächste Konferenz stattfindet"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Was passiert, wenn sich die Länder beim Klimaschutz nicht einigen?"
+      }
+     ]
+    },
+    {
+     "titel": "So geht es den Kindern im Sudan",
+     "kurz": "Im Sudan in Afrika ist seit über drei Jahren Krieg. Viele Kinder haben nicht genug zu essen und können nicht zur Schule gehen. Hilfsorganisationen versuchen, ihnen zu helfen.",
+     "themen": [
+      "Krieg & Konflikte",
+      "Welt & Internationales"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/kinder-im-sudan-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Was fehlt vielen Kindern im Sudan? Kreuze an, was du hörst.",
+       "optionen": [
+        "genug Essen",
+        "sauberes Wasser",
+        "ein Platz in der Schule",
+        "Medikamente"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Wie würde sich dein Alltag ändern, wenn du nicht zur Schule könntest?"
+      }
+     ]
+    },
+    {
+     "titel": "logo! erklärt: Krieg im Sudan",
+     "kurz": "Im Sudan kämpfen seit April 2023 zwei Gruppen um die Macht: die Armee von General Burhan und die Miliz RSF von Mohammed Hamdan Daglo. Früher haben die beiden Anführer zusammengearbeitet.",
+     "themen": [
+      "Krieg & Konflikte",
+      "Welt & Internationales"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/krieg-in-sudan-einfach-erklaert-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Worum geht es im Krieg im Sudan vor allem?",
+       "optionen": [
+        "um die Macht im Land",
+        "um Streit über eine Religion",
+        "um Wasser aus dem Nil",
+        "um einen Angriff aus dem Ausland"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Warum sind aus den früheren Partnern Gegner geworden?"
+      }
+     ]
+    },
+    {
+     "titel": "14-jähriger Förster in Slowenien",
+     "kurz": "In diesem Beitrag geht es um einen 14-Jährigen aus Slowenien, der sich um den Wald kümmert. Hör genau hin, was er dort alles macht.",
+     "themen": [
+      "Natur & Wissen",
+      "Umwelt, Klima & Energie"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Was gehört zur Arbeit im Wald? Dann hör genau hin.",
+       "optionen": [
+        "Bäume pflanzen",
+        "kranke Bäume fällen",
+        "Tiere beobachten",
+        "Holz verkaufen"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Welche Aufgabe in der Natur würdest du gern übernehmen? Warum?"
+      }
+     ]
+    },
+    {
+     "titel": "Wie die Sterne klingen",
+     "kurz": "Im Weltall gibt es keine Luft, deshalb breitet sich dort kein Schall aus. In diesem Beitrag geht es darum, wie man Sterne trotzdem „hören“ kann.",
+     "themen": [
+      "Natur & Wissen"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Wie kann man Sterne „hören“? Dann hör genau hin.",
+       "optionen": [
+        "Messdaten werden in Töne umgewandelt",
+        "mit einem riesigen Mikrofon",
+        "Forscher hören Funksignale ab",
+        "mit einem Teleskop mit Lautsprecher"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Warum kann man im Weltall eigentlich nichts hören?"
+      }
+     ]
+    }
+   ]
   }
  ]
 }
