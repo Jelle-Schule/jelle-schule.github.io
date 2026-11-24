@@ -8883,6 +8883,127 @@
      ]
     }
    ]
+  },
+  {
+   "datum": "2026-11-23",
+   "wochentag": "Montag",
+   "zeit": "19:50",
+   "url": "https://www.logo.de/logo-vom-montag-23-november-2026-102.html",
+   "streitfrage": {
+    "text": "Sollen Schulen nach einer Droh-Mail immer den Unterricht ausfallen lassen?",
+    "optionen": [
+     "ja",
+     "nein",
+     "weiß ich noch nicht"
+    ]
+   },
+   "beitraege": [
+    {
+     "titel": "Bombendrohungen gegen Schulen",
+     "kurz": "Viele Schulen in Deutschland haben am Montag eine Mail mit einer Bombendrohung bekommen. Die Polizei hält eine echte Gefahr für sehr unwahrscheinlich und ermittelt, wer dahintersteckt.",
+     "themen": [
+      "Schule & Bildung",
+      "Gewalt & Sicherheit"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/bombendrohungen-schulen-102.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Was sagt die Polizei über die Gefahr an den Schulen?",
+       "optionen": [
+        "Eine echte Gefahr ist sehr unwahrscheinlich.",
+        "Es wurden Bomben gefunden.",
+        "Alle Schulen müssen eine Woche schließen.",
+        "Die Gefahr ist sehr hoch."
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Warum ist eine falsche Drohung trotzdem eine Straftat?"
+      }
+     ]
+    },
+    {
+     "titel": "Klimakonferenz",
+     "kurz": "Bei der Weltklimakonferenz in der Türkei haben fast 200 Länder über den Klimaschutz verhandelt. logo! berichtet, was dabei herausgekommen ist.",
+     "themen": [
+      "Umwelt, Klima & Energie",
+      "Welt & Internationales"
+     ],
+     "politisch": true,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Was kam bei der Konferenz heraus? Dann hör genau hin.",
+       "optionen": [
+        "ein neuer gemeinsamer Vertrag",
+        "ein kleiner Kompromiss",
+        "gar keine Einigung",
+        "eine Verlängerung der Konferenz"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Wen trifft der Klimawandel besonders stark? Hör genau hin."
+      }
+     ]
+    },
+    {
+     "titel": "Laufende Nase – einfach erklärt",
+     "kurz": "Im Herbst und Winter haben viele eine Erkältung mit Schnupfen. logo! erklärt, warum die Nase dann läuft.",
+     "themen": [
+      "Gesundheit & Ernährung",
+      "Natur & Wissen"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/tipps-fuers-immunsystem-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Wozu ist der Schleim in der Nase gut? Kreuze an, was stimmt.",
+       "optionen": [
+        "Er fängt Staub und Erreger ein.",
+        "Er hält die Nase feucht.",
+        "Er tötet alle Viren sofort.",
+        "Er entsteht nur bei Allergien."
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Was kannst du tun, damit du dich seltener erkältest?"
+      }
+     ]
+    },
+    {
+     "titel": "10-jähriger Kickboxer",
+     "kurz": "logo! stellt einen zehnjährigen Jungen vor, der Kickboxen als Sport macht.",
+     "themen": [
+      "Sport"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Was braucht man, um im Sport so gut zu werden?",
+       "optionen": [
+        "viel Training",
+        "Disziplin",
+        "Unterstützung der Familie",
+        "Talent"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Wie schafft er Schule und Training gleichzeitig? Hör genau hin."
+      }
+     ]
+    }
+   ]
   }
  ]
 }
