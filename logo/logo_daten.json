@@ -9004,6 +9004,156 @@
      ]
     }
    ]
+  },
+  {
+   "datum": "2026-11-24",
+   "wochentag": "Dienstag",
+   "zeit": "19:50",
+   "url": "https://www.logo.de/logo-vom-dienstag-24-november-2026-102.html",
+   "streitfrage": {
+    "text": "Soll ein Verein einem kranken Spieler weiter das volle Gehalt zahlen?",
+    "optionen": [
+     "ja",
+     "nein",
+     "weiß ich noch nicht"
+    ]
+   },
+   "beitraege": [
+    {
+     "titel": "Lara checkt Bevölkerungsschutzzentrum",
+     "kurz": "Reporterin Lara besucht ein Zentrum für Bevölkerungsschutz. Bevölkerungsschutz soll Menschen bei Katastrophen helfen, zum Beispiel bei Stürmen oder langen Stromausfällen.",
+     "themen": [
+      "Gewalt & Sicherheit",
+      "Gesellschaft & Zusammenleben"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/katastrophen-vorsorge-privat-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Was gehört in einen Notvorrat für zu Hause? Kreuze an.",
+       "optionen": [
+        "Trinkwasser",
+        "Taschenlampe",
+        "Radio mit Batterien",
+        "Tiefkühlpizza",
+        "Kerzen und Feuerzeug"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Was würde sich bei dir ändern, wenn zwei Tage der Strom ausfällt?"
+      }
+     ]
+    },
+    {
+     "titel": "Skaten in Gaza",
+     "kurz": "Im Gazastreifen ist durch den Krieg zwischen Israel und der Hamas sehr vieles zerstört. Seit Oktober 2025 gilt eine Waffenruhe, die aber immer wieder gebrochen wird. logo! berichtet, wie dort Skateboard gefahren wird.",
+     "themen": [
+      "Krieg & Konflikte",
+      "Welt & Internationales",
+      "Sport"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/konflikt-israel-palaestinenser-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Was gibt das Skaten den Menschen dort? Dann hör genau hin.",
+       "optionen": [
+        "Ablenkung vom schweren Alltag",
+        "Zeit mit Freunden",
+        "Training für Wettkämpfe",
+        "Mut und Selbstvertrauen"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Wie sieht der Alltag für Kinder im Gazastreifen gerade aus?"
+      }
+     ]
+    },
+    {
+     "titel": "Diskussion um Musiala – einfach erklärt",
+     "kurz": "Fußball-Nationalspieler Jamal Musiala vom FC Bayern hat ein gesundheitliches Problem. Einige Bayern-Chefs fragen, ob sein sehr hohes Gehalt noch passt. Andere im Verein, auch der Trainer, unterstützen ihn.",
+     "themen": [
+      "Sport",
+      "Gesundheit & Ernährung",
+      "Gesellschaft & Zusammenleben"
+     ],
+     "politisch": true,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Worüber wird beim FC Bayern gestritten?",
+       "optionen": [
+        "über einen Wechsel zu einem anderen Verein",
+        "über sein sehr hohes Gehalt",
+        "über einen Streit mit dem Trainer",
+        "über seine Rolle als Kapitän"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Wie fühlt sich Musiala wohl, wenn alle über ihn reden?"
+      }
+     ]
+    },
+    {
+     "titel": "Fußball-Rekord",
+     "kurz": "logo! berichtet über einen neuen Rekord im Fußball.",
+     "themen": [
+      "Sport"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Um welche Art von Rekord geht es? Dann hör genau hin.",
+       "optionen": [
+        "die meisten Tore",
+        "die meisten Zuschauer",
+        "der jüngste Spieler",
+        "die meisten Spiele ohne Niederlage"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Warum wollen Sportlerinnen und Sportler Rekorde aufstellen?"
+      }
+     ]
+    },
+    {
+     "titel": "Origami-Weihnachtsbaum",
+     "kurz": "Beim Origami entstehen Figuren nur durch Falten von Papier. logo! zeigt einen Weihnachtsbaum, an dem hunderte kleine gefaltete Kunstwerke hängen.",
+     "themen": [
+      "Kultur & Feiertage"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/origami-basteln-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Was braucht man für klassisches Origami? Kreuze an.",
+       "optionen": [
+        "Papier",
+        "Schere",
+        "Kleber",
+        "geschickte Finger"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Was würdest du gern aus Papier falten – und für wen?"
+      }
+     ]
+    }
+   ]
   }
  ]
 }
