@@ -9154,6 +9154,155 @@
      ]
     }
    ]
+  },
+  {
+   "datum": "2026-11-25",
+   "wochentag": "Mittwoch",
+   "zeit": "19:50",
+   "url": "https://www.logo.de/logo-vom-mittwoch-25-november-2026-102.html",
+   "streitfrage": {
+    "text": "Soll der Staat Schulden machen dürfen, um mehr Geld für wichtige Dinge zu haben?",
+    "optionen": [
+     "ja",
+     "nein",
+     "weiß ich noch nicht"
+    ]
+   },
+   "beitraege": [
+    {
+     "titel": "Generaldebatte im Bundestag",
+     "kurz": "Im Bundestag wird über den Haushalt für 2027 gestritten. Das ist der Plan, wofür der Staat sein Geld ausgibt. Der Haushalt ist so groß wie nie, ein Teil soll über neue Schulden bezahlt werden.",
+     "themen": [
+      "Regierung & Parlament",
+      "Wirtschaft & Preise"
+     ],
+     "politisch": true,
+     "link": "https://www.zdfheute.de/politik/deutschland/generaldebatte-bundestag-haushalt-kanzler-2026-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Schätz zuerst: Wie viel Geld will der Staat 2027 ausgeben?",
+       "optionen": [
+        "5,6 Milliarden Euro",
+        "56 Milliarden Euro",
+        "560 Milliarden Euro",
+        "5.600 Milliarden Euro"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was passiert, wenn ein Staat jedes Jahr viele neue Schulden macht?"
+      }
+     ]
+    },
+    {
+     "titel": "Orange Day",
+     "kurz": "Am 25. November ist der internationale Tag gegen Gewalt an Frauen. Weltweit und auch in Deutschland erleben viele Frauen und Mädchen Gewalt. Mit Aktionen wollen Menschen ein Zeichen dagegen setzen.",
+     "themen": [
+      "Gewalt & Sicherheit",
+      "Gesellschaft & Zusammenleben"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/internationaler-tag-gegen-gewalt-an-frauen-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Wie setzen Menschen am Orange Day ein Zeichen? Dann hör genau hin.",
+       "optionen": [
+        "Gebäude orange beleuchten",
+        "orange Kleidung tragen",
+        "auf Kundgebungen gehen",
+        "Infostände aufbauen"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Warum ist es wichtig, dass auch Freunde und Nachbarn hinschauen?"
+      }
+     ]
+    },
+    {
+     "titel": "logo! erklärt: Warum Frauen trotz Gewalt in Beziehungen bleiben",
+     "kurz": "Manche Frauen bleiben bei ihrem Partner, obwohl er sie schlägt. logo! erklärt an drei Beispielen, warum das so sein kann. Hilfe gibt es zum Beispiel beim Hilfetelefon (08000 116 016) und in Frauenhäusern.",
+     "themen": [
+      "Gewalt & Sicherheit",
+      "Gesellschaft & Zusammenleben"
+     ],
+     "politisch": true,
+     "link": "https://www.zdf.de/video/magazine/logo-154/frauen-in-beziehung-trotz-gewalt-einfach-erklaert-100",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Was hält manche Frauen davon ab, zu gehen? Dann hör genau hin.",
+       "optionen": [
+        "Angst vor dem Partner",
+        "Sorge um die Kinder",
+        "kein eigenes Geld",
+        "Hoffnung, dass es besser wird"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Was könnte einer betroffenen Frau helfen, sich Hilfe zu holen?"
+      }
+     ]
+    },
+    {
+     "titel": "Eislaufen",
+     "kurz": "logo! berichtet über das Eislaufen.",
+     "themen": [
+      "Sport"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Worum geht es beim Eislaufen-Beitrag? Dann hör genau hin.",
+       "optionen": [
+        "um einen Wettkampf",
+        "um eine neue Eisbahn",
+        "um ein junges Talent",
+        "um Eislaufen lernen"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Was hilft dir, wenn du etwas Schwieriges neu lernst?"
+      }
+     ]
+    },
+    {
+     "titel": "\"Ghetto Classics\" in Nairobi",
+     "kurz": "Brian lebt in einem der ärmsten Viertel von Nairobi, der Hauptstadt von Kenia. Er spielt Saxophon in dem Orchester \"Ghetto Classics\". Das hilft ihm sehr.",
+     "themen": [
+      "Welt & Internationales",
+      "Kultur & Feiertage"
+     ],
+     "politisch": false,
+     "link": "https://www.zdf.de/video/magazine/logo-154/ghetto-classics-nairobi-100",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Wie hilft das Orchester Brian? Dann hör genau hin.",
+       "optionen": [
+        "Er hat ein festes Ziel.",
+        "Er findet dort Freunde.",
+        "Er verdient damit Geld.",
+        "Er wird selbstbewusster."
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Was gibt dir selbst Kraft, wenn es im Leben schwer ist?"
+      }
+     ]
+    }
+   ]
   }
  ]
 }
