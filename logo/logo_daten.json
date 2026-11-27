@@ -9303,6 +9303,152 @@
      ]
     }
    ]
+  },
+  {
+   "datum": "2026-11-26",
+   "wochentag": "Donnerstag",
+   "zeit": "19:50",
+   "url": "https://www.logo.de/logo-vom-donnerstag-26-november-2026-102.html",
+   "streitfrage": {
+    "text": "Soll eine Partei bestimmen dürfen, was ihre Abgeordneten öffentlich sagen?",
+    "optionen": [
+     "ja",
+     "nein",
+     "weiß ich noch nicht"
+    ]
+   },
+   "beitraege": [
+    {
+     "titel": "Thanksgiving-Parade",
+     "kurz": "In den USA wird Thanksgiving gefeiert, eine Art Erntedankfest. In New York gibt es dazu eine große Parade mit riesigen Ballonfiguren. In diesem Jahr findet sie zum 100. Mal statt.",
+     "themen": [
+      "Kultur & Feiertage",
+      "Welt & Internationales"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Schätz zuerst: Seit wann gibt es die große Parade in New York?",
+       "optionen": [
+        "seit 1924",
+        "seit 1964",
+        "seit 1994",
+        "seit 2004"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Warum feiern die Menschen in den USA Thanksgiving?"
+      }
+     ]
+    },
+    {
+     "titel": "logo! erklärt: Diskussion um Berliner Linke",
+     "kurz": "Bei der Wahl in Berlin hat die Partei „Die Linke“ gewonnen. Trotzdem gibt es Kritik an der Partei. logo! erklärt, worum es dabei geht und wie die Partei auf die Vorwürfe reagiert.",
+     "themen": [
+      "Wahlen & Demokratie",
+      "Regierung & Parlament"
+     ],
+     "politisch": true,
+     "link": "https://www.logo.de/linke-berlin-kritik-einfach-erklaert-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Was hat „Die Linke“ bei der Wahl in Berlin geschafft?",
+       "optionen": [
+        "die meisten Stimmen bekommen",
+        "knapp den Einzug verpasst",
+        "gleich viele Stimmen wie die SPD",
+        "zum ersten Mal mitgemacht"
+       ],
+       "mehrere": false
+      },
+      {
+       "typ": "satz",
+       "text": "Wen betrifft es, wenn eine Partei in der Regierung in der Kritik steht?"
+      }
+     ]
+    },
+    {
+     "titel": "Spürhunde-Training",
+     "kurz": "Spürhunde können mit ihrer feinen Nase Dinge finden, die Menschen nicht riechen. Damit das klappt, müssen sie lange trainieren. logo! zeigt, wie so ein Training abläuft.",
+     "themen": [
+      "Natur & Wissen"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Wobei können Spürhunde helfen? Dann hör genau hin.",
+       "optionen": [
+        "vermisste Menschen suchen",
+        "Drogen finden",
+        "Sprengstoff aufspüren",
+        "Krankheiten erschnüffeln"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Wie schafft es die Trainerin oder der Trainer, dass der Hund gern mitmacht?"
+      }
+     ]
+    },
+    {
+     "titel": "Weihnachtshaus",
+     "kurz": "Die Adventszeit beginnt bald. logo! stellt ein Haus vor, das ganz weihnachtlich geschmückt ist, und zeigt, was dahintersteckt.",
+     "themen": [
+      "Kultur & Feiertage"
+     ],
+     "politisch": false,
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Was macht dieses Weihnachtshaus besonders? Dann hör genau hin.",
+       "optionen": [
+        "sehr viele Lichter",
+        "viele Besucher kommen",
+        "es sammelt Spenden",
+        "sehr viele Figuren"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Was würdest du an so einem Haus gut finden – und was eher nicht?"
+      }
+     ]
+    },
+    {
+     "titel": "Wie entsteht veganes Fleisch?",
+     "kurz": "Manche Menschen essen nichts, was vom Tier kommt. Für sie gibt es zum Beispiel Schnitzel, Würstchen und Bouletten ohne Fleisch. logo!-Reporterin Lara schaut sich an, wie veganes „Fleisch“ hergestellt wird.",
+     "themen": [
+      "Gesundheit & Ernährung",
+      "Natur & Wissen"
+     ],
+     "politisch": false,
+     "link": "https://www.logo.de/veganes-fleisch-reporterin-lara-100.html",
+     "fragen": [
+      {
+       "typ": "kreuz",
+       "text": "Vermute zuerst: Woraus kann veganes „Fleisch“ gemacht werden? Dann hör genau hin.",
+       "optionen": [
+        "Erbsen",
+        "Soja",
+        "Weizen",
+        "Pilze"
+       ],
+       "mehrere": true
+      },
+      {
+       "typ": "satz",
+       "text": "Warum entscheiden sich manche Menschen, vegan zu essen?"
+      }
+     ]
+    }
+   ]
   }
  ]
 }
